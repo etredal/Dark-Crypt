@@ -55,13 +55,16 @@ standardSpeed = 2.2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Move
+            <string>///Move and setting
 //set sprite
 sprite_index = spr_playerIdle;
 
 //Set Lantern
-global.xLanternOffset = 23;
-global.yLanternOffset = 1 + 16;
+global.xLanternOffset = 11;
+global.yLanternOffset = 9;
+
+//depth
+depth = -y;
 
 if (keyboard_check(vk_left) || keyboard_check(ord('A'))) {
     //collision check
@@ -73,8 +76,8 @@ if (keyboard_check(vk_left) || keyboard_check(ord('A'))) {
     sprite_index = spr_playerLeft;
     
     //Set Lantern
-    global.xLanternOffset = 23;
-    global.yLanternOffset = 1 + 16;
+    global.xLanternOffset = 11;
+    global.yLanternOffset = 9;
 }
 
 if (keyboard_check(vk_up) || keyboard_check(ord('W'))) {
@@ -87,8 +90,8 @@ if (keyboard_check(vk_up) || keyboard_check(ord('W'))) {
     sprite_index = spr_playerUp;
     
     //Set Lantern
-    global.xLanternOffset = 23;
-    global.yLanternOffset = 1 + 16;
+    global.xLanternOffset = 11;
+    global.yLanternOffset = 9;
 }
 
 if (keyboard_check(vk_right) || keyboard_check(ord('D'))) {
@@ -101,8 +104,8 @@ if (keyboard_check(vk_right) || keyboard_check(ord('D'))) {
     sprite_index = spr_playerRight;
     
     //Set Lantern
-    global.xLanternOffset = 23;
-    global.yLanternOffset = 1 + 16;
+    global.xLanternOffset = 11;
+    global.yLanternOffset = 9;
 }
 
 if (keyboard_check(vk_down) || keyboard_check(ord('S'))) {
@@ -115,8 +118,8 @@ if (keyboard_check(vk_down) || keyboard_check(ord('S'))) {
     sprite_index = spr_playerDown;
     
     //Set Lantern
-    global.xLanternOffset = 23;
-    global.yLanternOffset = 1 + 16;
+    global.xLanternOffset = 11;
+    global.yLanternOffset = 9;
 }
 
 </string>

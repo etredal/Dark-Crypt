@@ -79,7 +79,9 @@ y = obj_player.y + global.yLanternOffset;
           <argument>
             <kind>1</kind>
             <string>///Sets light
-scr_setLight(512, c_yellow,c_black);
+scr_setLight(512, c_white,c_black);
+
+depth = -y;
 </string>
           </argument>
         </arguments>
