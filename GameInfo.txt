@@ -1,0 +1,12 @@
+Have 50 levels
+   -save with txt for which level is current
+
+Can hit w/ lantern and lights go off
+
+Little shines that make lantern brighter
+
+Puzzle - lever open gate, lever create bridge
+
+Enemies attack -- dmg by making lantern darker, if all killed sometimes door open
+
+If light goes out you die
