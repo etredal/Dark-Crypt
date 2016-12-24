@@ -9,4 +9,4 @@ Puzzle - lever open gate, lever create bridge
 
 Enemies attack -- dmg by making lantern darker, if all killed sometimes door open
 
-If light goes out you die
+stream
