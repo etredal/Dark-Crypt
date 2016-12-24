@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,18 +25,113 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///IF no save file exists, create
+            <string>///IF no save file exists, create file -- Create Buttons
 if !(file_exists("Stygian_MazeSave.txt")) {
     saveFile = file_text_open_write("Stygian_MazeSave.txt");
-    file_text_write_string(saveFile, 0);
-    file_text_close(File);
-} else {
-    saveFile = file_text_open_read("Stygian_MazeSave.txt");
-    val = file_text_read_real(saveFile);
-    if (val &gt;= 0) {
-        instance_create(496,96,obj_button3);
+    file_text_write_real(saveFile, 0);
+    file_text_close(saveFile);
+} 
+
+//Set location
+saveFile = file_text_open_read("Stygian_MazeSave.txt");
+val = file_text_read_real(saveFile);
+
+//Set next line
+var i = 0;
+var j = 0;
+
+//Loop for buttons
+for (i = 0; i &lt; 50; i++) {
+    var rows = 5;
+    
+    if (i%rows == 0) &amp;&amp; (i != 0) {
+        j += 1;
+    }
+    
+    var xOffset = 64;
+    var yOffset = 64;
+
+    //Create button
+    button = instance_create((xOffset*(i - (j*rows))) + 496,96 + (yOffset*j),obj_button3);
+    
+    //Is unlocked
+    if (i &lt;= val) {
+        button.sprite_index = spr_button3;
+        button.image_index = i;
+    } else {
+        button.sprite_index = spr_buttonLocked;
     }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Save level
+var currentLevel = -1;
+
+//ALL LEVELS
+if (room == rm_level0) {
+    currentLevel = 0;
+} else if (room == rm_level1) {
+    currentLevel = 1;
+}
+
+if (currentLevel != -1) {
+    //Set location
+    saveFile = file_text_open_read("Stygian_MazeSave.txt");
+    val = file_text_read_real(saveFile);
+    
+    //Save
+    if (val &lt; currentLevel) {
+        saveFile = file_text_open_write("Stygian_MazeSave.txt");
+        file_text_write_real(saveFile, currentLevel);
+    }
+    
+    //close
+    file_text_close(saveFile);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="27">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///game exit
+game_end();
 </string>
           </argument>
         </arguments>
