@@ -50,6 +50,7 @@
     <room>rooms\rm_mainMenu</room>
     <room>rooms\rm_level0</room>
     <room>rooms\rm_level1</room>
+    <room>rooms\rm_lost</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

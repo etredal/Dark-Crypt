@@ -42,14 +42,14 @@ var j = 0;
 
 //Loop for buttons
 for (i = 0; i &lt; 50; i++) {
-    var rows = 5;
+    var rows = 6;
     
     if (i%rows == 0) &amp;&amp; (i != 0) {
         j += 1;
     }
     
-    var xOffset = 64;
-    var yOffset = 64;
+    var xOffset = 64 + 32;
+    var yOffset = 64 + 32;
 
     //Create button
     button = instance_create((xOffset*(i - (j*rows))) + 496,96 + (yOffset*j),obj_button3);
@@ -60,6 +60,63 @@ for (i = 0; i &lt; 50; i++) {
         button.image_index = i;
     } else {
         button.sprite_index = spr_buttonLocked;
+    }
+    
+    //torch
+    if (button.sprite_index != spr_buttonLocked) {
+        instance_create(button.x,button.y - 64 + 8,obj_torch);
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Init
+timer = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Emd game if game lost
+if (room = rm_lost) {
+    timer += 1
+    
+    if (timer &gt; 5 * room_speed) {
+        room_goto(rm_mainMenu);
     }
 }
 </string>
@@ -131,7 +188,11 @@ if (currentLevel != -1) {
           <argument>
             <kind>1</kind>
             <string>///game exit
-game_end();
+if (window_get_fullscreen() == true) {
+    window_set_fullscreen(false);
+} else {
+    window_set_fullscreen(true);
+}
 </string>
           </argument>
         </arguments>

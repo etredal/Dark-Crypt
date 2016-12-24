@@ -33,7 +33,7 @@ global.xLanternOffset = 0;
 global.yLanternOffset = 0;
 
 //Set lantern radius
-global.rLantern = 512;
+global.rLantern = 100;
 </string>
           </argument>
         </arguments>
@@ -107,6 +107,10 @@ depth = -y;
             <kind>1</kind>
             <string>///Sets lower in light
 global.rLantern -= 1/room_speed;
+
+if (global.rLantern &lt;= 0) { 
+    room_goto(rm_lost);
+}
 </string>
           </argument>
         </arguments>
