@@ -5,14 +5,31 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_Lantern</sprite>
+    <sprite>sprites\spr_block</sprite>
+    <sprite>sprites\spr_darkness</sprite>
+    <sprites name="Player">
+      <sprite>sprites\spr_playerIdle</sprite>
+      <sprite>sprites\spr_playerLeft</sprite>
+      <sprite>sprites\spr_playerUp</sprite>
+      <sprite>sprites\spr_playerRight</sprite>
+      <sprite>sprites\spr_playerDown</sprite>
+    </sprites>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_setLight.gml</script>
+  </scripts>
   <objects name="objects">
-    <object>objects\obj_test</object>
+    <object>objects\obj_darkness</object>
+    <object>objects\obj_lantern</object>
+    <object>objects\obj_player</object>
+    <object>objects\obj_block</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_mainMenu</room>
+    <room>rooms\rm_testMainMenu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
