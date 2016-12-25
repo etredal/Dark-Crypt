@@ -88,7 +88,8 @@ for (i = 0; i &lt; 50; i++) {
           <argument>
             <kind>1</kind>
             <string>///Init
-timer = 0;
+//for losing game
+global.lostTimer = 5 * room_speed; //5 seconds
 </string>
           </argument>
         </arguments>
@@ -133,12 +134,14 @@ window_set_fullscreen(true);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Restart if game lost
+            <string>///If game lost (room)
 if (room = rm_lost) {
-    timer += 1
+    global.lostTimer--;
     
-    if (timer &gt; 5 * room_speed) {
+    if (global.lostTimer &lt;= 0) {
         room_goto(rm_mainMenu);
+    
+        instance_destroy(); //destroying self to be reset
     }
 }
 </string>

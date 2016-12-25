@@ -30,6 +30,7 @@ image_speed = 0.075;
 
 lightYellow = make_colour_rgb(255,255,200);
 
+r = 300;
 </string>
           </argument>
         </arguments>
@@ -53,7 +54,9 @@ lightYellow = make_colour_rgb(255,255,200);
           <argument>
             <kind>1</kind>
             <string>///set light
-scr_setLight(200,0.99,1.01,lightYellow);
+r = something //something HERE
+
+scr_setLight(r,0.99,1.01,lightYellow);
 </string>
           </argument>
         </arguments>

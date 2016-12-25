@@ -46,6 +46,7 @@
     <object>objects\obj_shine</object>
     <object>objects\obj_sign</object>
     <object>objects\obj_fireball</object>
+    <object>objects\obj_torchLost</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_mainMenu</room>
