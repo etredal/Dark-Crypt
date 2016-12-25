@@ -53,17 +53,14 @@ global.chosenLevel = 0; // 0 is tutorial
 //ALL LEVELS
 if (global.chosenLevel == 0) {
     room_goto(rm_level0);
-}
-
-if (global.chosenLevel == 1) {
+} else if (global.chosenLevel == 1) {
     room_goto(rm_level1);
-}
-
-/*
-if (global.chosenLevel == 2) {
+} else if (global.chosenLevel == 2) {
     room_goto(rm_level2);
 }
 
+
+/*
 if (global.chosenLevel == 0) {
     room_goto(rm_level0);
 }
