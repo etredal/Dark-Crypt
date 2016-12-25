@@ -11,11 +11,16 @@
     <sprite>sprites\spr_darkness</sprite>
     <sprites name="Player">
       <sprite>sprites\spr_playerLeft</sprite>
+<<<<<<< HEAD
       <sprite>sprites\spr_playerLeftAttack</sprite>
       <sprite>sprites\spr_playerRight</sprite>
       <sprite>sprites\spr_playerRightAttack</sprite>
       <sprite>sprites\spr_playerUp</sprite>
       <sprite>sprites\spr_playerUpAttack</sprite>
+=======
+      <sprite>sprites\spr_playerRight</sprite>
+      <sprite>sprites\spr_playerUp</sprite>
+>>>>>>> 61a0b19a6a5e9e312802a1530f63929147007fa1
       <sprite>sprites\spr_playerDown</sprite>
       <sprite>sprites\spr_playerDownAttack</sprite>
     </sprites>

@@ -1,4 +1,5 @@
 Have 50 levels
+<<<<<<< HEAD
 
 
 
@@ -6,12 +7,18 @@ Can hit w/ lantern and lights go off
 
 
 
+=======
+
+Can hit w/ lantern and lights go off
+
+>>>>>>> 61a0b19a6a5e9e312802a1530f63929147007fa1
 Puzzle - lever open gate, lever create bridge
 
 
 
 Enemies attack -- dmg by making lantern darker, if all killed sometimes door open
 
+<<<<<<< HEAD
 
 
 cracked wall
@@ -26,4 +33,12 @@ light engine -- shadows, particle systems
 
 
 
+=======
+cracked wall
+
+stream
+
+light engine -- shadows, particle systems
+
+>>>>>>> 61a0b19a6a5e9e312802a1530f63929147007fa1
 intro cutscene
