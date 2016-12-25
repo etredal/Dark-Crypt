@@ -26,7 +26,7 @@
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>0</page>
+    <page>1</page>
     <xoffset>3898</xoffset>
     <yoffset>248</yoffset>
   </makerSettings>
@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_darkness" x="-80" y="-64" name="inst_9B2EDF8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="2016" y="232" name="inst_E1E0E204" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="1984" y="240" name="inst_E1E0E204" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blockCracked" x="1984" y="192" name="inst_B529D3EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blockCracked" x="1952" y="192" name="inst_83719F9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blockCracked" x="1920" y="192" name="inst_D97BA97E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -98,16 +98,6 @@
     <instance objName="obj_blockCracked" x="1600" y="96" name="inst_440E42E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blockCracked" x="1600" y="16" name="inst_588E8301" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blockCracked" x="1600" y="48" name="inst_0F5F0942" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cont_block" x="1984" y="304" name="inst_D3948E02" locked="0" code="" scaleX="15" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cont_block" x="2064" y="208" name="inst_50BAD046" locked="0" code="" scaleX="1" scaleY="5.5" colour="4294967295" rotation="0"/>
-    <instance objName="cont_block" x="1968" y="192" name="inst_CC8F466B" locked="0" code="" scaleX="10" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cont_block" x="2016" y="80" name="inst_07F5099E" locked="0" code="" scaleX="1" scaleY="6.5" colour="4294967295" rotation="0"/>
-    <instance objName="cont_block" x="1760" y="-16" name="inst_259F3957" locked="0" code="" scaleX="15.25" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cont_block" x="1600" y="32" name="inst_8626E8CA" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="cont_block" x="1600" y="128" name="inst_C58E206B" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="cont_block" x="1696" y="160" name="inst_1C57892C" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cont_block" x="1760" y="80" name="inst_0FD3CDFD" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="cont_block" x="1760" y="192" name="inst_1F2D64F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

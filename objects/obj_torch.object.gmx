@@ -3,7 +3,7 @@
   <spriteName>spr_torch</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-10</depth>
+  <depth>-99999</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -27,6 +27,9 @@
             <kind>1</kind>
             <string>///Init
 image_speed = 0.075;
+
+lightYellow = make_colour_rgb(255,255,200);
+
 </string>
           </argument>
         </arguments>
@@ -50,8 +53,7 @@ image_speed = 0.075;
           <argument>
             <kind>1</kind>
             <string>///set light
-lightYellow = make_colour_rgb(255,255,200);
-scr_setLight(200,lightYellow,c_black);
+scr_setLight(200,0.99,1.01,lightYellow);
 </string>
           </argument>
         </arguments>

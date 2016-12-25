@@ -1,15 +1,21 @@
 Have 50 levels
 
-Can hit w/ lantern and lights go off
+
 
 Puzzle - lever open gate, lever create bridge
 
+
+
 Enemies attack -- dmg by making lantern darker, if all killed sometimes door open
+
+
 
 cracked wall
 
-stream
+
 
 light engine -- shadows, particle systems
 
-intro cutscene
+
+
+intro cutscenes

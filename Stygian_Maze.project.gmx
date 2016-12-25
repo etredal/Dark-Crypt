@@ -10,7 +10,6 @@
     <sprite>sprites\spr_block</sprite>
     <sprite>sprites\spr_darkness</sprite>
     <sprites name="Player">
-      <sprite>sprites\spr_playerIdle</sprite>
       <sprite>sprites\spr_playerLeft</sprite>
       <sprite>sprites\spr_playerRight</sprite>
       <sprite>sprites\spr_playerUp</sprite>
@@ -25,8 +24,11 @@
     <sprite>sprites\spr_exit</sprite>
     <sprite>sprites\spr_shine</sprite>
     <sprite>sprites\spr_sign</sprite>
+    <sprite>sprites\spr_fireball</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_blocks</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_setLight.gml</script>
@@ -37,7 +39,7 @@
     <object>objects\obj_lantern</object>
     <object>objects\obj_player</object>
     <object>objects\cont_block</object>
-    <object>objects\obj_block1</object>
+    <object>objects\obj_blockCracked</object>
     <object>objects\obj_torch</object>
     <object>objects\obj_button1</object>
     <object>objects\obj_button2</object>
@@ -45,11 +47,14 @@
     <object>objects\cont_exit</object>
     <object>objects\obj_shine</object>
     <object>objects\obj_sign</object>
+    <object>objects\obj_fireball</object>
+    <object>objects\obj_torchLost</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_mainMenu</room>
     <room>rooms\rm_level0</room>
     <room>rooms\rm_level1</room>
+    <room>rooms\rm_level2</room>
     <room>rooms\rm_lost</room>
   </rooms>
   <help>
