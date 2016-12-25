@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Light
-scr_setLight(100,c_blue,c_black);
+scr_setLight(100,0.9,1.1,c_blue);
 </string>
           </argument>
         </arguments>
