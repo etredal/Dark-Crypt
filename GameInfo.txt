@@ -1,7 +1,10 @@
 Have 50 levels
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6be442f7d9b7540eaf7aa17f7d9e4d5f6bfc31cc
 Puzzle - lever open gate, lever create bridge
 
 
@@ -9,6 +12,7 @@ Puzzle - lever open gate, lever create bridge
 Enemies attack -- dmg by making lantern darker, if all killed sometimes door open
 
 
+<<<<<<< HEAD
 
 cracked wall/Setup
 
@@ -18,4 +22,8 @@ light engine -- shadows, particle systems
 
 
 
+=======
+light engine -- shadows, particle systems
+
+>>>>>>> 6be442f7d9b7540eaf7aa17f7d9e4d5f6bfc31cc
 intro cutscenes
