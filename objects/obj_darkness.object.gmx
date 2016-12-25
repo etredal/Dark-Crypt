@@ -51,6 +51,11 @@ surfaceDarkness = surface_create(view_wview, view_hview);
           <argument>
             <kind>1</kind>
             <string>//draw
+if (!surface_exists(surfaceDarkness)) {
+    globalvar surfaceDarkness;
+    surfaceDarkness = surface_create(view_wview, view_hview);
+}
+
 surface_set_target(surfaceDarkness);
 draw_set_color(c_white); //makes it dark
 draw_rectangle(0,0,view_wview,view_hview,false); //draws over
@@ -127,7 +132,10 @@ surface_free(surfaceDarkness);
             <kind>1</kind>
             <string>///Draw
 draw_set_blend_mode(bm_subtract);
-draw_surface(surfaceDarkness,view_xview,view_yview);
+
+if (surface_exists(surfaceDarkness)) {
+    draw_surface(surfaceDarkness,view_xview,view_yview);
+}
 draw_set_blend_mode(bm_normal);
 </string>
           </argument>

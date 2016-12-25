@@ -3,7 +3,7 @@
   <spriteName>spr_Lantern</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-99</depth>
+  <depth>-9999</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -33,7 +33,7 @@ global.xLanternOffset = 0;
 global.yLanternOffset = 0;
 
 //Set lantern radius
-global.rLantern = 512;
+global.rLantern = 100;
 </string>
           </argument>
         </arguments>
@@ -83,8 +83,6 @@ y = obj_player.y + global.yLanternOffset;
             <kind>1</kind>
             <string>///Sets light and depth
 scr_setLight(global.rLantern, c_white,c_black);
-
-depth = -y;
 </string>
           </argument>
         </arguments>
@@ -107,6 +105,10 @@ depth = -y;
             <kind>1</kind>
             <string>///Sets lower in light
 global.rLantern -= 1/room_speed;
+
+if (global.rLantern &lt;= 0) { 
+    room_goto(rm_lost);
+}
 </string>
           </argument>
         </arguments>

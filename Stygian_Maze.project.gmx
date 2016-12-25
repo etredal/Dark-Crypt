@@ -10,11 +10,14 @@
     <sprite>sprites\spr_block</sprite>
     <sprite>sprites\spr_darkness</sprite>
     <sprites name="Player">
-      <sprite>sprites\spr_playerIdle</sprite>
       <sprite>sprites\spr_playerLeft</sprite>
-      <sprite>sprites\spr_playerUp</sprite>
+      <sprite>sprites\spr_playerLeftAttack</sprite>
       <sprite>sprites\spr_playerRight</sprite>
+      <sprite>sprites\spr_playerRightAttack</sprite>
+      <sprite>sprites\spr_playerUp</sprite>
+      <sprite>sprites\spr_playerUpAttack</sprite>
       <sprite>sprites\spr_playerDown</sprite>
+      <sprite>sprites\spr_playerDownAttack</sprite>
     </sprites>
     <sprite>sprites\spr_block1</sprite>
     <sprite>sprites\spr_torch</sprite>
@@ -22,6 +25,9 @@
     <sprite>sprites\spr_button2</sprite>
     <sprite>sprites\spr_buttonLocked</sprite>
     <sprite>sprites\spr_button3</sprite>
+    <sprite>sprites\spr_exit</sprite>
+    <sprite>sprites\spr_shine</sprite>
+    <sprite>sprites\spr_sign</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -39,11 +45,15 @@
     <object>objects\obj_button1</object>
     <object>objects\obj_button2</object>
     <object>objects\obj_button3</object>
+    <object>objects\cont_exit</object>
+    <object>objects\obj_shine</object>
+    <object>objects\obj_sign</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_mainMenu</room>
-    <room>rooms\rm_tutorial</room>
+    <room>rooms\rm_level0</room>
     <room>rooms\rm_level1</room>
+    <room>rooms\rm_lost</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
