@@ -10,7 +10,7 @@ Enemies attack -- dmg by making lantern darker, if all killed sometimes door ope
 
 
 
-cracked wall
+cracked wall/Setup
 
 
 
