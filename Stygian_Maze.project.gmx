@@ -28,6 +28,7 @@
     <sprite>sprites\spr_fireball</sprite>
     <sprite>sprites\spr_monsterRock</sprite>
     <sprite>sprites\spr_monsterRockRun</sprite>
+    <sprite>sprites\spr_textBox</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -37,6 +38,9 @@
   <scripts name="scripts">
     <script>scripts\scr_setLight.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_tutorial</font>
+  </fonts>
   <objects name="objects">
     <objects name="Managers">
       <object>objects\cont_gm</object>
@@ -46,6 +50,7 @@
     <objects name="Maze">
       <object>objects\cont_block</object>
       <object>objects\cont_exit</object>
+      <object>objects\cont_textBox</object>
       <object>objects\obj_signArrow</object>
       <object>objects\obj_signMonster</object>
       <object>objects\obj_torchLost</object>
