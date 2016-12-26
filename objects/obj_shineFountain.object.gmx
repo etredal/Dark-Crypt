@@ -50,7 +50,7 @@ image_speed = 0;
           <argument>
             <kind>1</kind>
             <string>///Create shines
-var r = irandom(8 * room_speed);
+var r = irandom(16 * room_speed); //16 seconds
 
 if (r == 1) &amp;&amp; (distance_to_point(obj_lantern.x,obj_lantern.y) &lt; global.rLantern) {
     instance_create(x,y,obj_shineMoving);
@@ -76,7 +76,7 @@ if (r == 1) &amp;&amp; (distance_to_point(obj_lantern.x,obj_lantern.y) &lt; glob
           <argument>
             <kind>1</kind>
             <string>///Anim if close
-if (distance_to_point(obj_lantern.x,obj_lantern.y) &lt; global.rLantern) {
+if (distance_to_object(obj_lantern) &lt; global.rLantern) {
     image_speed = 0.1;
 } else {
     image_speed = 0;

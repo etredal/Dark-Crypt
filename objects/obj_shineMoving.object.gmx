@@ -48,23 +48,13 @@ spd = 1;
           <argument>
             <kind>1</kind>
             <string>///Moving
+var fn = instance_nearest(x,y,obj_shineFountain);
+
 do {
     //Random
-    rX = x + irandom_range(-32,32);
-    rY = y + irandom_range(-32,32);
-} until (place_free(rX,rY));
-
-if (spd != 0) {
-    //go
-    move_towards_point(rX,rY,spd);
-} else {
-    speed = spd;
-}
-
-if (distance_to_point(rX,rY) &lt; 2) {
-    spd = 0;
-}
-
+    rX = x + irandom_range(-64,64);
+    rY = y + irandom_range(-64,64);
+} until (place_free(rX,rY)) &amp;&amp; point_distance(rX,rY,fn.x,fn.y) &gt; 24;
 </string>
           </argument>
         </arguments>
@@ -87,10 +77,22 @@ if (distance_to_point(rX,rY) &lt; 2) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Light and depth
+            <string>///Light/Mvmt
 scr_setLight(100,0.9,1.1,c_blue);
 
 depth = -y;
+
+//MOVEMENT
+if (spd != 0) {
+    //go
+    move_towards_point(rX,rY,spd);
+} else {
+    speed = spd;
+}
+
+if (distance_to_point(rX,rY) &lt; 2) {
+    spd = 0;
+}
 </string>
           </argument>
         </arguments>
