@@ -74,7 +74,7 @@ if (dis &lt; global.rLantern) &amp;&amp; (hasRisen == false) {
     startRise = true;
 }
 
-if (startRise == true) {
+if (startRise == true) &amp;&amp; (hasRisen == false) {
     //awaken anim
     image_speed = 0.01;
     
@@ -122,34 +122,37 @@ if (hasRisen == true) {
                 speed = 0;
             }
         }
+    } else {
+        //Light
+        scr_setLight(32,0.8,1.2,c_yellow);
+    
+        //random
+        rX = x+irandom_range(-64,64)
+        rY = y+irandom_range(-64,64)
+        
+        //Will randomly move after time
+        randomMove = irandom(16 * room_speed);
+        
+        if (randomMove == 1) {
+            //check and move
+            move_towards_point(rX,rY,spd);
+            
+            //setting initials
+            iX = rX
+            iY = rY;
+        }
+        
+        //stop moving if too close
+        var dis1 = distance_to_point(iX,iY);
+    
+        if (dis1 &lt; 3) {
+            speed = 0;
+        }
     }
 }
 
 if (taken == true) {
-    scr_setLight(32,0.8,1.2,c_yellow);
     
-    //random
-    rX = x+irandom_range(-64,64)
-    rY = y+irandom_range(-64,64)
-    
-    //Will randomly move after time
-    randomMove = irandom(16 * room_speed);
-    
-    if (randomMove == 1) {
-        //check and move
-        move_towards_point(rX,rY,spd);
-        
-        //setting initials
-        iX = rX
-        iY = rY;
-    }
-    
-    //stop moving if too close
-    var dis1 = distance_to_point(iX,iY);
-
-    if (dis1 &lt; 3) {
-        speed = 0;
-    }
 }
 </string>
           </argument>
