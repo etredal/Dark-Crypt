@@ -82,7 +82,7 @@ if (keyboard_check(vk_left) || keyboard_check(ord('A'))) {
     global.xLanternOffset = -4;
     global.yLanternOffset = 9;
     
-    obj_lantern.depth = -9999;
+    obj_lantern.depth = -9990;
 }
 
 if (keyboard_check(vk_up) || keyboard_check(ord('W'))) {
@@ -139,7 +139,7 @@ if (keyboard_check(vk_down) || keyboard_check(ord('S'))) {
     global.xLanternOffset = 11;
     global.yLanternOffset = 9;
     
-    obj_lantern.depth = -9999;
+    obj_lantern.depth = -9990;
 }
 
 </string>
