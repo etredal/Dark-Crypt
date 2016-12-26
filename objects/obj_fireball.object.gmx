@@ -28,6 +28,9 @@
             <string>///Init
 spd = 2;
 
+//set depth
+depth = obj_lantern.depth;
+
 if (obj_player.sprite_index == spr_playerDown) {
     move_towards_point(x,y+4 * random_range(0.8,1.2), spd);
 }
