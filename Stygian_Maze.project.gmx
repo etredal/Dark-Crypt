@@ -15,7 +15,7 @@
       <sprite>sprites\spr_playerUp</sprite>
       <sprite>sprites\spr_playerDown</sprite>
     </sprites>
-    <sprite>sprites\spr_block1</sprite>
+    <sprite>sprites\spr_blockCracked</sprite>
     <sprite>sprites\spr_torch</sprite>
     <sprite>sprites\spr_button1</sprite>
     <sprite>sprites\spr_button2</sprite>
@@ -56,6 +56,7 @@
     <room>rooms\rm_level1</room>
     <room>rooms\rm_level2</room>
     <room>rooms\rm_lost</room>
+    <room>rooms\rm_playground</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

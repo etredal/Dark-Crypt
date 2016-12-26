@@ -20,7 +20,8 @@
   <width>32</width>
   <height>32</height>
   <frames>
-    <frame index="0">images\spr_block1_0.png</frame>
-    <frame index="1">images\spr_block1_1.png</frame>
+    <frame index="0">images\spr_blockCracked_0.png</frame>
+    <frame index="1">images\spr_blockCracked_1.png</frame>
+    <frame index="2">images\spr_blockCracked_2.png</frame>
   </frames>
 </sprite>
