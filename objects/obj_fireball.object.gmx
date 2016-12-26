@@ -3,7 +3,7 @@
   <spriteName>spr_fireball</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-500</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -43,6 +43,7 @@ if (obj_player.sprite_index == spr_playerUp) {
 if (obj_player.sprite_index == spr_playerRight) {
     move_towards_point(x+4 * random_range(0.8,1.2),y, spd);
 }
+
 </string>
           </argument>
         </arguments>
@@ -66,14 +67,12 @@ if (obj_player.sprite_index == spr_playerRight) {
           <argument>
             <kind>1</kind>
             <string>///Light
-scr_setLight(25,0.8,1.2, c_red);
+scr_setLight(25,0.8,1.2,c_red);
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-<<<<<<< HEAD
-=======
     <event eventtype="4" ename="cont_block">
       <action>
         <libid>1</libid>
@@ -91,14 +90,13 @@ scr_setLight(25,0.8,1.2, c_red);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///destroy
+            <string>///Destroy
 instance_destroy();
 </string>
           </argument>
         </arguments>
       </action>
     </event>
->>>>>>> 6be442f7d9b7540eaf7aa17f7d9e4d5f6bfc31cc
   </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
