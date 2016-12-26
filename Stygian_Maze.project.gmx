@@ -25,30 +25,42 @@
     <sprite>sprites\spr_shine</sprite>
     <sprite>sprites\spr_sign</sprite>
     <sprite>sprites\spr_fireball</sprite>
+    <sprite>sprites\spr_monsterRock</sprite>
+    <sprite>sprites\spr_monsterRockRun</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
+    <background>background\bg_aesthetics</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_setLight.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\cont_gm</object>
-    <object>objects\obj_darkness</object>
-    <object>objects\obj_lantern</object>
-    <object>objects\obj_player</object>
-    <object>objects\cont_block</object>
-    <object>objects\obj_blockCracked</object>
-    <object>objects\obj_torch</object>
-    <object>objects\obj_button1</object>
-    <object>objects\obj_button2</object>
-    <object>objects\obj_button3</object>
-    <object>objects\cont_exit</object>
-    <object>objects\obj_shine</object>
-    <object>objects\obj_sign</object>
-    <object>objects\obj_fireball</object>
-    <object>objects\obj_torchLost</object>
+    <objects name="Managers">
+      <object>objects\cont_gm</object>
+      <object>objects\obj_darkness</object>
+    </objects>
+    <objects name="Maze">
+      <object>objects\cont_block</object>
+      <object>objects\cont_exit</object>
+      <object>objects\obj_sign</object>
+      <object>objects\obj_torchLost</object>
+      <object>objects\obj_shine</object>
+      <object>objects\obj_torch</object>
+      <object>objects\obj_blockCracked</object>
+    </objects>
+    <objects name="Gameplay">
+      <object>objects\obj_fireball</object>
+      <object>objects\obj_player</object>
+      <object>objects\obj_lantern</object>
+      <object>objects\obj_monsterRock</object>
+    </objects>
+    <objects name="Menu">
+      <object>objects\obj_button1</object>
+      <object>objects\obj_button2</object>
+      <object>objects\obj_button3</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <rooms name="Menus">

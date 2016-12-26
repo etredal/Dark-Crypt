@@ -108,7 +108,7 @@ if (keyboard_check_pressed(vk_space)) {
     //Starting attack
     instance_create(x,y,obj_fireball);
     
-    global.rLantern -= 10;   
+    global.rLantern -= 2;   
 }
 </string>
           </argument>

@@ -147,15 +147,6 @@
     <tile bgName="bg_blocks" x="256" y="0" w="32" h="32" xo="0" yo="0" id="10000072" name="inst_77FB88D7" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="0" y="576" w="32" h="32" xo="0" yo="0" id="10000073" name="inst_139771BD" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="0" y="544" w="32" h="32" xo="0" yo="0" id="10000074" name="inst_377101AF" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_blocks" x="0" y="512" w="32" h="32" xo="0" yo="0" id="10000075" name="inst_C18888AF" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_blocks" x="0" y="480" w="32" h="32" xo="0" yo="0" id="10000076" name="inst_E838EB04" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_blocks" x="0" y="448" w="32" h="32" xo="0" yo="0" id="10000077" name="inst_EA4292CD" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_blocks" x="0" y="416" w="32" h="32" xo="0" yo="0" id="10000078" name="inst_165C551C" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_blocks" x="0" y="384" w="32" h="32" xo="0" yo="0" id="10000079" name="inst_B86EE2E2" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_blocks" x="0" y="352" w="32" h="32" xo="0" yo="0" id="10000080" name="inst_E5B0273F" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_blocks" x="0" y="320" w="32" h="32" xo="0" yo="0" id="10000081" name="inst_D0D7A71D" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_blocks" x="0" y="288" w="32" h="32" xo="0" yo="0" id="10000082" name="inst_8683E0A4" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_blocks" x="0" y="256" w="32" h="32" xo="0" yo="0" id="10000083" name="inst_1BC37C51" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
