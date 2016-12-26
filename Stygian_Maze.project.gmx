@@ -29,6 +29,8 @@
     <sprite>sprites\spr_monsterRock</sprite>
     <sprite>sprites\spr_monsterRockRun</sprite>
     <sprite>sprites\spr_textBox</sprite>
+    <sprite>sprites\spr_door</sprite>
+    <sprite>sprites\spr_lever</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -45,7 +47,6 @@
     <objects name="Managers">
       <object>objects\cont_gm</object>
       <object>objects\obj_darkness</object>
-      <object>objects\par_solid</object>
     </objects>
     <objects name="Maze">
       <object>objects\cont_block</object>
@@ -57,6 +58,8 @@
       <object>objects\obj_shine</object>
       <object>objects\obj_torch</object>
       <object>objects\obj_blockCracked</object>
+      <object>objects\obj_door1</object>
+      <object>objects\obj_lever1</object>
     </objects>
     <objects name="Gameplay">
       <object>objects\obj_fireball</object>

@@ -93,10 +93,10 @@ if (hasRisen == true) {
     //HUNT IF NOT GOTTEN LIGHT
     if (taken == false) {
         //go to player if can see
-        l = collision_line(x,y,obj_lantern.x,obj_lantern.y,par_solid,false,true);
+        l = collision_line(x,y,obj_lantern.x,obj_lantern.y,all,false,true);
         
         //if sight is clear
-        if (l == noone) {
+        if !(object_get_solid(l) == true)  {
             move_towards_point(obj_lantern.x,obj_lantern.y,spd);
         } else {
             //random
@@ -149,10 +149,6 @@ if (hasRisen == true) {
             speed = 0;
         }
     }
-}
-
-if (taken == true) {
-    
 }
 </string>
           </argument>
