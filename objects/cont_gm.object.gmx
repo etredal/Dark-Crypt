@@ -42,7 +42,7 @@ var j = 0;
 
 //Loop for buttons
 for (i = 0; i &lt; 50; i++) {
-    var rows = 6;
+    var rows = 9;
     
     if (i%rows == 0) &amp;&amp; (i != 0) {
         j += 1;
@@ -52,7 +52,7 @@ for (i = 0; i &lt; 50; i++) {
     var yOffset = 64 + 32;
 
     //Create button
-    button = instance_create((xOffset*(i - (j*rows))) + 496,96 + (yOffset*j),obj_button3);
+    button = instance_create((xOffset*(i - (j*rows))) + 448,(112 -32) + (yOffset*j),obj_button3);
     
     //Is unlocked
     if (i &lt;= val) {
