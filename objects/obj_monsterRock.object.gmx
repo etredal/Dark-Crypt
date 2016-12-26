@@ -30,6 +30,16 @@ image_speed = 0;
 
 startRise = false;
 hasRisen = false;
+
+//move speed
+spd = random_range(0.2,0.4);
+
+taken = false;
+
+randomMove = 0;
+
+iX = 0;
+iY = 0;
 </string>
           </argument>
         </arguments>
@@ -53,17 +63,22 @@ hasRisen = false;
           <argument>
             <kind>1</kind>
             <string>///Awaken
+//depth
+depth = -y;
+
+//setting distance
 var dis = distance_to_object(obj_lantern);
 
 //if within light
-if (dis &lt; global.rLantern) {
+if (dis &lt; global.rLantern) &amp;&amp; (hasRisen == false) {
     startRise = true;
 }
 
 if (startRise == true) {
-    //awaken
-    image_speed = 0.03;
+    //awaken anim
+    image_speed = 0.01;
     
+    //set to run
     if (image_index == image_number) {
         sprite_index = spr_monsterRockRun;
         
@@ -72,8 +87,151 @@ if (startRise == true) {
 }
 
 if (hasRisen == true) {
-    //go to player
-    //collision_line(x,y,obj_lantern.x,obj_lantern.y,
+    //anim speed
+    image_speed = 0.075;
+    
+    //HUNT IF NOT GOTTEN LIGHT
+    if (taken == false) {
+        //go to player if can see
+        l = collision_line(x,y,obj_lantern.x,obj_lantern.y,par_solid,false,true);
+        
+        //if sight is clear
+        if (l == noone) {
+            move_towards_point(obj_lantern.x,obj_lantern.y,spd);
+        } else {
+            //random
+            rX = x+irandom_range(-64,64)
+            rY = y+irandom_range(-64,64)
+            
+            //Will randomly move after time
+            randomMove = irandom(16 * room_speed);
+            
+            if (randomMove == 1) {
+                //check and move
+                move_towards_point(rX,rY,spd);
+                
+                //setting initials
+                iX = rX
+                iY = rY;
+            }
+            
+            //stop moving if too close
+            var dis1 = distance_to_point(iX,iY);
+    
+            if (dis1 &lt; 3) {
+                speed = 0;
+            }
+        }
+    }
+}
+
+if (taken == true) {
+    scr_setLight(32,0.8,1.2,c_yellow);
+    
+    //random
+    rX = x+irandom_range(-64,64)
+    rY = y+irandom_range(-64,64)
+    
+    //Will randomly move after time
+    randomMove = irandom(16 * room_speed);
+    
+    if (randomMove == 1) {
+        //check and move
+        move_towards_point(rX,rY,spd);
+        
+        //setting initials
+        iX = rX
+        iY = rY;
+    }
+    
+    //stop moving if too close
+    var dis1 = distance_to_point(iX,iY);
+
+    if (dis1 &lt; 3) {
+        speed = 0;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Collision
+if (!place_free(x+hspeed,y+vspeed)) {
+    hspeed = 0;
+    vspeed = 0;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_fireball">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Destroy
+with (other) {
+    instance_destroy();
+}
+
+instance_destroy();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_lantern">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Set
+if (taken == false) {
+    //Take some
+    global.rLantern -= 8;    
+
+    taken = true;
 }
 </string>
           </argument>

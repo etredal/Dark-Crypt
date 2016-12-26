@@ -40,6 +40,7 @@
     <objects name="Managers">
       <object>objects\cont_gm</object>
       <object>objects\obj_darkness</object>
+      <object>objects\par_solid</object>
     </objects>
     <objects name="Maze">
       <object>objects\cont_block</object>

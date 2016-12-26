@@ -82,7 +82,12 @@ y = obj_player.y + global.yLanternOffset;
           <argument>
             <kind>1</kind>
             <string>///Sets light and depth
-scr_setLight(global.rLantern,0.9,1.1, c_white);
+if (global.rLantern &lt; 250) {
+    scr_setLight(global.rLantern,0.9,1.1, c_white);
+} else {
+    //Helps to stop flicker
+    scr_setLight(global.rLantern,0.99,1.01,c_white);
+}
 </string>
           </argument>
         </arguments>

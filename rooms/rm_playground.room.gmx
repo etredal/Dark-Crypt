@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_darkness" x="-80" y="-64" name="inst_9B2EDF8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="80" y="64" name="inst_E1E0E204" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="368" y="80" name="inst_E1E0E204" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shine" x="32" y="32" name="inst_0597FA70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shine" x="32" y="160" name="inst_630F34D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shine" x="160" y="160" name="inst_A92E45CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -66,12 +66,16 @@
     <instance objName="obj_shine" x="224" y="224" name="inst_A37A7E8D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shine" x="96" y="208" name="inst_3CA414F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blockCracked" x="112" y="144" name="inst_C5578AB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_monsterRock" x="416" y="80" name="inst_7C8052C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="cont_block" x="480" y="80" name="inst_C9E5B7C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="cont_block" x="480" y="112" name="inst_6E12BE45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monsterRock" x="320" y="80" name="inst_8E81C8A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_blocks" x="-16" y="96" w="32" h="32" xo="0" yo="0" id="10000072" name="inst_718FBAF1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="16" y="96" w="32" h="32" xo="0" yo="0" id="10000073" name="inst_9EC84FB1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="-16" y="48" w="32" h="32" xo="0" yo="0" id="10000074" name="inst_148EC418" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="464" y="64" w="32" h="32" xo="0" yo="0" id="10000084" name="inst_8D0B168C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="464" y="96" w="32" h="32" xo="0" yo="0" id="10000085" name="inst_1842EC91" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
