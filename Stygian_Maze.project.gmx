@@ -31,6 +31,7 @@
     <sprite>sprites\spr_textBox</sprite>
     <sprite>sprites\spr_door</sprite>
     <sprite>sprites\spr_lever</sprite>
+    <sprite>sprites\spr_shineFountain</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -49,23 +50,37 @@
       <object>objects\obj_darkness</object>
     </objects>
     <objects name="Maze">
-      <object>objects\cont_block</object>
-      <object>objects\cont_exit</object>
-      <object>objects\cont_textBox</object>
-      <object>objects\obj_signArrow</object>
-      <object>objects\obj_signMonster</object>
-      <object>objects\obj_torchLost</object>
-      <object>objects\obj_shine</object>
-      <object>objects\obj_torch</object>
-      <object>objects\obj_blockCracked</object>
-      <object>objects\obj_door1</object>
-      <object>objects\obj_lever1</object>
+      <objects name="controllers">
+        <object>objects\cont_block</object>
+        <object>objects\cont_exit</object>
+        <object>objects\cont_textBox</object>
+      </objects>
+      <objects name="Action Blocks">
+        <object>objects\obj_shine</object>
+        <object>objects\obj_shineMoving</object>
+        <object>objects\obj_lever1</object>
+        <object>objects\obj_door1</object>
+      </objects>
+      <objects name="Aesthetics">
+        <object>objects\obj_signArrow</object>
+        <object>objects\obj_signMonster</object>
+        <object>objects\obj_torch</object>
+        <object>objects\obj_torchLost</object>
+        <object>objects\obj_shineFountain</object>
+      </objects>
+      <objects name="Blocks">
+        <object>objects\obj_blockCracked</object>
+      </objects>
     </objects>
     <objects name="Gameplay">
-      <object>objects\obj_fireball</object>
-      <object>objects\obj_player</object>
-      <object>objects\obj_lantern</object>
-      <object>objects\obj_monsterRock</object>
+      <objects name="Player">
+        <object>objects\obj_player</object>
+        <object>objects\obj_lantern</object>
+        <object>objects\obj_fireball</object>
+      </objects>
+      <objects name="Enemy">
+        <object>objects\obj_monsterRock</object>
+      </objects>
     </objects>
     <objects name="Menu">
       <object>objects\obj_button1</object>
@@ -82,6 +97,8 @@
       <room>rooms\rm_level0</room>
       <room>rooms\rm_level1</room>
       <room>rooms\rm_level2</room>
+      <room>rooms\rm_level3</room>
+      <room>rooms\rm_level4</room>
     </rooms>
     <rooms name="special">
       <room>rooms\rm_playground</room>
