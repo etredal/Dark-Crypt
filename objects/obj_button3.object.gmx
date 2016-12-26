@@ -79,7 +79,7 @@ if (sprite_index != spr_buttonLocked) {
             <string>///Set different color
 draw_self();
 
-if (global.chosenLevel = image_index) {
+if (global.chosenLevel == image_index) {
     image_blend = c_green;
 } else {
     image_blend = c_white;

@@ -50,7 +50,7 @@ surfaceDarkness = surface_create(view_wview, view_hview);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//draw
+            <string>///draw
 if (!surface_exists(surfaceDarkness)) {
     globalvar surfaceDarkness;
     surfaceDarkness = surface_create(view_wview, view_hview);

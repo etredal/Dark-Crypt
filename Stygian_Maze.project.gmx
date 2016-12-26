@@ -51,12 +51,18 @@
     <object>objects\obj_torchLost</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_mainMenu</room>
-    <room>rooms\rm_level0</room>
-    <room>rooms\rm_level1</room>
-    <room>rooms\rm_level2</room>
-    <room>rooms\rm_lost</room>
-    <room>rooms\rm_playground</room>
+    <rooms name="Menus">
+      <room>rooms\rm_mainMenu</room>
+      <room>rooms\rm_lost</room>
+    </rooms>
+    <rooms name="levels">
+      <room>rooms\rm_level0</room>
+      <room>rooms\rm_level1</room>
+      <room>rooms\rm_level2</room>
+    </rooms>
+    <rooms name="special">
+      <room>rooms\rm_playground</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
