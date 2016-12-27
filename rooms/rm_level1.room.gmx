@@ -250,6 +250,7 @@
     <instance objName="obj_shine" x="2704" y="752" name="inst_5ED7467B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shine" x="2560" y="832" name="inst_6EC959C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shine" x="2672" y="864" name="inst_06C9F72C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="cont_light" x="2576" y="1520" name="inst_880282FE" locked="0" code="//Setting&#xA;r = 400;&#xA;color = c_maroon;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_blocks" x="2640" y="400" w="32" h="32" xo="0" yo="96" id="10000527" name="inst_02817103" depth="-9998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
