@@ -33,6 +33,7 @@
     <sprite>sprites\spr_lever</sprite>
     <sprite>sprites\spr_shineFountain</sprite>
     <sprite>sprites\spr_light</sprite>
+    <sprite>sprites\spr_ledge</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -55,6 +56,7 @@
         <object>objects\cont_block</object>
         <object>objects\cont_exit</object>
         <object>objects\cont_textBox</object>
+        <object>objects\cont_ledge</object>
       </objects>
       <objects name="Action Blocks">
         <object>objects\obj_shine</object>
