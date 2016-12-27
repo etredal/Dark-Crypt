@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///Init
 spd = 1;
+r = 100;
 </string>
           </argument>
         </arguments>
@@ -78,7 +79,7 @@ do {
           <argument>
             <kind>1</kind>
             <string>///Light/Mvmt
-scr_setLight(100,0.9,1.1,c_blue);
+scr_setLight(r,0.9,1.1,c_blue);
 
 depth = -y;
 
