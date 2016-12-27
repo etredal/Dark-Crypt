@@ -57,6 +57,7 @@
         <object>objects\cont_exit</object>
         <object>objects\cont_textBox</object>
         <object>objects\cont_ledge</object>
+        <object>objects\cont_light</object>
       </objects>
       <objects name="Action Blocks">
         <object>objects\obj_shine</object>
@@ -65,7 +66,6 @@
         <object>objects\obj_door1</object>
       </objects>
       <objects name="Aesthetics">
-        <object>objects\cont_light</object>
         <object>objects\obj_signArrow</object>
         <object>objects\obj_signMonster</object>
         <object>objects\obj_torch</object>
