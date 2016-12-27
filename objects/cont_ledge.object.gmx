@@ -26,38 +26,44 @@
           <argument>
             <kind>1</kind>
             <string>///If player is from red side its solid
-//0 degrees
-if (image_angle == 0) {
-    if (obj_player.y &lt; y) {
-        solid = true;
-    } else {
-        solid = false;
-    }
-} else if (image_angle == 90) {
-    if (obj_player.x &lt; x) {
-        solid = true;
-    } else {
-        solid = false;
-    }
-} else if (image_angle == 180) {
-    if (obj_player.y &gt; y) {
-        solid = true;
-    } else {
-        solid = false;
-    }
-} else if (image_angle == 270) {
-    if (obj_player.x &gt; x) {
-        solid = true;
-    } else {
-        solid = false;
-    }
-}
+var d = distance_to_object(obj_player);
 
-//if inside -- 1 pixel inward
-var collisionRect = collision_rectangle(x - 15 * image_xscale,y-15 * image_yscale,x + 15 * image_xscale,y + 15 * image_yscale, obj_player, false, true);
+if (d &lt; 50) {
+    //0 degrees
+    if (image_angle == 0) {
+        if (obj_player.y &lt; y) {
+            solid = true;
+        } else {
+            solid = false;
+        }
+    } else if (image_angle == 90) {
+        if (obj_player.x &lt; x) {
+            solid = true;
+        } else {
+            solid = false;
+        }
+    } else if (image_angle == 180) {
+        if (obj_player.y &gt; y) {
+            solid = true;
+        } else {
+            solid = false;
+        }
+    } else if (image_angle == 270) {
+        if (obj_player.x &gt; x) {
+            solid = true;
+        } else {
+            solid = false;
+        }
+    }
 
-if (collisionRect != noone) {
-    solid = false;
+    //if inside -- 1 pixel inward
+    var collisionRect = collision_rectangle(x - 15 * image_xscale,y-15 * image_yscale,x + 15 * image_xscale,y + 15 * image_yscale, obj_player, false, true);
+
+    if (collisionRect != noone) {
+        solid = false;
+    }
+} else {
+    solid = true;
 }
 </string>
           </argument>
