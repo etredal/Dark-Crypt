@@ -66,7 +66,7 @@ if (activate == true) {
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_fireball">
+    <event eventtype="4" ename="obj_ember">
       <action>
         <libid>1</libid>
         <id>603</id>

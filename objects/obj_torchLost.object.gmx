@@ -28,8 +28,6 @@
             <string>///Init
 image_speed = 0.075;
 
-lightYellow = make_colour_rgb(255,255,200);
-
 //can edit in creation code
 r = 700;
 </string>
@@ -57,7 +55,7 @@ r = 700;
             <string>///set light
 r = 50 * (global.lostTimer/room_speed);
 
-scr_setLight(r,0.9,1.1,lightYellow);
+scr_setLight(r,0.9,1.1,global.lightYellow);
 </string>
           </argument>
         </arguments>

@@ -25,13 +25,14 @@
     <sprite>sprites\spr_shine</sprite>
     <sprite>sprites\spr_signArrow</sprite>
     <sprite>sprites\spr_signMonster</sprite>
-    <sprite>sprites\spr_fireball</sprite>
+    <sprite>sprites\spr_ember</sprite>
     <sprite>sprites\spr_monsterRock</sprite>
     <sprite>sprites\spr_monsterRockRun</sprite>
     <sprite>sprites\spr_textBox</sprite>
     <sprite>sprites\spr_door</sprite>
     <sprite>sprites\spr_lever</sprite>
     <sprite>sprites\spr_shineFountain</sprite>
+    <sprite>sprites\spr_light</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -67,6 +68,7 @@
         <object>objects\obj_torch</object>
         <object>objects\obj_torchLost</object>
         <object>objects\obj_shineFountain</object>
+        <object>objects\cont_light</object>
       </objects>
       <objects name="Blocks">
         <object>objects\obj_blockCracked</object>
@@ -76,7 +78,7 @@
       <objects name="Player">
         <object>objects\obj_player</object>
         <object>objects\obj_lantern</object>
-        <object>objects\obj_fireball</object>
+        <object>objects\obj_ember</object>
       </objects>
       <objects name="Enemy">
         <object>objects\obj_monsterRock</object>
