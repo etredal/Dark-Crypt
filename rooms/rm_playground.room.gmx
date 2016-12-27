@@ -90,7 +90,7 @@
     <instance objName="cont_light" x="288" y="448" name="inst_BA1D5769" locked="0" code="color = c_maroon;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_light" x="160" y="400" name="inst_D2A8DF83" locked="0" code="r = 300;&#xA;&#xA;color = c_red;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_ledge" x="192" y="496" name="inst_0E1F1F4B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cont_ledge" x="240" y="368" name="inst_1AD3D2AD" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="cont_ledge" x="240" y="368" name="inst_1AD3D2AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="cont_ledge" x="240" y="496" name="inst_7EA84D90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
     <instance objName="cont_ledge" x="240" y="416" name="inst_FEAC3F9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
   </instances>
