@@ -44,6 +44,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_setLight.gml</script>
+    <script>scripts\scr_isLevel.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_tutorial</font>
