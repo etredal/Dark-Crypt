@@ -28,6 +28,8 @@
             <string>///Init
 image_speed = 0;
 
+r = 32;
+
 dmg = 24;
 
 startRise = false;
@@ -126,7 +128,7 @@ if (hasRisen == true) {
         }
     } else {
         //Light
-        scr_setLight(32,0.8,1.2,c_yellow);
+        scr_setLight(r,0.8,1.2,c_yellow);
     
         //random
         rX = x+irandom_range(-64,64)

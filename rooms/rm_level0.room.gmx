@@ -86,14 +86,14 @@
     <instance objName="obj_signMonster" x="528" y="304" name="inst_42F1324B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shine" x="144" y="368" name="inst_E5036997" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shine" x="144" y="208" name="inst_9E210140" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cont_textBox" x="256" y="176" name="inst_A65F85D8" locked="0" code="///Set string&#xA;str = &quot;Blue Shines will increase the lantern's light!&quot;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="cont_textBox" x="256" y="176" name="inst_A65F85D8" locked="0" code="///Set string&#xA;str = &quot;Blue Shines will increase the lantern's light!&quot;&#xA;delete = true;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="144" y="16" name="inst_60DE8E7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="256" y="16" name="inst_55DFD6EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="144" y="272" name="inst_B6881220" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="624" y="208" name="inst_70AE69B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="528" y="112" name="inst_960ADB2A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="592" y="112" name="inst_5F2F18E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cont_textBox" x="464" y="352" name="inst_327227EC" locked="0" code="///string set&#xA;str = &quot;Press Space to shoot! Monsters want#light from the lantern.&quot;;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="cont_textBox" x="464" y="352" name="inst_327227EC" locked="0" code="///string set&#xA;str = &quot;Press Space to shoot! Monsters want#light from the lantern.&quot;;&#xA;delete = true;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="192" y="400" name="inst_20D2A01B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="320" y="400" name="inst_6B54EA12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="456" y="400" name="inst_F9D5F27E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -114,7 +114,7 @@
     <instance objName="obj_shine" x="624" y="176" name="inst_0AA1A0E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="416" y="16" name="inst_3B2F1EAA" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="496" y="80" name="inst_259144C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cont_textBox" x="656" y="64" name="inst_03587D11" locked="0" code="///init&#xA;str = &quot;Shooting embers will use up light.#Without light it is impossible to survive...&quot;;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="cont_textBox" x="656" y="64" name="inst_03587D11" locked="0" code="///init&#xA;str = &quot;Shooting embers will use up light.#Without light it is impossible to survive...&quot;;&#xA;delete = true;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="592" y="16" name="inst_7986B59F" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="752" y="112" name="inst_E29DA130" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="752" y="16" name="inst_6B08C8AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -163,6 +163,10 @@
     <instance objName="cont_block" x="496" y="576" name="inst_529087F2" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="448" y="624" name="inst_BF5AADBB" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="480" y="624" name="inst_6885E823" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="cont_block" x="1184" y="704" name="inst_E2DC37DA" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="cont_block" x="1136" y="672" name="inst_DD9F0DE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="cont_block" x="1232" y="560" name="inst_E4DDA3E3" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="cont_block" x="1264" y="592" name="inst_5FD990F3" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_blocks" x="0" y="128" w="32" h="32" xo="0" yo="0" id="10000001" name="inst_23D2F020" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -466,6 +470,23 @@
     <tile bgName="bg_blocks" x="464" y="544" w="32" h="32" xo="32" yo="32" id="10000337" name="inst_BCBFECD0" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="496" y="544" w="32" h="32" xo="32" yo="32" id="10000338" name="inst_FE5F7457" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="496" y="576" w="32" h="32" xo="32" yo="32" id="10000339" name="inst_F94949B8" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="320" y="688" w="32" h="32" xo="0" yo="0" id="10003125" name="inst_9E87A7C1" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="352" y="688" w="32" h="32" xo="0" yo="0" id="10003126" name="inst_72364A5E" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="1216" y="688" w="32" h="32" xo="0" yo="0" id="10003127" name="inst_B5876621" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="1184" y="688" w="32" h="32" xo="0" yo="0" id="10003128" name="inst_4E72458E" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="1152" y="688" w="32" h="32" xo="0" yo="0" id="10003129" name="inst_9A11E577" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="1120" y="688" w="32" h="32" xo="0" yo="0" id="10003130" name="inst_BA59468C" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="1088" y="688" w="32" h="32" xo="0" yo="0" id="10003131" name="inst_E80FE263" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="1120" y="656" w="32" h="32" xo="0" yo="0" id="10003132" name="inst_87313BB6" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="1248" y="688" w="32" h="32" xo="0" yo="0" id="10003133" name="inst_5E17ACD0" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="1248" y="656" w="32" h="32" xo="0" yo="0" id="10003134" name="inst_4ED59A7C" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="1248" y="624" w="32" h="32" xo="0" yo="0" id="10003135" name="inst_D7EB1100" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="1248" y="592" w="32" h="32" xo="0" yo="0" id="10003136" name="inst_322ED0BA" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="1248" y="560" w="32" h="32" xo="0" yo="0" id="10003137" name="inst_B66C6FDA" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="1216" y="560" w="32" h="32" xo="0" yo="0" id="10003138" name="inst_6B12D95D" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="1248" y="528" w="32" h="32" xo="0" yo="0" id="10003139" name="inst_4AEE8D4C" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="1248" y="496" w="32" h="32" xo="0" yo="0" id="10003140" name="inst_7F2B0A33" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="1216" y="528" w="32" h="32" xo="0" yo="0" id="10003141" name="inst_35DE3B7F" depth="-9999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
