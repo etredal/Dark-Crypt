@@ -28,6 +28,8 @@
             <string>///Init
 image_speed = 0;
 
+dmg = 12;
+
 startRise = false;
 hasRisen = false;
 
@@ -228,7 +230,7 @@ instance_destroy();
             <string>///Set
 if (taken == false) {
     //Take some
-    global.rLantern -= 8;    
+    global.rLantern -= dmg;    
 
     taken = true;
 }

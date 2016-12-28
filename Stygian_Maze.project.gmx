@@ -35,6 +35,7 @@
     <sprite>sprites\spr_light</sprite>
     <sprite>sprites\spr_ledge</sprite>
     <sprite>sprites\spr_shooter</sprite>
+    <sprite>sprites\spr_shot</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -67,6 +68,7 @@
         <object>objects\obj_lever1</object>
         <object>objects\obj_door1</object>
         <object>objects\obj_shooter</object>
+        <object>objects\obj_shot</object>
       </objects>
       <objects name="Aesthetics">
         <object>objects\obj_signArrow</object>
