@@ -63,8 +63,8 @@
       </objects>
       <objects name="Action Blocks">
         <object>objects\obj_shine</object>
-        <object>objects\obj_shineFountain</object>
         <object>objects\obj_shineMoving</object>
+        <object>objects\obj_shineFountain</object>
         <object>objects\obj_lever1</object>
         <object>objects\obj_door1</object>
         <object>objects\obj_shooter</object>

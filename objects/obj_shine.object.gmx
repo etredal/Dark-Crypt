@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>///Init
 r = 100;
+
+inc = 20;
 </string>
           </argument>
         </arguments>
@@ -76,7 +78,7 @@ depth = -y;
           <argument>
             <kind>1</kind>
             <string>///make light bigger
-global.rLantern += 50;
+global.rLantern += inc;
 
 instance_destroy();
 </string>

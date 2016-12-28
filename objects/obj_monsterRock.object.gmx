@@ -28,7 +28,7 @@
             <string>///Init
 image_speed = 0;
 
-dmg = 12;
+dmg = 24;
 
 startRise = false;
 hasRisen = false;

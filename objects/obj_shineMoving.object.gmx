@@ -29,6 +29,8 @@
 spd = 1;
 r = 100;
 
+inc = 50;
+
 despawn = 8 * room_speed;
 </string>
           </argument>
@@ -145,7 +147,7 @@ if (despawn &lt;= 0) {
           <argument>
             <kind>1</kind>
             <string>///make light bigger
-global.rLantern += 50;
+global.rLantern += inc;
 
 instance_destroy();
 </string>
