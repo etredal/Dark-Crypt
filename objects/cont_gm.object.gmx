@@ -327,6 +327,9 @@ if (currentLevel != -1) {
             <string>///Draw Timer and Score
 if (scr_isLevel() == true) {
     draw_set_font(fnt_tutorial);
+    
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_center);
 
     draw_text(view_xview + view_wview/4,view_yview + view_hview/12,"Score: " + string(global.levelScore));
     draw_text(view_xview + view_wview/2,view_yview + view_hview/12,"Timer: " + string(global.levelTimer));
