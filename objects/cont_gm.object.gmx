@@ -223,7 +223,7 @@ if (room != rm_playground) {
           <argument>
             <kind>1</kind>
             <string>///Score and Timer
-if (scr_isLevel == true) {
+if (scr_isLevel() == true) {
     global.levelTimer += 1/room_speed;
 }
 </string>
@@ -307,7 +307,7 @@ if (currentLevel != -1) {
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="64">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -325,10 +325,11 @@ if (currentLevel != -1) {
           <argument>
             <kind>1</kind>
             <string>///Draw Timer and Score
-//ALL LEVELS
-if (scr_isLevel == true) {
-    draw_text(500,500,"Score: " + string(global.levelScore));
-    draw_text(500,600,"Timer: " + string(global.levelTimer));
+if (scr_isLevel() == true) {
+    draw_set_font(fnt_tutorial);
+
+    draw_text(view_xview + view_wview/4,view_yview + view_hview/12,"Score: " + string(global.levelScore));
+    draw_text(view_xview + view_wview/2,view_yview + view_hview/12,"Timer: " + string(global.levelTimer));
 }
 </string>
           </argument>
