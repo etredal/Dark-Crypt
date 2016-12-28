@@ -63,7 +63,7 @@
         <object>objects\cont_ledge</object>
         <object>objects\cont_light</object>
       </objects>
-      <objects name="Action Blocks">
+      <objects name="Action Items">
         <object>objects\obj_shine</object>
         <object>objects\obj_shineMoving</object>
         <object>objects\obj_shineFountain</object>
