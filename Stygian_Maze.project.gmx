@@ -37,6 +37,7 @@
     <sprite>sprites\spr_shooter</sprite>
     <sprite>sprites\spr_shot</sprite>
     <sprite>sprites\spr_magma</sprite>
+    <sprite>sprites\spr_instanceActivator</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -62,6 +63,8 @@
         <object>objects\cont_textBox</object>
         <object>objects\cont_ledge</object>
         <object>objects\cont_light</object>
+        <object>objects\cont_instanceActivator</object>
+        <object>objects\obj_doorInstanceActivator</object>
       </objects>
       <objects name="Action Items">
         <object>objects\obj_shine</object>
