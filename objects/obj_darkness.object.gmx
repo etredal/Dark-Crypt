@@ -153,6 +153,7 @@ surface_free(surfaceDarkness);
           <argument>
             <kind>1</kind>
             <string>///Draw
+//Darkness
 draw_set_blend_mode(bm_subtract);
 
 if (surface_exists(surfaceDarkness)) {
