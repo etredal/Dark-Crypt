@@ -36,6 +36,7 @@
     <sprite>sprites\spr_ledge</sprite>
     <sprite>sprites\spr_shooter</sprite>
     <sprite>sprites\spr_shot</sprite>
+    <sprite>sprites\spr_magma</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -79,6 +80,7 @@
       </objects>
       <objects name="Blocks">
         <object>objects\obj_blockCracked</object>
+        <object>objects\obj_magma</object>
       </objects>
     </objects>
     <objects name="Gameplay">
