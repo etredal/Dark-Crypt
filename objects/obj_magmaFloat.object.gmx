@@ -97,9 +97,12 @@ if (move == true) {
         var yy = 0;
     }
 
-    //Checks handled (only works if spd is 1) i do not know why 32 works and 16 doesn't i think the origin is in top left instead of center
-    //when doing this check, but it works for now
-    if (place_meeting(x + (32 * xx) + xx,y + (32 * yy) + yy,obj_magma) &amp;&amp; !place_meeting(x + (32 * xx) + xx,y + (32 * yy) + yy, obj_magmaFloat)) {
+    //Checks handled (only works if spd is 1)
+    var magmaCol = collision_point(x + (16 *xx) + xx,y + (16 * yy) +yy,obj_magma,false,true);
+    var magmaFloatCol = collision_point(x + (16 *xx) + xx,y + (16 * yy) +yy,obj_magmaFloat,false,true);
+    
+    //if (place_meeting(x + xx,y + yy,obj_magma) &amp;&amp; !place_meeting(x + xx,y + 16 + yy, obj_magmaFloat)) {
+    if (magmaCol != noone &amp;&amp; magmaFloatCol == noone) {
         x += xx;
         y += yy;
     } else {
