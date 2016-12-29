@@ -16,7 +16,7 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>888</w>
+    <w>870</w>
     <h>600</h>
     <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
@@ -26,9 +26,9 @@
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>2</page>
-    <xoffset>4002</xoffset>
-    <yoffset>2302</yoffset>
+    <page>0</page>
+    <xoffset>96</xoffset>
+    <yoffset>-54</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
@@ -288,7 +288,7 @@
     <instance objName="obj_magma" x="1040" y="528" name="inst_F0D1646F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_magma" x="1232" y="592" name="inst_D811E059" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_magma" x="1264" y="592" name="inst_8072677B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cont_instanceActivator" x="720" y="560" name="inst_3CB1B7A7" locked="0" code="///creation code&#xA;obj = obj_monsterRock;&#xA;" scaleX="9" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="cont_instanceActivator" x="720" y="560" name="inst_3CB1B7A7" locked="0" code="///creation code&#xA;obj = obj_monsterRock;" scaleX="9" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="768" y="560" name="inst_96A0B1BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="784" y="496" name="inst_4472F6BA" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="656" y="496" name="inst_2CF09F76" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
@@ -333,6 +333,8 @@
     <instance objName="obj_magmaFloat" x="1104" y="688" name="inst_8833C9C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_magmaFloat" x="1040" y="688" name="inst_E132DCA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_magmaFloat" x="1136" y="752" name="inst_3B35867D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magmaFloat" x="1040" y="752" name="inst_0FF8F9B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magmaFloat" x="1104" y="752" name="inst_28F2A9F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_blocks" x="784" y="608" w="32" h="32" xo="64" yo="0" id="10003616" name="inst_299B6134" depth="1099" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
