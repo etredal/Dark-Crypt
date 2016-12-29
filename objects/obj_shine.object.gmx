@@ -3,7 +3,7 @@
   <spriteName>spr_shine</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-9999</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -53,8 +53,6 @@ inc = 20;
             <kind>1</kind>
             <string>///Light and depth
 scr_setLight(r,0.9,1.1,c_blue);
-
-depth = -y;
 </string>
           </argument>
         </arguments>

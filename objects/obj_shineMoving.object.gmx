@@ -3,9 +3,9 @@
   <spriteName>spr_shine</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-9999</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_shine</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -26,8 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>///Init
+event_inherited();
+
 spd = 1;
-r = 100;
 
 inc = 50;
 
@@ -83,7 +84,7 @@ do {
           <argument>
             <kind>1</kind>
             <string>///Light/Mvmt
-scr_setLight(r,0.9,1.1,c_blue);
+event_inherited();
 
 depth = -y;
 
@@ -98,58 +99,13 @@ if (spd != 0) {
 if (distance_to_point(rX,rY) &lt; 2) {
     spd = 0;
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Despawn
+
+//Despawn
 despawn--;
 
 if (despawn &lt;= 0) {
     instance_destroy();
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_lantern">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///make light bigger
-global.rLantern += inc;
-
-instance_destroy();
 </string>
           </argument>
         </arguments>

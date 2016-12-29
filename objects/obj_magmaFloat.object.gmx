@@ -30,6 +30,32 @@ move = false;
 dir = 0;
 
 spd = 1;
+
+playerCollision = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///player collision false
+playerCollision = false;
 </string>
           </argument>
         </arguments>
@@ -55,8 +81,20 @@ spd = 1;
             <string>///Move
 if (move == true) {
     if (dir == 0) {
-        xx = 0 * spd;
-        yy = 0 * spd;
+        var xx = 1 * spd;
+        var yy = 0 * spd;
+    } else if (dir == 90) {
+        var xx = 0 * spd;
+        var yy = -1 * spd;
+    } else if (dir == 180) {
+        var xx = -1 * spd;
+        var yy = 0 * spd;
+    } else if (dir == 270) {
+        var xx = 0 * spd;
+        var yy = 1 * spd;
+    } else {
+        var xx = 0;
+        var yy = 0;
     }
 
     //Checks handled
@@ -90,14 +128,41 @@ if (move == true) {
           <argument>
             <kind>1</kind>
             <string>///Start mvmt
-move = true;
+//if player not there
+if (playerCollision == false) {
+    move = true;
 
-//decide dir
-dir = other.direction;
+    //decide dir
+    dir = other.direction;
+}
 
 with (other) {
     instance_destroy();
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_player">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///set
+playerCollision = true;
 </string>
           </argument>
         </arguments>
