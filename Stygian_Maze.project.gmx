@@ -38,6 +38,7 @@
     <sprite>sprites\spr_shot</sprite>
     <sprite>sprites\spr_magma</sprite>
     <sprite>sprites\spr_instanceActivator</sprite>
+    <sprite>sprites\spr_magmaFloat</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -74,6 +75,7 @@
         <object>objects\obj_door1</object>
         <object>objects\obj_shooter</object>
         <object>objects\obj_shot</object>
+        <object>objects\obj_magmaFloat</object>
       </objects>
       <objects name="Aesthetics">
         <object>objects\obj_signArrow</object>

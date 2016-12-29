@@ -93,7 +93,7 @@ scr_setLight(r,0.8,1.2,c_red);
           <argument>
             <kind>1</kind>
             <string>///Destroy when touching solid
-if !(place_free(x,y,)) {
+if !(place_free(x,y)) {
     instance_destroy();
 }
 </string>
