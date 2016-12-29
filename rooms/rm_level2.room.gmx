@@ -16,7 +16,7 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>968</w>
+    <w>984</w>
     <h>600</h>
     <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
@@ -26,9 +26,9 @@
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>4</page>
-    <xoffset>88</xoffset>
-    <yoffset>-73</yoffset>
+    <page>0</page>
+    <xoffset>-81</xoffset>
+    <yoffset>-91</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
@@ -107,7 +107,7 @@
     <instance objName="obj_torch" x="1840" y="80" name="inst_1552F705" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="1072" y="384" name="inst_8E5852C5" locked="0" code="" scaleX="1" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="1200" y="400" name="inst_1133E25F" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="cont_block" x="1568" y="-16" name="inst_DBBDB847" locked="0" code="" scaleX="40" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="cont_block" x="1584" y="-16" name="inst_DBBDB847" locked="0" code="" scaleX="40" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="2064" y="240" name="inst_3FFFB110" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="2064" y="32" name="inst_AF593029" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_magma" x="1136" y="688" name="inst_EC71C294" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -336,12 +336,116 @@
     <instance objName="obj_magma" x="1008" y="400" name="inst_98607125" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="560" y="400" name="inst_37F287AC" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="592" y="336" name="inst_180A7067" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cont_block" x="656" y="176" name="inst_9C2A38A9" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="cont_block" x="656" y="192" name="inst_9C2A38A9" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="768" y="144" name="inst_31AC701C" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="848" y="192" name="inst_25FED4BD" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_magmaFloat" x="784" y="240" name="inst_DBB779FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_magmaFloat" x="912" y="240" name="inst_130199F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_magmaFloat" x="1104" y="752" name="inst_77AC6D05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shineFountain" x="848" y="80" name="inst_D58E8D07" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monsterRock" x="896" y="432" name="inst_36F6B802" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monsterRock" x="880" y="352" name="inst_4F5038FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monsterRock" x="784" y="368" name="inst_89EDE691" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shooter" x="720" y="288" name="inst_0A8A5F4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="cont_block" x="784" y="64" name="inst_FBE520D9" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="cont_block" x="848" y="16" name="inst_9ACA3FDD" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="496" y="336" name="inst_D228FA22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="496" y="304" name="inst_9DC5ADE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="496" y="272" name="inst_3B773BCB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="496" y="240" name="inst_A913BC91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="528" y="240" name="inst_942D46E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="528" y="208" name="inst_F12E30AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="528" y="176" name="inst_454F8A4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="560" y="176" name="inst_E37BBABB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="592" y="176" name="inst_2951AA11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="592" y="144" name="inst_BB7E5172" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="624" y="144" name="inst_D58CD770" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="496" y="368" name="inst_810E7801" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="528" y="368" name="inst_90B13811" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="528" y="400" name="inst_CDAC20CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="496" y="400" name="inst_02323BB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="464" y="400" name="inst_798A5F20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="464" y="432" name="inst_78424786" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="432" y="400" name="inst_94FA48C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="464" y="368" name="inst_47031192" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="432" y="368" name="inst_D959DFA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="400" y="368" name="inst_981071C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="368" y="368" name="inst_4CE8C2D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="368" y="336" name="inst_2629D1C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="400" y="336" name="inst_00CAA76D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="432" y="336" name="inst_53734DDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="464" y="336" name="inst_9E5D8FF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="432" y="304" name="inst_5DD94B55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="464" y="304" name="inst_15B073F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="400" y="304" name="inst_8A96210F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="400" y="272" name="inst_204F75C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="432" y="272" name="inst_3D97AA77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="464" y="272" name="inst_AF0EEFAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="432" y="240" name="inst_4655BCE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="400" y="240" name="inst_460A166F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="368" y="240" name="inst_96882816" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="400" y="208" name="inst_B2F47658" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="432" y="208" name="inst_25737AC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="464" y="208" name="inst_35561409" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="496" y="208" name="inst_00F1F0AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="496" y="176" name="inst_E2D990F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="464" y="176" name="inst_2E61DCC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="432" y="176" name="inst_F3A0E6C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="464" y="144" name="inst_B6915546" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="496" y="144" name="inst_BF5DE9ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="528" y="144" name="inst_375F57F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="560" y="144" name="inst_04CA2EC7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="624" y="112" name="inst_CDF6AF1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="656" y="112" name="inst_EE055473" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="656" y="80" name="inst_3CB31594" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="656" y="48" name="inst_B522274C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="656" y="16" name="inst_D3E7D35A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="592" y="112" name="inst_D21C3508" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="560" y="112" name="inst_362854E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="528" y="112" name="inst_D6B71779" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="624" y="80" name="inst_043FDDCA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="592" y="80" name="inst_1F5E205E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="688" y="80" name="inst_A3D451E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="720" y="80" name="inst_7FF1C1E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="720" y="48" name="inst_3359ABE8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="752" y="48" name="inst_DFDEA528" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="752" y="16" name="inst_9A1D39CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magmaFloat" x="528" y="240" name="inst_BA94AE6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magmaFloat" x="464" y="272" name="inst_79AD6EF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magmaFloat" x="464" y="304" name="inst_C66AC504" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magmaFloat" x="432" y="208" name="inst_38641A98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magmaFloat" x="400" y="208" name="inst_DE996033" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magmaFloat" x="528" y="208" name="inst_6CCD239B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magmaFloat" x="496" y="240" name="inst_34CFA387" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magmaFloat" x="432" y="336" name="inst_15D68C79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magmaFloat" x="464" y="368" name="inst_9287248C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magmaFloat" x="464" y="400" name="inst_FEAF9789" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magmaFloat" x="464" y="432" name="inst_27509CD4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magmaFloat" x="496" y="336" name="inst_C1A645AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="336" y="240" name="inst_0924F0AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="336" y="272" name="inst_01F9EB47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="304" y="272" name="inst_9A010E46" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="272" y="272" name="inst_1A216831" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="240" y="272" name="inst_EC14CA2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="240" y="240" name="inst_3642B7CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="208" y="240" name="inst_ACF3AFB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="176" y="240" name="inst_38F0CD2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="144" y="240" name="inst_F518A7BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="112" y="240" name="inst_3F5695B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="112" y="208" name="inst_3646EC09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="80" y="208" name="inst_611A7F12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="48" y="208" name="inst_576C25A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magma" x="16" y="208" name="inst_4CBC1C41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="cont_block" x="-16" y="80" name="inst_769A85A0" locked="0" code="" scaleX="1" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="cont_block" x="304" y="-16" name="inst_ED5BE410" locked="0" code="" scaleX="24.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shine" x="304" y="192" name="inst_CFA5BB15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shine" x="384" y="96" name="inst_9CA75639" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shine" x="272" y="96" name="inst_FC95BD8D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_signMonster" x="192" y="128" name="inst_C280B07B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monsterRock" x="32" y="96" name="inst_CC60768F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monsterRock" x="176" y="32" name="inst_E2C435AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monsterRock" x="48" y="32" name="inst_6B0AFEB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monsterRock" x="128" y="64" name="inst_731A02BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_blocks" x="784" y="608" w="32" h="32" xo="64" yo="0" id="10003616" name="inst_299B6134" depth="1099" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -355,6 +459,13 @@
     <tile bgName="bg_blocks" x="832" y="128" w="32" h="32" xo="0" yo="32" id="10003659" name="inst_0FB39981" depth="1099" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="832" y="160" w="32" h="32" xo="0" yo="32" id="10003660" name="inst_ADFCD3BA" depth="1099" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="832" y="192" w="32" h="32" xo="0" yo="32" id="10003661" name="inst_9C8E4B58" depth="1099" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="768" y="96" w="32" h="32" xo="0" yo="0" id="10003665" name="inst_8421D0EC" depth="1099" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="768" y="64" w="32" h="32" xo="0" yo="0" id="10003666" name="inst_A4CAB261" depth="1099" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="768" y="32" w="32" h="32" xo="0" yo="0" id="10003667" name="inst_C613977E" depth="1099" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="768" y="0" w="32" h="32" xo="0" yo="0" id="10003668" name="inst_9A0233C9" depth="1099" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="800" y="0" w="32" h="32" xo="0" yo="0" id="10003669" name="inst_623C0FE8" depth="1099" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="832" y="0" w="32" h="32" xo="0" yo="0" id="10003670" name="inst_78D7BB11" depth="1099" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="864" y="0" w="32" h="32" xo="0" yo="0" id="10003671" name="inst_723D8247" depth="1099" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="2016" y="128" w="32" h="32" xo="0" yo="0" id="10003111" name="inst_BC9850B4" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="1984" y="128" w="32" h="32" xo="0" yo="0" id="10003112" name="inst_F3772662" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="2016" y="64" w="32" h="32" xo="0" yo="0" id="10003113" name="inst_68AAED7B" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -763,7 +874,6 @@
     <tile bgName="bg_blocks" x="640" y="192" w="32" h="32" xo="0" yo="0" id="10003642" name="inst_855652F5" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="640" y="160" w="32" h="32" xo="0" yo="0" id="10003643" name="inst_68DD64D5" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="640" y="128" w="32" h="32" xo="0" yo="0" id="10003644" name="inst_06292029" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_blocks" x="640" y="96" w="32" h="32" xo="0" yo="0" id="10003645" name="inst_B01B63B4" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="1344" y="288" w="32" h="32" xo="0" yo="128" id="10003550" name="inst_4EA4FE0D" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="1312" y="320" w="32" h="32" xo="0" yo="128" id="10003551" name="inst_F0E333BE" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="1280" y="352" w="32" h="32" xo="0" yo="128" id="10003552" name="inst_A1138358" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
