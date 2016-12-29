@@ -27,9 +27,10 @@
             <kind>1</kind>
             <string>///Init
 timerReset = 4 * room_speed;
+timerOffset = irandom_range(0, 1*room_speed);
 
 //spawn shots
-timer = timerReset;
+timer = timerReset - timerOffset;
 </string>
           </argument>
         </arguments>
