@@ -97,9 +97,9 @@ if (move == true) {
         var yy = 0;
     }
 
-    //Checks handled (only works if spd is 1)
-    var magmaCol = collision_point(x + (16 *xx) + xx,y + (16 * yy) +yy,obj_magma,false,true);
-    var magmaFloatCol = collision_point(x + (16 *xx) + xx,y + (16 * yy) +yy,obj_magmaFloat,false,true);
+    //Checks handled
+    var magmaCol = collision_point(x + (16 * sign(xx)) + xx,y + (16 * sign(yy)) +yy,obj_magma,false,true);
+    var magmaFloatCol = collision_point(x + (16 * sign(xx)) + xx,y + (16 * sign(yy)) +yy,obj_magmaFloat,false,true);
     
     //if (place_meeting(x + xx,y + yy,obj_magma) &amp;&amp; !place_meeting(x + xx,y + 16 + yy, obj_magmaFloat)) {
     if (magmaCol != noone &amp;&amp; magmaFloatCol == noone) {
