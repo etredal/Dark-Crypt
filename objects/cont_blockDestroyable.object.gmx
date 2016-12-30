@@ -30,13 +30,11 @@ with (other) {
     instance_destroy();
 }
 
-//Find tile
+//Find tile and delete
 t = tile_layer_find(1,x,y);
+tile_delete(t);
 
-with (t) {
-    instance_destroy();
-}
-
+//destroy
 instance_destroy();
 </string>
           </argument>
