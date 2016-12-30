@@ -28,7 +28,7 @@
             <string>///Image speed
 image_speed = 0.01;
 
-r=80;
+r = 80;
 </string>
           </argument>
         </arguments>
@@ -52,7 +52,9 @@ r=80;
           <argument>
             <kind>1</kind>
             <string>///Light
-scr_setLight(r,0.9,1.1,c_red);
+if (distance_to_object(obj_player) &lt; 400) {
+    scr_setLight(r,0.9,1.1,c_red);
+}
 </string>
           </argument>
         </arguments>
