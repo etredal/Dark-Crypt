@@ -28,7 +28,7 @@
             <string>///If player is from red side its solid
 var d = distance_to_object(obj_player);
 
-if (d &lt; 50) {
+if (d &lt; 24) { //About as small as nearly touching. (Hypotenus is ~22.6)
     //0 degrees
     if (image_angle == 0) {
         if (obj_player.y &lt; y) {
