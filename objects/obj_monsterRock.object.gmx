@@ -66,7 +66,7 @@ iY = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Awaken
+            <string>///Awaken and Attack
 //depth
 depth = -y;
 
@@ -126,13 +126,24 @@ if (hasRisen == true) {
     
             if (dis1 &lt; 3) {
                 speed = 0;
+                
+                image_speed = 0
+            } else {
+                image_speed = 0.075;
             }
         }
-    //HAS CAPTURED LANTERN
+    //HAS CAPTURED LIGHT
     } else { 
+        //Setting
         image_speed = 0.075;
-        image_index = spr_monsterRockRed;
-    
+        sprite_index = spr_monsterRockRed;
+        
+        //Initial values setting (This'll only happen at the start)
+        if (iX == 0) &amp;&amp; (iY == 0) {
+            iX = x;
+            iY = y;
+        }
+        
         //random
         rX = x+irandom_range(-64,64)
         rY = y+irandom_range(-64,64)
@@ -151,9 +162,14 @@ if (hasRisen == true) {
         
         //stop moving if too close
         var dis1 = distance_to_point(iX,iY);
-    
+        
+        //Setting things
         if (dis1 &lt; 3) {
             speed = 0;
+            
+            image_speed = 0
+        } else {
+            image_speed = 0.075;
         }
     }
 }
@@ -181,6 +197,9 @@ if (hasRisen == true) {
 if (!place_free(x+hspeed,y+vspeed)) {
     hspeed = 0;
     vspeed = 0;
+    
+    image_speed = 0;
+    image_index = 0;
 }
 </string>
           </argument>
