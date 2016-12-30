@@ -41,6 +41,8 @@
     <sprite>sprites\spr_instanceActivator</sprite>
     <sprite>sprites\spr_magmaFloat</sprite>
     <sprite>sprites\spr_wisp</sprite>
+    <sprite>sprites\spr_wispSkull</sprite>
+    <sprite>sprites\spr_wispSkullBack</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -104,6 +106,7 @@
       <objects name="Enemy">
         <object>objects\obj_monsterRock</object>
         <object>objects\obj_wisp</object>
+        <object>objects\obj_wispSkull</object>
       </objects>
     </objects>
     <objects name="Menu">
