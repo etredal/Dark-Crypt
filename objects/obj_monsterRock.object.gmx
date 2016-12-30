@@ -234,7 +234,7 @@ with (other) {
 }
 
 //random drop
-var rand = random(4);
+var rand = irandom(4);
 if (rand == 1) {
     instance_create(x,y,drop);
 }
