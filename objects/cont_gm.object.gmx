@@ -300,16 +300,8 @@ if (scr_isLevel() == true) {
           <argument>
             <kind>1</kind>
             <string>///Save level
-var currentLevel = -1;
-
 //ALL LEVELS
-if (room == rm_level0) {
-    currentLevel = 0;
-} else if (room == rm_level1) {
-    currentLevel = 1;
-} else if (room == rm_level2) {
-    currentLevel = 2;
-}
+var currentLevel = scr_levelNumber();
 
 if (currentLevel != -1) {
     //Set location

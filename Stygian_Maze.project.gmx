@@ -48,6 +48,8 @@
   <scripts name="scripts">
     <script>scripts\scr_setLight.gml</script>
     <script>scripts\scr_isLevel.gml</script>
+    <script>scripts\scr_levelNumber.gml</script>
+    <script>scripts\scr_returnLevel.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_tutorial</font>
@@ -115,6 +117,15 @@
       <room>rooms\rm_level2</room>
       <room>rooms\rm_level3</room>
       <room>rooms\rm_level4</room>
+      <room>rooms\rm_level5</room>
+      <room>rooms\rm_level6</room>
+      <room>rooms\rm_level7</room>
+      <room>rooms\rm_level8</room>
+      <room>rooms\rm_level9</room>
+      <room>rooms\rm_level10</room>
+      <room>rooms\rm_level11</room>
+      <room>rooms\rm_level12</room>
+      <room>rooms\rm_level13</room>
     </rooms>
     <rooms name="special">
       <room>rooms\rm_playground</room>

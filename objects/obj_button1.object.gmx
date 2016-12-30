@@ -51,19 +51,7 @@ global.chosenLevel = 0; // 0 is tutorial
             <kind>1</kind>
             <string>///Goto level
 //ALL LEVELS
-if (global.chosenLevel == 0) {
-    room_goto(rm_level0);
-} else if (global.chosenLevel == 1) {
-    room_goto(rm_level1);
-} else if (global.chosenLevel == 2) {
-    room_goto(rm_level2);
-}
-
-
-/*
-if (global.chosenLevel == 0) {
-    room_goto(rm_level0);
-}
+room_goto(scr_returnLevel(global.chosenLevel));
 </string>
           </argument>
         </arguments>
