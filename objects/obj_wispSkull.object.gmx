@@ -3,7 +3,7 @@
   <spriteName>spr_wispSkull</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-9999</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -95,8 +95,6 @@ if (fade &lt;= 0) {
           <argument>
             <kind>1</kind>
             <string>///Move
-depth = -y;
-
 move_towards_point(obj_lantern.x,obj_lantern.y,spd);
 </string>
           </argument>
