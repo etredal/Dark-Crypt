@@ -78,6 +78,7 @@ if (dis &lt; global.rLantern) &amp;&amp; (hasRisen == false) {
     startRise = true;
 }
 
+//AWAKEN
 if (startRise == true) &amp;&amp; (hasRisen == false) {
     //awaken anim
     image_speed = 0.01;
@@ -90,6 +91,7 @@ if (startRise == true) &amp;&amp; (hasRisen == false) {
     }
 }
 
+//MOVE TO PLAYER
 if (hasRisen == true) {
     //anim speed
     image_speed = 0.075;
@@ -126,9 +128,10 @@ if (hasRisen == true) {
                 speed = 0;
             }
         }
-    } else {
-        //Light
-        scr_setLight(r,0.8,1.2,c_yellow);
+    //HAS CAPTURED LANTERN
+    } else { 
+        image_speed = 0.075;
+        image_index = spr_monsterRockRed;
     
         //random
         rX = x+irandom_range(-64,64)

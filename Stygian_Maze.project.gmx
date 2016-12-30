@@ -29,6 +29,7 @@
     <sprite>sprites\spr_ember</sprite>
     <sprite>sprites\spr_monsterRock</sprite>
     <sprite>sprites\spr_monsterRockRun</sprite>
+    <sprite>sprites\spr_monsterRockRed</sprite>
     <sprite>sprites\spr_textBox</sprite>
     <sprite>sprites\spr_door</sprite>
     <sprite>sprites\spr_lever</sprite>
