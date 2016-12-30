@@ -29,6 +29,7 @@
 spd = random_range(0.4,0.6);
 image_speed = 0.075;
 fade = 1;
+activate = false;
 </string>
           </argument>
         </arguments>
@@ -54,7 +55,13 @@ fade = 1;
             <string>///Destroys/Fade
 var dis = distance_to_object(obj_player);
 
+//close to player
 if (dis &lt; 16) {
+    activate = true;
+}
+
+//Fade away
+if (activate == true) {
     fade -= 0.01;
     image_alpha = fade;
     

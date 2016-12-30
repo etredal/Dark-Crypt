@@ -87,33 +87,6 @@ y = obj_player.y + global.yLanternOffset;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Sets light and depth
-if (global.rLantern &lt; 250) {
-    scr_setLight(global.rLantern,0.9,1.1, c_white);
-} else {
-    //Helps to stop flicker
-    scr_setLight(global.rLantern,0.99,1.01,c_white);
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
             <string>///Attacking
 if (keyboard_check_pressed(vk_space)) {
     //Starting attack
@@ -141,36 +114,24 @@ if (keyboard_check_pressed(vk_space)) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Sets lower in light
+            <string>///Diminishing light and death
 global.rLantern -= dec;
 
-if (global.rLantern &lt;= 0) { 
+//Lowest going out
+if (global.rLantern &lt; 25) { 
+    scr_setLight(global.rLantern,0.4,1, c_white);
+//Low -- high Flicker
+} else if (global.rLantern &lt; 250 &amp;&amp; global.rLantern &gt;= 130) {
+    scr_setLight(global.rLantern,0.9,1.1, c_white);
+//High
+} else {
+    scr_setLight(global.rLantern,0.99,1.01,c_white);
+}
+
+//Death
+if (global.rLantern &lt;= 10) { 
     room_goto(rm_lost);
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///sets location
-draw_self();
 </string>
           </argument>
         </arguments>
