@@ -52,6 +52,7 @@ r = 80;
           <argument>
             <kind>1</kind>
             <string>///Light
+//Optimize
 if (distance_to_object(obj_player) &lt; 400) {
     scr_setLight(r,0.9,1.1,c_red);
 }
