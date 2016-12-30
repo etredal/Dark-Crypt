@@ -26,12 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>///Init
-dmg = 2;
 spd = random_range(0.4,0.6);
 image_speed = 0.075;
 fade = 1;
-
-time = 10 * room_speed;
 </string>
           </argument>
         </arguments>
@@ -54,25 +51,16 @@ time = 10 * room_speed;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Fade/Destroy
-//wispID is set by obj_wisp
-if !(instance_exists(wispID)) { 
+            <string>///Destroys/Fade
+var dis = distance_to_object(obj_player);
+
+if (dis &lt; 16) {
     fade -= 0.01;
-}
-
-//Time
-time--;
-
-if (time &lt;= 0) {
-    fade -= 0.01;
-}
-
-//Fade set
-image_alpha = fade;
-
-//Destroy
-if (fade &lt;= 0) {
-    instance_destroy();
+    image_alpha = fade;
+    
+    if (fade &lt;= 0) {
+        instance_destroy();
+    }
 }
 </string>
           </argument>
@@ -98,37 +86,6 @@ if (fade &lt;= 0) {
 depth = -y;
 
 move_towards_point(obj_lantern.x,obj_lantern.y,spd);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_lantern">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Damage
-timer = 0;
-
-//Damage once
-if (dmg != 0) {
-    global.rLantern -= dmg;
-    
-    dmg = 0;
-}
 </string>
           </argument>
         </arguments>

@@ -29,6 +29,8 @@
 //CREATION CODE ITEMS
 drop = noone; //drops item
 hp = 8; //goes down one when hit w/ ember
+createWispSkull = 5 * room_speed;
+createWispSkullReset = createWispSkull
 
 //sets
 color = c_white;
@@ -108,7 +110,20 @@ if (hp &lt;= 0) {
           <argument>
             <kind>1</kind>
             <string>///Attack handle
+//setting distance
+var dis = distance_to_object(obj_lantern);
 
+if (dis &lt; r) {
+    createWispSkull--;
+    
+    if (createWispSkull &lt;= 0) {
+        i = instance_create(x,y,obj_wispSkull);
+        
+        i.wispID = id;
+    
+        createWispSkull = createWispSkullReset;
+    }
+}
 </string>
           </argument>
         </arguments>
