@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Init
-dmg = 2;
+dmg = 8;
 spd = random_range(0.4,0.6);
 image_speed = 0.075;
 fade = 1;
@@ -57,14 +57,14 @@ time = 10 * room_speed;
             <string>///Fade/Destroy
 //wispID is set by obj_wisp
 if !(instance_exists(wispID)) { 
-    fade -= 0.01;
+    fade -= 0.05;
 }
 
 //Time
 time--;
 
 if (time &lt;= 0) {
-    fade -= 0.01;
+    fade -= 0.05;
 }
 
 //Fade set
@@ -119,13 +119,13 @@ move_towards_point(obj_lantern.x,obj_lantern.y,spd);
           <argument>
             <kind>1</kind>
             <string>///Damage
-timer = 0;
-
 //Damage once
 if (dmg != 0) {
     global.rLantern -= dmg;
     
     dmg = 0;
+    
+    time = 0;
 }
 </string>
           </argument>

@@ -28,7 +28,7 @@
             <string>///Init
 r = 150;
 
-inc = 30;
+inc = 50;
 </string>
           </argument>
         </arguments>
@@ -52,7 +52,7 @@ inc = 30;
           <argument>
             <kind>1</kind>
             <string>///Light and depth
-scr_setLight(r,0.95,1.05,c_blue);
+scr_setLight(r,0.95,1.05,c_teal);
 </string>
           </argument>
         </arguments>

@@ -142,6 +142,8 @@
     <instance objName="obj_shooter" x="1120" y="144" name="inst_FB708C1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shooter" x="1120" y="112" name="inst_2855C320" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shooter" x="1120" y="272" name="inst_27D5ACF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shineLarge" x="1040" y="240" name="inst_C1A892C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shine" x="1072" y="176" name="inst_B8806F22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_blocks" x="-16" y="96" w="32" h="32" xo="0" yo="0" id="10000072" name="inst_718FBAF1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
