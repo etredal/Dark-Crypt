@@ -42,6 +42,7 @@
     <sprite>sprites\spr_magmaFloat</sprite>
     <sprite>sprites\spr_wisp</sprite>
     <sprite>sprites\spr_wispSkull</sprite>
+    <sprite>sprites\spr_blockDestroyable</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -65,6 +66,7 @@
     <objects name="Maze">
       <objects name="controllers">
         <object>objects\cont_block</object>
+        <object>objects\cont_blockDestroyable</object>
         <object>objects\cont_exit</object>
         <object>objects\cont_textBox</object>
         <object>objects\cont_ledge</object>
