@@ -23,6 +23,7 @@
     <sprite>sprites\spr_button3</sprite>
     <sprite>sprites\spr_exit</sprite>
     <sprite>sprites\spr_shine</sprite>
+    <sprite>sprites\spr_shineLarge</sprite>
     <sprite>sprites\spr_signArrow</sprite>
     <sprite>sprites\spr_signMonster</sprite>
     <sprite>sprites\spr_ember</sprite>
@@ -35,10 +36,11 @@
     <sprite>sprites\spr_light</sprite>
     <sprite>sprites\spr_ledge</sprite>
     <sprite>sprites\spr_shooter</sprite>
-    <sprite>sprites\spr_shot</sprite>
+    <sprite>sprites\spr_shooterShot</sprite>
     <sprite>sprites\spr_magma</sprite>
     <sprite>sprites\spr_instanceActivator</sprite>
     <sprite>sprites\spr_magmaFloat</sprite>
+    <sprite>sprites\spr_wisp</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -70,14 +72,17 @@
         <object>objects\obj_doorInstanceActivator</object>
       </objects>
       <objects name="Action Items">
-        <object>objects\obj_shine</object>
-        <object>objects\obj_shineMoving</object>
         <object>objects\obj_shineFountain</object>
         <object>objects\obj_lever1</object>
         <object>objects\obj_door1</object>
         <object>objects\obj_shooter</object>
-        <object>objects\obj_shot</object>
+        <object>objects\obj_shooterShot</object>
         <object>objects\obj_magmaFloat</object>
+        <objects name="shines">
+          <object>objects\obj_shine</object>
+          <object>objects\obj_shineLarge</object>
+          <object>objects\obj_shineMoving</object>
+        </objects>
       </objects>
       <objects name="Aesthetics">
         <object>objects\obj_signArrow</object>
@@ -98,6 +103,7 @@
       </objects>
       <objects name="Enemy">
         <object>objects\obj_monsterRock</object>
+        <object>objects\obj_wisp</object>
       </objects>
     </objects>
     <objects name="Menu">

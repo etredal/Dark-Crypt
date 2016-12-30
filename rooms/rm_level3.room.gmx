@@ -568,7 +568,6 @@
     <instance objName="obj_torch" x="1168" y="544" name="inst_CA5CECDB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="1232" y="544" name="inst_F21A5309" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_signMonster" x="1328" y="608" name="inst_32D75694" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cont_light" x="1520" y="624" name="inst_91A1DFD3" locked="0" code="color = c_white;&#xA;&#xA;randomMin = 1;&#xA;randomMax = 1;&#xA;&#xA;r = 600;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_monsterRock" x="400" y="592" name="inst_AC2B6943" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_monsterRock" x="672" y="640" name="inst_62EDB36E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_monsterRock" x="800" y="592" name="inst_1AD767E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -580,6 +579,7 @@
     <instance objName="obj_shine" x="1056" y="592" name="inst_E0CCDA29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shine" x="1280" y="592" name="inst_A66A57E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shine" x="1280" y="624" name="inst_8A40899F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wisp" x="1520" y="624" name="inst_A0B97447" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_blocks" x="0" y="672" w="32" h="32" xo="0" yo="0" id="10003852" name="inst_39794F5F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
