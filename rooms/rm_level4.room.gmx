@@ -62,6 +62,8 @@
     <instance objName="cont_block" x="784" y="64" name="inst_1210262D" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="704" y="144" name="inst_763E4917" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_light" x="704" y="64" name="inst_DF01D498" locked="0" code="r = 200;&#xA;color = c_white;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_looter" x="736" y="48" name="inst_D7177444" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="cont_textBox" x="640" y="64" name="inst_DB53640E" locked="0" code="///Set&#xA;str = &quot;I've got the last piece of loot... Scram!&quot;;&#xA;timerReset = 2 * room_speed; //2 secs&#xA;" scaleX="8.77419376373291" scaleY="4" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_blocks" x="416" y="192" w="32" h="32" xo="32" yo="128" id="10005130" name="inst_0A6C1E06" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

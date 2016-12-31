@@ -47,6 +47,7 @@
     <sprite>sprites\spr_bat</sprite>
     <sprite>sprites\spr_spider</sprite>
     <sprite>sprites\spr_pressurePlate</sprite>
+    <sprite>sprites\spr_looter</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -128,6 +129,7 @@
       <objects name="Neutral Creature">
         <object>objects\obj_bat</object>
         <object>objects\obj_spider</object>
+        <object>objects\obj_looter</object>
       </objects>
     </objects>
   </objects>
