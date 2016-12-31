@@ -89,9 +89,6 @@ for (i = 0; i &lt; 50; i++) {
           <argument>
             <kind>1</kind>
             <string>///Init
-//score
-global.levelScore = 0;
-
 //time
 global.levelTimer = 0;
 
@@ -251,7 +248,7 @@ if (scr_isLevel() == true) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///SAVE SCORE and TIME
+            <string>///SAVE TIME
 </string>
           </argument>
         </arguments>
@@ -272,9 +269,8 @@ if (scr_isLevel() == true) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Reset score and time
+            <string>///Reset time
 if (scr_isLevel() == true) {
-    global.levelScore = 0;
     global.levelTimer = 0;
 }
 </string>
@@ -346,7 +342,6 @@ if (scr_isLevel() == true) {
     draw_set_halign(fa_center);
     draw_set_valign(fa_center);
     
-    draw_text(view_xview + view_wview/4,view_yview + view_hview/12,"Score: " + string(global.levelScore));
     draw_text(view_xview + view_wview/2,view_yview + view_hview/12,"Timer: " + string(global.levelTimer));
 }
 </string>
