@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///set
+            <string>///Init
+//ALWAYS HAVE TWO BLOCKS TO SHOOT FROM W/ MAGMA FLOAT
 move = false;
 dir = 0;
 
