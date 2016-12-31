@@ -28,7 +28,7 @@
             <string>///Init
 //CREATION CODE ITEMS
 drop = noone; //drops item
-hp = 8; //goes down one when hit w/ ember
+hp = 4; //goes down one when hit w/ ember
 createWispSkull = 5 * room_speed;
 createWispSkullReset = createWispSkull
 

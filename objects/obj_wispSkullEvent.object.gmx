@@ -56,7 +56,7 @@ activate = false;
 var dis = distance_to_object(obj_player);
 
 //close to player
-if (dis &lt; 16) {
+if (dis &lt; 64) {
     activate = true;
 }
 
