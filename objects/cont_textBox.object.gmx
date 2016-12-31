@@ -26,12 +26,12 @@
           <argument>
             <kind>1</kind>
             <string>///init
+//CREATION CODE
 str = "";
+delete = false;
+timerReset = 8* room_speed;
 
 start = false;
-delete = false;
-
-timerReset = 8* room_speed;
 timer = timerReset
 </string>
           </argument>

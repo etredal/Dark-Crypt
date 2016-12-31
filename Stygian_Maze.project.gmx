@@ -44,6 +44,8 @@
     <sprite>sprites\spr_wisp</sprite>
     <sprite>sprites\spr_wispSkull</sprite>
     <sprite>sprites\spr_blockDestroyable</sprite>
+    <sprite>sprites\spr_bat</sprite>
+    <sprite>sprites\spr_spider</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -110,6 +112,10 @@
         <object>objects\obj_wisp</object>
         <object>objects\obj_wispSkull</object>
         <object>objects\obj_wispSkullEvent</object>
+      </objects>
+      <objects name="Neutral Creature">
+        <object>objects\obj_bat</object>
+        <object>objects\obj_spider</object>
       </objects>
     </objects>
     <objects name="Menu">
