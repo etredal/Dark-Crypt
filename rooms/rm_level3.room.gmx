@@ -3,8 +3,8 @@
   <caption></caption>
   <width>2560</width>
   <height>1440</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -413,7 +413,6 @@
     <instance objName="obj_magma" x="2288" y="1040" name="inst_07F771F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_magma" x="2320" y="1040" name="inst_8BE4104D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_magma" x="2352" y="1040" name="inst_45A84449" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_magma" x="2384" y="1040" name="inst_63747D2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_magma" x="2416" y="1040" name="inst_E4793EBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_magma" x="2416" y="1072" name="inst_B3F3D184" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_magma" x="2416" y="1104" name="inst_6534594E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -422,7 +421,7 @@
     <instance objName="obj_magma" x="2320" y="1104" name="inst_D43FA033" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_magma" x="2288" y="1104" name="inst_884506E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_magma" x="2256" y="1104" name="inst_42326361" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_magmaFloat" x="2384" y="1040" name="inst_FAE869C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_magmaFloat" x="2384" y="1008" name="inst_FAE869C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_magma" x="2192" y="1008" name="inst_A3F5609F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_magma" x="2224" y="1008" name="inst_865BC0B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_magma" x="2256" y="1008" name="inst_995C0E11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
