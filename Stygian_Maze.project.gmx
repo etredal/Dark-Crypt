@@ -46,6 +46,7 @@
     <sprite>sprites\spr_blockDestroyable</sprite>
     <sprite>sprites\spr_bat</sprite>
     <sprite>sprites\spr_spider</sprite>
+    <sprite>sprites\spr_pressurePlate</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -66,6 +67,11 @@
       <object>objects\cont_gm</object>
       <object>objects\obj_darkness</object>
     </objects>
+    <objects name="Menu">
+      <object>objects\obj_button1</object>
+      <object>objects\obj_button2</object>
+      <object>objects\obj_button3</object>
+    </objects>
     <objects name="Maze">
       <objects name="controllers">
         <object>objects\cont_block</object>
@@ -74,21 +80,27 @@
         <object>objects\cont_textBox</object>
         <object>objects\cont_ledge</object>
         <object>objects\cont_light</object>
-        <object>objects\cont_instanceActivator</object>
-        <object>objects\obj_doorInstanceActivator</object>
       </objects>
       <objects name="Action Items">
-        <object>objects\obj_shineFountain</object>
-        <object>objects\obj_lever1</object>
-        <object>objects\obj_door1</object>
-        <object>objects\obj_shooter</object>
-        <object>objects\obj_shooterShot</object>
-        <object>objects\obj_magmaFloat</object>
         <objects name="shines">
           <object>objects\obj_shine</object>
           <object>objects\obj_shineLarge</object>
           <object>objects\obj_shineMoving</object>
         </objects>
+        <objects name="Mechanical">
+          <object>objects\obj_lever1</object>
+          <object>objects\obj_door1</object>
+          <object>objects\obj_lever2</object>
+          <object>objects\obj_door2</object>
+          <object>objects\cont_instanceActivator</object>
+          <object>objects\obj_doorInstanceActivator</object>
+          <object>objects\cont_pressurePlate</object>
+          <object>objects\obj_doorPressurePlate</object>
+        </objects>
+        <object>objects\obj_shineFountain</object>
+        <object>objects\obj_shooter</object>
+        <object>objects\obj_shooterShot</object>
+        <object>objects\obj_magmaFloat</object>
       </objects>
       <objects name="Aesthetics">
         <object>objects\obj_signArrow</object>
@@ -117,11 +129,6 @@
         <object>objects\obj_bat</object>
         <object>objects\obj_spider</object>
       </objects>
-    </objects>
-    <objects name="Menu">
-      <object>objects\obj_button1</object>
-      <object>objects\obj_button2</object>
-      <object>objects\obj_button3</object>
     </objects>
   </objects>
   <rooms name="rooms">
