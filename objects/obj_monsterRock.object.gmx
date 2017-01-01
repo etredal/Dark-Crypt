@@ -29,7 +29,6 @@
 image_speed = 0;
 
 //Setting
-r = 32;
 dmg = 24;
 
 //States

@@ -49,6 +49,7 @@
     <sprite>sprites\spr_pressurePlate</sprite>
     <sprite>sprites\spr_looter</sprite>
     <sprite>sprites\spr_shineRed</sprite>
+    <sprite>sprites\spr_helmetBeetle</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -57,9 +58,11 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_setLight.gml</script>
-    <script>scripts\scr_isLevel.gml</script>
-    <script>scripts\scr_levelNumber.gml</script>
-    <script>scripts\scr_returnLevel.gml</script>
+    <scripts name="Level Specific">
+      <script>scripts\scr_isLevel.gml</script>
+      <script>scripts\scr_levelNumber.gml</script>
+      <script>scripts\scr_returnLevel.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_tutorial</font>
@@ -127,7 +130,7 @@
         <object>objects\obj_wisp</object>
         <object>objects\obj_wispSkull</object>
         <object>objects\obj_wispSkullEvent</object>
-        <object>objects\obj_</object>
+        <object>objects\obj_helmetBeetle</object>
       </objects>
       <objects name="Neutral Creature">
         <object>objects\obj_bat</object>
