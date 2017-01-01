@@ -48,6 +48,7 @@
     <sprite>sprites\spr_spider</sprite>
     <sprite>sprites\spr_pressurePlate</sprite>
     <sprite>sprites\spr_looter</sprite>
+    <sprite>sprites\spr_shineRed</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -86,6 +87,7 @@
         <objects name="shines">
           <object>objects\obj_shine</object>
           <object>objects\obj_shineLarge</object>
+          <object>objects\obj_shineRed</object>
           <object>objects\obj_shineMoving</object>
         </objects>
         <objects name="Mechanical">
