@@ -62,8 +62,7 @@ drop = obj_shineLarge;
             <kind>1</kind>
             <string>///Collision
 if (!place_free(x+hspeed,y+vspeed)) {
-    hspeed = 0;
-    vspeed = 0;
+    speed = 0;
     
     image_speed = 0;
     image_index = 0;
@@ -189,7 +188,7 @@ if (timer == 0) {
           <argument>
             <kind>1</kind>
             <string>///Damage
-if (other.x &lt; x - 8) &amp;&amp; (image_xscale == 1) {
+if (other.x &lt; x - 8) &amp;&amp; (image_xscale == -1) {
     //Destroy
     with (other) {
         instance_destroy();
