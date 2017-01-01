@@ -126,8 +126,13 @@ if (timer == 0) {
             path = true;
         }
         
-        //Move
-        move_towards_point(rX, rY, spd);
+        if (collision_line(x,y,rX,rY,solid,false,true) == noone) {
+            //Move
+            move_towards_point(rX, rY, spd);
+        } else {
+            speed = 0;
+            path = false;
+        }
         
         //Reset Movement
         ran = irandom(15 * room_speed);
