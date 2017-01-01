@@ -34,6 +34,7 @@ path = false;
 //States
 idle = true;
 attack = false;
+timer = 0;
 
 //Randomly Drop
 drop = obj_shineLarge;
@@ -100,55 +101,69 @@ if (direction &lt; 90 || direction &gt; 270) {
     image_xscale = -1;
 }
 
-//Setting State
-if (distance_to_point(obj_player.x,obj_player.y) &lt; 100) {
-    //Random
-    var ran = irandom(4 * room_speed);
-    
-    //states
-    if (ran == 1) {
-        idle = false;
-        attack = true;
-    }
-}
-
-//States
-if (idle == true) {
-    image_speed = 0.075;
-    spd = 0.2;
-    
-    //Path Move
-    if (path == false) {
-        rX = irandom_range(0,room_width);
-        rY = irandom_range(0,room_height);
+if (timer == 0) {
+    //Setting State
+    if (distance_to_point(obj_player.x,obj_player.y) &lt; 100) {
+        //Random
+        var ran = irandom(4 * room_speed);
         
-        path = true;
+        //states
+        if (ran == 1) {
+            idle = false;
+            attack = true;
+        }
     }
     
-    //Move
-    move_towards_point(rX, rY, spd);
-    
-    //Reset Movement
-    ran = irandom(15 * room_speed);
-    
-    if (distance_to_point(rX,rY) &lt; 4) || (ran == 1) {
-        path = false;
+    //States------------------------
+    if (idle == true) {
+        image_speed = 0.075;
+        spd = 0.2;
+        
+        //Path Move
+        if (path == false) {
+            rX = irandom_range(0,room_width);
+            rY = irandom_range(0,room_height);
+            
+            path = true;
+        }
+        
+        //Move
+        move_towards_point(rX, rY, spd);
+        
+        //Reset Movement
+        ran = irandom(15 * room_speed);
+        
+        if (distance_to_point(rX,rY) &lt; 4) || (ran == 1) {
+            path = false;
+        }
     }
-}
-
-if (attack == true) {
-    image_speed = 0.1;    
-    spd = 0.3;
     
-    move_towards_point(obj_lantern.x,obj_lantern.y,spd);
+    if (attack == true) {
+        image_speed = 0.1;    
+        spd = 0.3;
+        
+        move_towards_point(obj_lantern.x,obj_lantern.y,spd);
+        
+        var ran = irandom(5 * room_speed);
+        
+        if (ran == 1) {
+            idle = true;
+            attack = false;
+            
+            path = false;
+        }
+    }
+} else {
+    timer--;
     
-    var ran = irandom(5 * room_speed);
-    
-    if (ran == 1) {
+    //Resetting
+    if (timer &lt;= 0) {
         idle = true;
         attack = false;
-        
+            
         path = false;
+        
+        timer = 0;
     }
 }
 </string>
@@ -207,6 +222,34 @@ if (other.x &lt; x - 8) &amp;&amp; (image_xscale == 1) {
         instance_destroy();
     }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_lantern">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Steal
+if (timer == 0) {
+    global.rLantern -= dmg;
+}
+
+timer = 3 * room_speed;
 </string>
           </argument>
         </arguments>
