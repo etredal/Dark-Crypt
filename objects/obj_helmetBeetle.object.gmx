@@ -38,6 +38,9 @@ timer = 0;
 
 //Randomly Drop
 drop = obj_shineLarge;
+
+//mvmnt
+collision = false;
 </string>
           </argument>
         </arguments>
@@ -61,13 +64,25 @@ drop = obj_shineLarge;
           <argument>
             <kind>1</kind>
             <string>///Collision
+//resetting
+collision = false
+
+//checking
 if (!place_free(x+hspeed,y+vspeed)) {
-    speed = 0;
+    //Setting
+    hspeed = 0;
+    vspeed = 0;
     
     image_speed = 0;
     image_index = 0;
     
     path = false;
+    
+    //Setting
+    idle = true;
+    attack = false;   
+    
+    collision = true;
 }
 </string>
           </argument>
@@ -92,6 +107,10 @@ if (!place_free(x+hspeed,y+vspeed)) {
             <string>///States
 //Init
 depth = -y;
+
+//Bounce off
+move_bounce_solid(true);
+
 
 //Setting image angle
 if (direction &lt; 90 || direction &gt; 270) {
@@ -126,12 +145,9 @@ if (timer == 0) {
             path = true;
         }
         
-        if (collision_line(x,y,rX,rY,solid,false,true) == noone) {
+        if (collision = false) {
             //Move
             move_towards_point(rX, rY, spd);
-        } else {
-            speed = 0;
-            path = false;
         }
         
         //Reset Movement
@@ -146,7 +162,9 @@ if (timer == 0) {
         image_speed = 0.1;    
         spd = 0.3;
         
-        move_towards_point(obj_lantern.x,obj_lantern.y,spd);
+        if (collision == false) {
+            move_towards_point(obj_lantern.x,obj_lantern.y,spd);
+        }
         
         var ran = irandom(5 * room_speed);
         

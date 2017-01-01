@@ -16,8 +16,8 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1169</w>
-    <h>679</h>
+    <w>1153</w>
+    <h>673</h>
     <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>1369</xoffset>
-    <yoffset>1656</yoffset>
+    <xoffset>108</xoffset>
+    <yoffset>-102</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
@@ -61,7 +61,7 @@
     <instance objName="cont_block" x="720" y="-16" name="inst_C075555A" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="784" y="64" name="inst_1210262D" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="688" y="144" name="inst_763E4917" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cont_light" x="704" y="64" name="inst_DF01D498" locked="0" code="r = 200;&#xA;color = c_white;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="cont_light" x="704" y="64" name="inst_DF01D498" locked="0" code="r = 200;&#xA;color = c_white;&#xA;randomMin = 1;&#xA;randomMax = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_looter" x="736" y="48" name="inst_D7177444" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_textBox" x="640" y="64" name="inst_DB53640E" locked="0" code="///Set&#xA;str = &quot;I've got the last piece of loot... Scram!&quot;;&#xA;timerReset = 2 * room_speed; //2 secs&#xA;" scaleX="8.77419376373291" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="0" y="112" name="inst_EF00F6CA" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
