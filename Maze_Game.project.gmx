@@ -127,6 +127,7 @@
         <object>objects\obj_wisp</object>
         <object>objects\obj_wispSkull</object>
         <object>objects\obj_wispSkullEvent</object>
+        <object>objects\obj_</object>
       </objects>
       <objects name="Neutral Creature">
         <object>objects\obj_bat</object>

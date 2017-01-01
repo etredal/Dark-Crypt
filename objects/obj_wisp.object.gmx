@@ -37,6 +37,7 @@ color = c_white;
 r = 600;
 depth = -y;
 image_speed = 0.075;
+activate = false;
 </string>
           </argument>
         </arguments>
@@ -114,6 +115,11 @@ if (hp &lt;= 0) {
 var dis = distance_to_object(obj_lantern);
 
 if (dis &lt; r) {
+    activate = true;
+}
+
+//Create Skulls
+if (activate == true) {
     createWispSkull--;
     
     if (createWispSkull &lt;= 0) {
