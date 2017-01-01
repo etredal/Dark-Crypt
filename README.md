@@ -1,4 +1,4 @@
-# Stygian_Maze
+# Maze_Game
 A video game project
 
 A Gamemaker game
