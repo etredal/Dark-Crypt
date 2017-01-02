@@ -1866,6 +1866,7 @@
     <tile bgName="bg_aesthetics" x="3072" y="1280" w="32" h="32" xo="0" yo="0" id="10004817" name="inst_1D5CB59F" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_aesthetics" x="3024" y="1280" w="32" h="32" xo="96" yo="0" id="10004818" name="inst_5BA2D426" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_aesthetics" x="3104" y="1264" w="32" h="32" xo="64" yo="0" id="10004819" name="inst_EFCEE136" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_blocks" x="2080" y="592" w="32" h="32" xo="160" yo="64" id="10010315" name="inst_7E10EC06" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_aesthetics" x="2080" y="592" w="32" h="32" xo="0" yo="64" id="10001259" name="inst_F1B00ACC" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="2784" y="1456" w="32" h="32" xo="96" yo="32" id="10001260" name="inst_F1EC0BFC" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="2848" y="1296" w="32" h="32" xo="96" yo="32" id="10001261" name="inst_FACC5924" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
