@@ -29,7 +29,7 @@
 //CREATION CODE
 str = "";
 delete = false;
-timerReset = 8* room_speed;
+timerReset = 6 * room_speed;
 
 //init
 start = false;

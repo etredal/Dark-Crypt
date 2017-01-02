@@ -136,6 +136,7 @@
         <object>objects\obj_bat</object>
         <object>objects\obj_spider</object>
         <object>objects\obj_looter</object>
+        <object>objects\obj_citizen</object>
       </objects>
     </objects>
   </objects>
