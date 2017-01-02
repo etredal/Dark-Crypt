@@ -31,8 +31,6 @@ event_inherited();
 spd = 1;
 
 inc = 50;
-
-despawn = 8 * room_speed;
 </string>
           </argument>
         </arguments>
@@ -98,13 +96,6 @@ if (spd != 0) {
 
 if (distance_to_point(rX,rY) &lt; 2) {
     spd = 0;
-}
-
-//Despawn
-despawn--;
-
-if (despawn &lt;= 0) {
-    instance_destroy();
 }
 </string>
           </argument>

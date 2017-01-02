@@ -71,7 +71,7 @@
     <instance objName="obj_spider" x="432" y="112" name="inst_C4C24DEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spider" x="304" y="48" name="inst_70447D58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_citizen" x="256" y="272" name="inst_D206F22A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cont_textBox" x="256" y="272" name="inst_9479B195" locked="0" code="str = &quot;Clear out the abandoned tunnel,#and I'll open that path for you.&quot;;" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="cont_textBox" x="256" y="272" name="inst_9479B195" locked="0" code="str = &quot;Clear out the abandoned tunnel,#and I'll open that path for you.&quot;;&#xA;" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="208" y="128" name="inst_39A38EA4" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="80" y="160" name="inst_63233849" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_shineLarge" x="144" y="256" name="inst_6953B896" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -255,6 +255,7 @@
     <tile bgName="bg_blocks" x="864" y="0" w="32" h="32" xo="64" yo="64" id="10009290" name="inst_F6B2F50B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="896" y="0" w="32" h="32" xo="64" yo="64" id="10009291" name="inst_796E04F3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="928" y="0" w="32" h="32" xo="64" yo="64" id="10009292" name="inst_F025CCAE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_aesthetics" x="640" y="160" w="32" h="32" xo="384" yo="64" id="10009293" name="inst_8739BAE4" depth="9" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="32" y="160" w="32" h="32" xo="128" yo="96" id="10007782" name="inst_AE83B6FE" depth="-999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="64" y="160" w="32" h="32" xo="128" yo="96" id="10007783" name="inst_F71E6628" depth="-999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="96" y="160" w="32" h="32" xo="128" yo="96" id="10007784" name="inst_4785CB06" depth="-999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
