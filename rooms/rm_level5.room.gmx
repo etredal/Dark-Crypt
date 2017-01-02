@@ -241,6 +241,9 @@
     <instance objName="obj_torch" x="2032" y="1232" name="inst_63D1BA4B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="2096" y="1232" name="inst_A70DA5D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="2448" y="1264" name="inst_DF195180" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shine" x="496" y="240" name="inst_64B416AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shine" x="496" y="176" name="inst_C543AE18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shine" x="464" y="208" name="inst_CE436E2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_blocks" x="0" y="384" w="32" h="32" xo="64" yo="64" id="10007686" name="inst_18E482D4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
