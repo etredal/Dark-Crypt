@@ -90,7 +90,13 @@ if (activate == true) {
           <argument>
             <kind>1</kind>
             <string>///Move
-move_towards_point(obj_lantern.x,obj_lantern.y,spd);
+var dis = distance_to_object(obj_player);
+
+if (dis &lt; 256) {
+    move_towards_point(obj_lantern.x,obj_lantern.y,spd);
+} else {
+    speed = 0;
+}
 </string>
           </argument>
         </arguments>
