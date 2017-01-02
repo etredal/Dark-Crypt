@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-9999</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_shine</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -26,8 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>///Init
-r = 150;
+event_inherited();
 
+//Setting
+r = 150;
 inc = 100;
 </string>
           </argument>
@@ -51,34 +53,8 @@ inc = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Light and depth
+            <string>///Light
 scr_setLight(r,0.95,1.05,c_red);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_lantern">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///make light bigger
-global.rLantern += inc;
-
-instance_destroy();
 </string>
           </argument>
         </arguments>
