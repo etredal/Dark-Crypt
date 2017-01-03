@@ -299,6 +299,74 @@ if (currentLevel != -1) {
         </arguments>
       </action>
     </event>
+    <event eventtype="7" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Destroy particle system(s)
+//Destroying Types
+part_type_destroy(global.p_lanternEffect);
+
+//Emitters destroyed where created
+
+//Destroying System
+part_system_destroy(global.p_main);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Create Particle System(s)
+global.p_main = part_system_create();
+
+//LANTERN EFFECT
+global.p_lanternEffect = part_type_create();
+
+part_type_shape(global.p_lanternEffect,pt_shape_pixel);            //This defines the particles shape
+part_type_size(global.p_lanternEffect,0.1,0.4,0,0);                    //This is for the size
+part_type_scale(global.p_lanternEffect,1,1);                       //This is for scaling
+part_type_color1(global.p_lanternEffect,c_white);                  //This sets its colour. There are three different codes for this
+part_type_alpha2(global.p_lanternEffect,1,0);                        //This is its alpha. There are three different codes for this
+part_type_speed(global.p_lanternEffect,0.05,0.5,-0.005,0);            //The particles speed
+part_type_direction(global.p_lanternEffect,0,359,0,20);            //The direction
+part_type_orientation(global.p_lanternEffect,0,0,0,0,1);           //This changes the rotation of the particle
+part_type_blend(global.p_lanternEffect,1);                         //This is the blend mode, either additive or normal
+part_type_life(global.p_lanternEffect,10,15);                       //this is its lifespan in steps
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
