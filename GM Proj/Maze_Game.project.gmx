@@ -58,6 +58,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_setLight.gml</script>
+    <script>scripts\scr_numberOnce.gml</script>
     <scripts name="Level Specific">
       <script>scripts\scr_isLevel.gml</script>
       <script>scripts\scr_levelNumber.gml</script>
