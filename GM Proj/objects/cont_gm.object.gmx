@@ -387,7 +387,7 @@ if !(part_system_exists(global.p_main)) {
 //If it is a level do this particle effect
 if (scr_isLevel() == true) {
     part_emitter_region(global.p_main, p_worldEffectEmitter, view_xview, view_xview + view_wview, view_yview, view_yview + view_hview, ps_shape_rectangle, ps_distr_linear);
-    part_emitter_stream(global.p_main, p_worldEffectEmitter,global.p_worldEffect, scr_numberOnce(0.25 * room_speed));
+    part_emitter_stream(global.p_main, p_worldEffectEmitter,global.p_worldEffect, scr_numberOnce(0.5 * room_speed));
 }
 </string>
           </argument>
