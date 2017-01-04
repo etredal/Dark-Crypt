@@ -148,14 +148,14 @@
     </rooms>
     <rooms name="Levels">
       <room>rooms\rm_level0</room>
-      <room>rooms\rm_levelA</room>
-      <room>rooms\rm_levelB</room>
-      <room>rooms\rm_levelC</room>
       <room>rooms\rm_level1</room>
       <room>rooms\rm_level2</room>
       <room>rooms\rm_level3</room>
       <room>rooms\rm_level4</room>
       <room>rooms\rm_level5</room>
+      <room>rooms\rm_level6</room>
+      <room>rooms\rm_level7</room>
+      <room>rooms\rm_level8</room>
       <room>rooms\rm_level9</room>
       <room>rooms\rm_level10</room>
       <room>rooms\rm_level11</room>
