@@ -383,7 +383,7 @@ global.p_worldEffect = part_type_create();
 part_type_shape(global.p_worldEffect,pt_shape_square);            //This defines the particles shape
 part_type_size(global.p_worldEffect,0.01,0.03,0,0.0001);                    //This is for the size
 part_type_scale(global.p_worldEffect,1,1);                       //This is for scaling
-part_type_color1(global.p_worldEffect,c_red);                  //This sets its colour. There are three different codes for this
+part_type_color1(global.p_worldEffect,c_gray);                  //This sets its colour. There are three different codes for this
 part_type_alpha2(global.p_worldEffect,1,0.5);                        //This is its alpha. There are three different codes for this
 part_type_speed(global.p_worldEffect,0.005,0.2,-0.0001,0);            //The particles speed
 part_type_direction(global.p_worldEffect,0,359,0,20);            //The direction
@@ -394,16 +394,30 @@ part_type_life(global.p_worldEffect,4 * room_speed,6 * room_speed);             
 //LANTERN EFFECT
 global.p_lanternEffect = part_type_create();
 
-part_type_shape(global.p_lanternEffect,pt_shape_pixel);            //This defines the particles shape
-part_type_size(global.p_lanternEffect,0.003,0.4,0,0);                    //This is for the size
-part_type_scale(global.p_lanternEffect,1,1);                       //This is for scaling
-part_type_color2(global.p_lanternEffect,c_white,c_yellow);                  //This sets its colour. There are three different codes for this
-part_type_alpha2(global.p_lanternEffect,1,0);                        //This is its alpha. There are three different codes for this
-part_type_speed(global.p_lanternEffect,0.0005,0.5,-0.001,0);            //The particles speed
-part_type_direction(global.p_lanternEffect,0,359,0,20);            //The direction
-part_type_orientation(global.p_lanternEffect,0,0,0,0,1);           //This changes the rotation of the particle
-part_type_blend(global.p_lanternEffect,1);                         //This is the blend mode, either additive or normal
-part_type_life(global.p_lanternEffect,1 * room_speed,2 * room_speed);                       //this is its lifespan in steps
+part_type_shape(global.p_lanternEffect,pt_shape_pixel);
+part_type_size(global.p_lanternEffect,0.003,0.4,0,0);
+part_type_scale(global.p_lanternEffect,1,1);
+part_type_color2(global.p_lanternEffect,c_white,c_yellow);
+part_type_alpha2(global.p_lanternEffect,1,0);
+part_type_speed(global.p_lanternEffect,0.0005,0.5,-0.001,0);
+part_type_direction(global.p_lanternEffect,0,359,0,20);
+part_type_orientation(global.p_lanternEffect,0,0,0,0,1);
+part_type_blend(global.p_lanternEffect,1); 
+part_type_life(global.p_lanternEffect,1 * room_speed,2 * room_speed);
+
+//EMBER EFFECT
+global.p_emberEffect = part_type_create();
+
+part_type_shape(global.p_emberEffect,pt_shape_sphere);
+part_type_size(global.p_emberEffect,0.01,0.03,0,0);
+part_type_scale(global.p_emberEffect,1,1);
+part_type_color1(global.p_emberEffect,c_red);
+part_type_alpha2(global.p_emberEffect,1,0);
+part_type_speed(global.p_emberEffect,0.1,0.2,0,0);
+part_type_direction(global.p_emberEffect,0,359,0,20);
+part_type_orientation(global.p_emberEffect,0,0,0,0,1);
+part_type_blend(global.p_emberEffect,1); 
+part_type_life(global.p_emberEffect,1 * room_speed,2 * room_speed);
 </string>
           </argument>
         </arguments>

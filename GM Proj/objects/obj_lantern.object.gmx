@@ -200,7 +200,7 @@ if (global.rLantern &lt;= 10) {
             <kind>1</kind>
             <string>///Particle Effect Emitter
 part_emitter_region(global.p_main, p_lanternEffectEmitter, x - 4, x + 4, y - 8, y + 8, ps_shape_rectangle, ps_distr_linear);
-part_emitter_stream(global.p_main, p_lanternEffectEmitter,global.p_lanternEffect, scr_numberOnce(0.1 * room_speed));
+part_emitter_stream(global.p_main, p_lanternEffectEmitter,global.p_lanternEffect, scr_numberOnce(0.3 * room_speed));
 </string>
           </argument>
         </arguments>
