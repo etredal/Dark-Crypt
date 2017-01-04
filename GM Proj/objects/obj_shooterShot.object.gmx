@@ -29,7 +29,7 @@
 spd = 2;
 r = 25;
 
-dmg = 6;
+dmg = 12;
 
 once = false;
 </string>
