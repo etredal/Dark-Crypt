@@ -3,8 +3,8 @@
   <caption></caption>
   <width>2560</width>
   <height>1440</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -243,6 +243,7 @@
     <instance objName="obj_torch" x="848" y="912" name="inst_2B682E89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="720" y="912" name="inst_ADF60933" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="816" y="1168" name="inst_9D4B37F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_signArrow" x="2464" y="976" name="inst_B9761982" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_blocks" x="416" y="192" w="32" h="32" xo="32" yo="128" id="10005130" name="inst_0A6C1E06" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

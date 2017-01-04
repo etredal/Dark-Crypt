@@ -1099,6 +1099,7 @@
     <instance objName="obj_spider" x="960" y="992" name="inst_17FD5CBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spider" x="896" y="1024" name="inst_2169F338" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spider" x="1664" y="1088" name="inst_EE1FD14E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_signArrow" x="2496" y="784" name="inst_16690842" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_blocks" x="0" y="672" w="32" h="32" xo="0" yo="0" id="10003852" name="inst_39794F5F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
