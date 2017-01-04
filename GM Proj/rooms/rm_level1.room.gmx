@@ -154,7 +154,7 @@
     <instance objName="obj_torch" x="1104" y="240" name="inst_5CDB4345" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="1232" y="240" name="inst_C8A5E8D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="240" y="400" name="inst_F033F56A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cont_pressurePlate" x="208" y="432" name="inst_ACD51A3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="cont_pressurePlate" x="176" y="432" name="inst_ACD51A3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_doorPressurePlate" x="240" y="432" name="inst_8E9D671E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door1" x="1136" y="464" name="inst_3D23F631" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lever1" x="1216" y="384" name="inst_4101DC5A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1090,7 +1090,7 @@
     <tile bgName="bg_blocks" x="608" y="224" w="32" h="32" xo="64" yo="128" id="10012525" name="inst_7A0E0404" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="640" y="224" w="32" h="32" xo="64" yo="128" id="10012526" name="inst_2E65F2DD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="224" y="384" w="32" h="32" xo="0" yo="0" id="10012527" name="inst_EEC9844B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_aesthetics" x="192" y="416" w="32" h="32" xo="384" yo="64" id="10012528" name="inst_66EA3A4C" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_aesthetics" x="160" y="416" w="32" h="32" xo="384" yo="64" id="10012528" name="inst_66EA3A4C" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_aesthetics" x="160" y="528" w="32" h="32" xo="0" yo="0" id="10012538" name="inst_7C8CA1BA" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_aesthetics" x="304" y="400" w="32" h="32" xo="0" yo="0" id="10012539" name="inst_B0F5C831" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_aesthetics" x="576" y="432" w="32" h="32" xo="0" yo="0" id="10012540" name="inst_A2AA1182" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
