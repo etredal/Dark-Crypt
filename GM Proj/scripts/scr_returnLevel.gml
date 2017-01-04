@@ -19,6 +19,10 @@ if (argument0 == 0) {
     return rm_level8;
 } else if (argument0 == 9) {
     return rm_level9;
+} else if (argument0 == 10) {
+    return rm_level10;
+} else if (argument0 == 11) {
+    return rm_level11;
 }
 
 

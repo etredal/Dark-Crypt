@@ -15,6 +15,12 @@ if (room == rm_level0) {
     return 6;
 } else if (room == rm_level7) {
     return 7;
+} else if (room == rm_level8) {
+    return 8;
+} else if (room == rm_level9) {
+    return 9;
+} else if (room == rm_level10) {
+    return 10;
 } 
 
 
