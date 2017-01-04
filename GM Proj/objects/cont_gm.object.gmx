@@ -25,6 +25,112 @@
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Create Particle System(s)
+global.p_main = part_system_create();
+part_system_depth(global.p_main,-999999);
+
+//WORLD EFFECT
+global.p_worldEffect = part_type_create();
+
+part_type_shape(global.p_worldEffect,pt_shape_square);            //This defines the particles shape
+part_type_size(global.p_worldEffect,0.01,0.03,0,0.0001);                    //This is for the size
+part_type_scale(global.p_worldEffect,1,1);                       //This is for scaling
+part_type_color1(global.p_worldEffect,c_gray);                  //This sets its colour. There are three different codes for this
+part_type_alpha2(global.p_worldEffect,1,0.5);                        //This is its alpha. There are three different codes for this
+part_type_speed(global.p_worldEffect,0.005,0.2,-0.0001,0);            //The particles speed
+part_type_direction(global.p_worldEffect,0,359,0,20);            //The direction
+part_type_orientation(global.p_worldEffect,0,0,0,0,1);           //This changes the rotation of the particle
+part_type_blend(global.p_worldEffect,1);                         //This is the blend mode, either additive or normal
+part_type_life(global.p_worldEffect,4 * room_speed,6 * room_speed);                       //this is its lifespan in steps
+
+//LANTERN EFFECT
+global.p_lanternEffect = part_type_create();
+
+part_type_shape(global.p_lanternEffect,pt_shape_pixel);
+part_type_size(global.p_lanternEffect,0.003,0.4,0,0);
+part_type_scale(global.p_lanternEffect,1,1);
+part_type_color2(global.p_lanternEffect,c_white,c_yellow);
+part_type_alpha2(global.p_lanternEffect,1,0);
+part_type_speed(global.p_lanternEffect,0.0005,0.5,-0.001,0);
+part_type_direction(global.p_lanternEffect,0,359,0,20);
+part_type_orientation(global.p_lanternEffect,0,0,0,0,1);
+part_type_blend(global.p_lanternEffect,1); 
+part_type_life(global.p_lanternEffect,1 * room_speed,2 * room_speed);
+
+//EMBER EFFECT
+global.p_emberEffect = part_type_create();
+
+part_type_shape(global.p_emberEffect,pt_shape_sphere);
+part_type_size(global.p_emberEffect,0.01,0.03,0,0);
+part_type_scale(global.p_emberEffect,1,1);
+part_type_color1(global.p_emberEffect,c_red);
+part_type_alpha2(global.p_emberEffect,1,0);
+part_type_speed(global.p_emberEffect,0.1,0.2,0,0);
+part_type_direction(global.p_emberEffect,0,359,0,20);
+part_type_orientation(global.p_emberEffect,0,0,0,0,1);
+part_type_blend(global.p_emberEffect,1); 
+part_type_life(global.p_emberEffect,1 * room_speed,2 * room_speed);
+
+//SHOOTER SHOT EFFECT
+global.p_shooterShotEffect = part_type_create();
+
+part_type_shape(global.p_shooterShotEffect,pt_shape_sphere);
+part_type_size(global.p_shooterShotEffect,0.01,0.03,0,0);
+part_type_scale(global.p_shooterShotEffect,1,1);
+part_type_color1(global.p_shooterShotEffect,c_green);
+part_type_alpha2(global.p_shooterShotEffect,1,0);
+part_type_speed(global.p_shooterShotEffect,0.1,0.2,0,0);
+part_type_direction(global.p_shooterShotEffect,0,359,0,20);
+part_type_orientation(global.p_shooterShotEffect,0,0,0,0,1);
+part_type_blend(global.p_shooterShotEffect,1); 
+part_type_life(global.p_shooterShotEffect,1 * room_speed,2 * room_speed);
+
+//Skull EFFECT
+global.p_skullEffect = part_type_create();
+
+part_type_shape(global.p_skullEffect,pt_shape_square);
+part_type_size(global.p_skullEffect,0.15,0.2,0,0);
+part_type_scale(global.p_skullEffect,1,1);
+part_type_color1(global.p_skullEffect,c_white);
+part_type_alpha2(global.p_skullEffect,0.2,0);
+part_type_speed(global.p_skullEffect,0,0,0,0);
+part_type_orientation(global.p_skullEffect,0,0,0,0,1);
+part_type_blend(global.p_skullEffect,1); 
+part_type_life(global.p_skullEffect,1 * room_speed,2 * room_speed);
+
+//TORCH EFFECT
+global.p_torchEffect = part_type_create();
+
+part_type_shape(global.p_torchEffect,pt_shape_sphere);
+part_type_size(global.p_torchEffect,0.01,0.03,0,0);
+part_type_scale(global.p_torchEffect,1,1);
+part_type_color1(global.p_torchEffect,c_red);
+part_type_alpha2(global.p_torchEffect,1,0);
+part_type_speed(global.p_torchEffect,0.1,0.2,0,0.05);
+part_type_direction(global.p_torchEffect,80,100,0,5);
+part_type_orientation(global.p_torchEffect,0,0,0,0,1);
+part_type_blend(global.p_torchEffect,1); 
+part_type_life(global.p_torchEffect,1 * room_speed,2 * room_speed);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///IF no save file exists, create file -- Also Creates Buttons
 if !(file_exists("Stygian_MazeSave.txt")) {
     saveFile = file_text_open_write("Stygian_MazeSave.txt");
@@ -120,6 +226,50 @@ window_set_fullscreen(true);
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Global Colors
+global.lightYellow = make_colour_rgb(255,255,200);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Particle Type Create
+p_worldEffectEmitter = part_emitter_create(global.p_main);
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -177,7 +327,7 @@ if (room != rm_playground) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///hiding cursor
+            <string>///Hiding Cursor
 if (room == rm_mainMenu) {
     window_set_cursor(cr_default); 
 } else {
@@ -203,7 +353,7 @@ if (room == rm_mainMenu) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Score/Timer
+            <string>///Timer
 if (scr_isLevel() == true) {
     global.levelTimer += 1/room_speed;
 }
@@ -227,7 +377,13 @@ if (scr_isLevel() == true) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Particle Effect Emitter
+            <string>///Particle Effect Emitter and System Create
+//Create 
+if !(part_system_exists(global.p_main)) {
+    global.p_main = part_system_create();
+    part_system_depth(global.p_main,-999999);
+}
+
 //If it is a level do this particle effect
 if (scr_isLevel() == true) {
     part_emitter_region(global.p_main, p_worldEffectEmitter, view_xview, view_xview + view_wview, view_yview, view_yview + view_hview, ps_shape_rectangle, ps_distr_linear);
@@ -302,6 +458,28 @@ if (scr_isLevel() == true) {
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Particle Type create
+p_worldEffectEmitter = part_emitter_create(global.p_main);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///Save level
 //ALL LEVELS
 var currentLevel = scr_levelNumber();
@@ -351,95 +529,6 @@ part_emitter_destroy_all(global.p_main);
 
 //Destroying System
 part_system_destroy(global.p_main);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="2">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Create Particle System(s)
-global.p_main = part_system_create();
-part_system_depth(global.p_main,-999999);
-
-//WORLD EFFECT
-global.p_worldEffect = part_type_create();
-
-part_type_shape(global.p_worldEffect,pt_shape_square);            //This defines the particles shape
-part_type_size(global.p_worldEffect,0.01,0.03,0,0.0001);                    //This is for the size
-part_type_scale(global.p_worldEffect,1,1);                       //This is for scaling
-part_type_color1(global.p_worldEffect,c_gray);                  //This sets its colour. There are three different codes for this
-part_type_alpha2(global.p_worldEffect,1,0.5);                        //This is its alpha. There are three different codes for this
-part_type_speed(global.p_worldEffect,0.005,0.2,-0.0001,0);            //The particles speed
-part_type_direction(global.p_worldEffect,0,359,0,20);            //The direction
-part_type_orientation(global.p_worldEffect,0,0,0,0,1);           //This changes the rotation of the particle
-part_type_blend(global.p_worldEffect,1);                         //This is the blend mode, either additive or normal
-part_type_life(global.p_worldEffect,4 * room_speed,6 * room_speed);                       //this is its lifespan in steps
-
-//LANTERN EFFECT
-global.p_lanternEffect = part_type_create();
-
-part_type_shape(global.p_lanternEffect,pt_shape_pixel);
-part_type_size(global.p_lanternEffect,0.003,0.4,0,0);
-part_type_scale(global.p_lanternEffect,1,1);
-part_type_color2(global.p_lanternEffect,c_white,c_yellow);
-part_type_alpha2(global.p_lanternEffect,1,0);
-part_type_speed(global.p_lanternEffect,0.0005,0.5,-0.001,0);
-part_type_direction(global.p_lanternEffect,0,359,0,20);
-part_type_orientation(global.p_lanternEffect,0,0,0,0,1);
-part_type_blend(global.p_lanternEffect,1); 
-part_type_life(global.p_lanternEffect,1 * room_speed,2 * room_speed);
-
-//EMBER EFFECT
-global.p_emberEffect = part_type_create();
-
-part_type_shape(global.p_emberEffect,pt_shape_sphere);
-part_type_size(global.p_emberEffect,0.01,0.03,0,0);
-part_type_scale(global.p_emberEffect,1,1);
-part_type_color1(global.p_emberEffect,c_red);
-part_type_alpha2(global.p_emberEffect,1,0);
-part_type_speed(global.p_emberEffect,0.1,0.2,0,0);
-part_type_direction(global.p_emberEffect,0,359,0,20);
-part_type_orientation(global.p_emberEffect,0,0,0,0,1);
-part_type_blend(global.p_emberEffect,1); 
-part_type_life(global.p_emberEffect,1 * room_speed,2 * room_speed);
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Particle Type create
-p_worldEffectEmitter = part_emitter_create(global.p_main);
 </string>
           </argument>
         </arguments>
