@@ -164,7 +164,7 @@ if !(place_free(x,y)) {
             <kind>1</kind>
             <string>///Particle Effect Emitter
 part_emitter_region(global.p_main, p_emberEffectEmitter, x - 4, x + 4, y - 4, y + 4, ps_shape_ellipse, ps_distr_linear);
-part_emitter_stream(global.p_main, p_emberEffectEmitter,global.p_emberEffect, scr_numberOnce(0.1 * room_speed));
+part_emitter_stream(global.p_main, p_emberEffectEmitter,global.p_emberEffect, scr_numberOnce(0.05 * room_speed));
 </string>
           </argument>
         </arguments>
