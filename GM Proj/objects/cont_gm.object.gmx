@@ -346,8 +346,8 @@ if (currentLevel != -1) {
 //Destroying Types
 part_type_destroy(global.p_lanternEffect);
 
-//Emitters destroyed where created
-part_emitter_destroy(global.p_main, p_worldEffectEmitter);
+//Emitters all destroyed
+part_emitter_destroy_all(global.p_main);
 
 //Destroying System
 part_system_destroy(global.p_main);
@@ -462,7 +462,7 @@ p_worldEffectEmitter = part_emitter_create(global.p_main);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Draw Timer and Score
+            <string>///Draw Timer
 if (scr_isLevel() == true) {
     draw_set_font(fnt_tutorial);
     
