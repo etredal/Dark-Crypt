@@ -200,6 +200,11 @@ global.levelTimer = 0;
 
 //for losing game
 global.lostTimer = 5 * room_speed; //5 seconds
+
+//Fading
+fadeTimeReset = 2 * room_speed;
+fadeTime = fadeTimeReset;
+alpha = 1;
 </string>
           </argument>
         </arguments>
@@ -502,6 +507,29 @@ if (currentLevel != -1) {
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Fade start
+fadeTime = fadeTimeReset;
+alpha = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="7" enumb="3">
       <action>
@@ -559,6 +587,37 @@ if (scr_isLevel() == true) {
     draw_set_valign(fa_center);
     
     draw_text(view_xview + view_wview/2,view_yview + view_hview/12,"Timer: " + string(global.levelTimer));
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Fade
+if (fadeTime &gt; 0) {
+    alpha -= 1/fadeTimeReset; //Full value
+
+    fadeTime -= 1;
+    
+    draw_set_alpha(alpha);
+    draw_set_color(c_black);
+    draw_rectangle(view_xview,view_yview,view_xview + view_wview,view_yview + view_hview,c_black);
+    draw_set_alpha(1);
 }
 </string>
           </argument>
