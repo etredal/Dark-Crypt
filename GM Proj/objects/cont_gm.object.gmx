@@ -382,14 +382,14 @@ if (scr_isLevel() == true) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Particle Effect Emitter and System Create
+            <string>///Particle Effect Emitter/ystem Create
 //Create 
 if !(part_system_exists(global.p_main)) {
     global.p_main = part_system_create();
     part_system_depth(global.p_main,-999999);
 }
 
-//If it is a level do this particle effect
+//If it is a level world effect/fog effect
 if (scr_isLevel() == true) {
     part_emitter_region(global.p_main, p_worldEffectEmitter, view_xview, view_xview + view_wview, view_yview, view_yview + view_hview, ps_shape_rectangle, ps_distr_linear);
     part_emitter_stream(global.p_main, p_worldEffectEmitter,global.p_worldEffect, scr_numberOnce(0.5 * room_speed));
@@ -447,28 +447,6 @@ if (scr_isLevel() == true) {
       </action>
     </event>
     <event eventtype="7" enumb="4">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Particle Type create
-p_worldEffectEmitter = part_emitter_create(global.p_main);
-</string>
-          </argument>
-        </arguments>
-      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
