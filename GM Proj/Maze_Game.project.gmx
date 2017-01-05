@@ -54,6 +54,7 @@
   <backgrounds name="background">
     <background>background\bg_blocks</background>
     <background>background\bg_aesthetics</background>
+    <background>background\bg_fog</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
