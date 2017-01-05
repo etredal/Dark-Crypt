@@ -187,6 +187,7 @@
     <instance objName="obj_shine" x="480" y="352" name="inst_9C349351" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shine" x="704" y="352" name="inst_593A606B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shine" x="592" y="352" name="inst_CB37AB41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_signArrow" x="1136" y="272" name="inst_E90B9A00" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_blocks" x="320" y="288" w="32" h="32" xo="64" yo="64" id="10014463" name="inst_C60A9D74" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
