@@ -202,7 +202,7 @@ global.levelTimer = 0;
 global.lostTimer = 5 * room_speed; //5 seconds
 
 //Fading
-fadeTimeReset = 2 * room_speed;
+fadeTimeReset = 1.5 * room_speed;
 fadeTime = fadeTimeReset;
 alpha = 1;
 </string>
