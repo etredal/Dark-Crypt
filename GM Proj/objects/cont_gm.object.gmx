@@ -49,7 +49,7 @@ global.p_lanternEffect = part_type_create();
 part_type_shape(global.p_lanternEffect,pt_shape_pixel);
 part_type_size(global.p_lanternEffect,0.003,0.4,0,0);
 part_type_scale(global.p_lanternEffect,1,1);
-part_type_color2(global.p_lanternEffect,c_white,c_yellow);
+part_type_color1(global.p_lanternEffect,c_yellow);
 part_type_alpha2(global.p_lanternEffect,1,0);
 part_type_speed(global.p_lanternEffect,0.0005,0.5,-0.001,0);
 part_type_direction(global.p_lanternEffect,0,359,0,20);
@@ -148,7 +148,7 @@ var i = 0;
 var j = 0;
 
 //Loop for buttons
-for (i = 0; i &lt; 50; i++) {
+for (i = 0; i &lt; 25; i++) {
     var rows = 9;
     
     if (i%rows == 0) &amp;&amp; (i != 0) {
