@@ -111,6 +111,20 @@ part_type_direction(global.p_torchEffect,80,100,0,5);
 part_type_orientation(global.p_torchEffect,0,0,0,0,1);
 part_type_blend(global.p_torchEffect,1); 
 part_type_life(global.p_torchEffect,1 * room_speed,2 * room_speed);
+
+//WISP EFFECT
+global.p_wispEffect = part_type_create();
+
+part_type_shape(global.p_wispEffect,pt_shape_sphere);
+part_type_size(global.p_wispEffect,0.01,0.03,0,0);
+part_type_scale(global.p_wispEffect,1,1);
+part_type_color1(global.p_wispEffect,c_white);
+part_type_alpha2(global.p_wispEffect,1,0.75);
+part_type_speed(global.p_wispEffect,0.1,0.2,0,0.05);
+part_type_direction(global.p_wispEffect,0,359,0,5);
+part_type_orientation(global.p_wispEffect,0,0,0,0,1);
+part_type_blend(global.p_wispEffect,1); 
+part_type_life(global.p_wispEffect,0.5 * room_speed,1 * room_speed);
 </string>
           </argument>
         </arguments>

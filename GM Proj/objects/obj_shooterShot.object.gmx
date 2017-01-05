@@ -77,6 +77,7 @@ p_shooterShotEffectEmitter = part_emitter_create(global.p_main);
           <argument>
             <kind>1</kind>
             <string>///Destroy Emitter
+part_emitter_burst(global.p_main,p_shooterShotEffectEmitter,global.p_shooterShotEffect,irandom_range(30,60));
 part_emitter_destroy(global.p_main,p_shooterShotEffectEmitter);
 </string>
           </argument>

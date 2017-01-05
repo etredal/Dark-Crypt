@@ -93,6 +93,7 @@ p_emberEffectEmitter = part_emitter_create(global.p_main);
           <argument>
             <kind>1</kind>
             <string>///Destroy Emitter
+part_emitter_burst(global.p_main,p_emberEffectEmitter,global.p_emberEffect,irandom_range(30,60));
 part_emitter_destroy(global.p_main,p_emberEffectEmitter);
 </string>
           </argument>
