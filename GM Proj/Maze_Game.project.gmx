@@ -161,6 +161,18 @@
       <room>rooms\rm_level11</room>
       <room>rooms\rm_level12</room>
       <room>rooms\rm_level13</room>
+      <room>rooms\rm_level14</room>
+      <room>rooms\rm_level15</room>
+      <room>rooms\rm_level16</room>
+      <room>rooms\rm_level17</room>
+      <room>rooms\rm_level18</room>
+      <room>rooms\rm_level19</room>
+      <room>rooms\rm_level20</room>
+      <room>rooms\rm_level21</room>
+      <room>rooms\rm_level22</room>
+      <room>rooms\rm_level23</room>
+      <room>rooms\rm_level24</room>
+      <room>rooms\rm_level25</room>
     </rooms>
     <rooms name="Special">
       <room>rooms\rm_playground</room>

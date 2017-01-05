@@ -23,6 +23,34 @@ if (argument0 == 0) {
     return rm_level10;
 } else if (argument0 == 11) {
     return rm_level11;
+} else if (argument0 == 12) {
+    return rm_level12;
+} else if (argument0 == 13) {
+    return rm_level13;
+} else if (argument0 == 14) {
+    return rm_level14;
+} else if (argument0 == 15) {
+    return rm_level15;
+} else if (argument0 == 16) {
+    return rm_level16;
+} else if (argument0 == 17) {
+    return rm_level17;
+} else if (argument0 == 18) {
+    return rm_level18;
+} else if (argument0 == 19) {
+    return rm_level19;
+} else if (argument0 == 20) {
+    return rm_level20;
+} else if (argument0 == 21) {
+    return rm_level21;
+} else if (argument0 == 22) {
+    return rm_level22;
+} else if (argument0 == 23) {
+    return rm_level23;
+} else if (argument0 == 24) {
+    return rm_level24;
+} else if (argument0 == 25) {
+    return rm_level25;
 }
 
 
