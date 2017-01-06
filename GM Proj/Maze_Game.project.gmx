@@ -29,6 +29,7 @@
       <sprite>sprites\spr_feather</sprite>
       <sprites name="sandMan">
         <sprite>sprites\spr_sandManDown</sprite>
+        <sprite>sprites\spr_sandManEvent</sprite>
         <sprite>sprites\spr_sandManUp</sprite>
         <sprite>sprites\spr_sandManLeft</sprite>
         <sprite>sprites\spr_sandManRight</sprite>
@@ -71,6 +72,7 @@
     <sprite>sprites\spr_spider</sprite>
     <sprite>sprites\spr_torch</sprite>
     <sprite>sprites\spr_sandManShot</sprite>
+    <sprite>sprites\spr_bonfire</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -130,6 +132,7 @@
         <object>objects\obj_shooter</object>
         <object>objects\obj_shooterShot</object>
         <object>objects\obj_magmaFloat</object>
+        <object>objects\obj_bonfire</object>
       </objects>
       <objects name="Aesthetics">
         <object>objects\obj_signArrow</object>
@@ -158,6 +161,7 @@
         <object>objects\obj_brod</object>
         <object>objects\obj_brodShot</object>
         <object>objects\obj_sandMan</object>
+        <object>objects\obj_sandManEvent</object>
         <object>objects\obj_sandManLantern</object>
         <object>objects\obj_sandManShot</object>
       </objects>
