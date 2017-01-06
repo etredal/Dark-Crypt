@@ -27,6 +27,7 @@
       <sprite>sprites\spr_monsterBlock</sprite>
       <sprite>sprites\spr_brod</sprite>
       <sprite>sprites\spr_brodAttack</sprite>
+      <sprite>sprites\spr_brodShot</sprite>
     </sprites>
     <sprites name="Controllers">
       <sprite>sprites\spr_block</sprite>
@@ -143,6 +144,8 @@
         <object>objects\obj_wispSkullEvent</object>
         <object>objects\obj_helmetBeetle</object>
         <object>objects\obj_monsterBlock</object>
+        <object>objects\obj_brod</object>
+        <object>objects\obj_brodShot</object>
       </objects>
       <objects name="Neutral Creature">
         <object>objects\obj_bat</object>
