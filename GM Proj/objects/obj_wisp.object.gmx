@@ -221,7 +221,7 @@ part_emitter_stream(global.p_main, p_wispEffectEmitter,global.p_wispEffect, scr_
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///drop
+            <string>///Drop
 hp -= 1;
 
 with (other) {
