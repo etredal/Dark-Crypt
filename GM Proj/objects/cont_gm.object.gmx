@@ -133,11 +133,24 @@ part_type_sprite(global.p_brodEffect,spr_feather,false,false,false);
 part_type_size(global.p_brodEffect,0.1,0.5,0,0);
 part_type_scale(global.p_brodEffect,1,1);
 part_type_alpha2(global.p_brodEffect,1,0);
-part_type_speed(global.p_brodEffect,1,2,0,0.05);
-part_type_direction(global.p_brodEffect,0,359,0,1);
-part_type_orientation(global.p_brodEffect,0,359,1,1,1);
+part_type_speed(global.p_brodEffect,0.5,1,-0.008,0.);
+part_type_direction(global.p_brodEffect,0,359,0,0);
+part_type_orientation(global.p_brodEffect,0,359,0,0,1);
 part_type_blend(global.p_brodEffect,1); 
-part_type_life(global.p_brodEffect,0.5 * room_speed,1 * room_speed);
+part_type_life(global.p_brodEffect,1 * room_speed,3 * room_speed);
+
+//BROD EFFECT
+global.p_brodShotEffect = part_type_create();
+
+part_type_sprite(global.p_brodShotEffect,spr_feather,false,false,false);
+part_type_size(global.p_brodShotEffect,0.1,0.5,0,0);
+part_type_scale(global.p_brodShotEffect,1,1);
+part_type_alpha2(global.p_brodShotEffect,1,0);
+part_type_speed(global.p_brodShotEffect,0.05,0.1,-0.005,0);
+part_type_direction(global.p_brodShotEffect,0,359,0,0);
+part_type_orientation(global.p_brodShotEffect,0,359,0,0,1);
+part_type_blend(global.p_brodShotEffect,1); 
+part_type_life(global.p_brodShotEffect,0.5 * room_speed,1.5 * room_speed);
 </string>
           </argument>
         </arguments>
