@@ -119,8 +119,7 @@ depth = -y;
             
 //Particle Effect Emitter
 part_emitter_region(global.p_main,p_brodEffectEmitter,x - 16,x+16,y-16,y+16,ps_shape_rectangle,ps_distr_gaussian);
-part_emitter_stream(global.p_main, p_brodEffectEmitter,global.p_brodEffect, scr_numberOnce(0.8 * room_speed));
-            
+part_emitter_stream(global.p_main, p_brodEffectEmitter,global.p_brodEffect, scr_numberOnce(0.8 * room_speed));            
 
 //Setting image angle
 if (direction &lt; 90 || direction &gt; 270) {

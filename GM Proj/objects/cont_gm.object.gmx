@@ -152,6 +152,20 @@ part_type_orientation(global.p_brodShotEffect,0,359,0,0,1);
 part_type_blend(global.p_brodShotEffect,1); 
 part_type_life(global.p_brodShotEffect,0.5 * room_speed,1.5 * room_speed);
 
+//SAND MAN EFFECT
+global.p_sandManEffect = part_type_create();
+
+part_type_shape(global.p_sandManEffect,pt_shape_pixel);
+part_type_size(global.p_sandManEffect,0.1,0.3,0,0);
+part_type_scale(global.p_sandManEffect,1,1);
+part_type_color1(global.p_sandManEffect,c_orange);
+part_type_alpha2(global.p_sandManEffect,1,0);
+part_type_speed(global.p_sandManEffect,0.1,0.2,0,0);
+part_type_direction(global.p_sandManEffect,0,359,0,0);
+part_type_orientation(global.p_sandManEffect,0,0,0,0,1);
+part_type_blend(global.p_sandManEffect,1); 
+part_type_life(global.p_sandManEffect,1 * room_speed,2 * room_speed);
+
 //SAND MAN SHOT EFFECT
 global.p_sandManShotEffect = part_type_create();
 
