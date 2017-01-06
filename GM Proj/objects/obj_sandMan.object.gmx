@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Set
-hp = 8;
+hp = irandom_range(6,10);
 drop = obj_shineRed;
 slowSpd = 0.2;
 fastSpd = 0.4;

@@ -36,6 +36,53 @@ move_towards_point(obj_player.x,obj_player.y,spd);
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Particle Effect Emitter create
+p_sandManShotEffectEmitter = part_emitter_create(global.p_main);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Destroy Emitter
+part_emitter_burst(global.p_main,p_sandManShotEffectEmitter,global.p_sandManShotEffect,irandom_range(30,60));
+part_emitter_destroy(global.p_main,p_sandManShotEffectEmitter);
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -63,6 +110,29 @@ depth = -y;
 if !(place_free(x,y,)) {
     instance_destroy();
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Particle Effect Emitter
+part_emitter_region(global.p_main, p_sandManShotEffectEmitter, x - 4, x + 4, y - 4, y + 4, ps_shape_ellipse, ps_distr_linear);
+part_emitter_stream(global.p_main, p_sandManShotEffectEmitter,global.p_sandManShotEffect, scr_numberOnce(0.1 * room_speed));
 </string>
           </argument>
         </arguments>
