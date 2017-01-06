@@ -25,6 +25,8 @@
       <sprite>sprites\spr_monsterRockRed</sprite>
       <sprite>sprites\spr_monsterRock</sprite>
       <sprite>sprites\spr_monsterBlock</sprite>
+      <sprite>sprites\spr_brod</sprite>
+      <sprite>sprites\spr_brodAttack</sprite>
     </sprites>
     <sprites name="Controllers">
       <sprite>sprites\spr_block</sprite>
