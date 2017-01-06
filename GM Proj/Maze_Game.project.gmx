@@ -6,50 +6,57 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprites name="Menu">
+      <sprite>sprites\spr_button1</sprite>
+      <sprite>sprites\spr_button2</sprite>
+      <sprite>sprites\spr_button3</sprite>
+      <sprite>sprites\spr_buttonLocked</sprite>
+    </sprites>
     <sprites name="Player">
       <sprite>sprites\spr_playerLeft</sprite>
       <sprite>sprites\spr_playerRight</sprite>
       <sprite>sprites\spr_playerUp</sprite>
       <sprite>sprites\spr_playerDown</sprite>
     </sprites>
-    <sprite>sprites\spr_Lantern</sprite>
-    <sprite>sprites\spr_block</sprite>
-    <sprite>sprites\spr_darkness</sprite>
+    <sprites name="Enemies">
+      <sprite>sprites\spr_wisp</sprite>
+      <sprite>sprites\spr_wispSkull</sprite>
+      <sprite>sprites\spr_monsterRockRun</sprite>
+      <sprite>sprites\spr_monsterRockRed</sprite>
+      <sprite>sprites\spr_monsterRock</sprite>
+      <sprite>sprites\spr_monsterBlock</sprite>
+    </sprites>
+    <sprites name="Controllers">
+      <sprite>sprites\spr_block</sprite>
+      <sprite>sprites\spr_ledge</sprite>
+      <sprite>sprites\spr_blockDestroyable</sprite>
+      <sprite>sprites\spr_textBox</sprite>
+      <sprite>sprites\spr_pressurePlate</sprite>
+      <sprite>sprites\spr_instanceActivator</sprite>
+      <sprite>sprites\spr_exit</sprite>
+    </sprites>
+    <sprite>sprites\spr_bat</sprite>
     <sprite>sprites\spr_blockCracked</sprite>
-    <sprite>sprites\spr_torch</sprite>
-    <sprite>sprites\spr_button1</sprite>
-    <sprite>sprites\spr_button2</sprite>
-    <sprite>sprites\spr_buttonLocked</sprite>
-    <sprite>sprites\spr_button3</sprite>
-    <sprite>sprites\spr_exit</sprite>
-    <sprite>sprites\spr_shine</sprite>
-    <sprite>sprites\spr_shineLarge</sprite>
-    <sprite>sprites\spr_signArrow</sprite>
-    <sprite>sprites\spr_signMonster</sprite>
-    <sprite>sprites\spr_ember</sprite>
-    <sprite>sprites\spr_monsterRock</sprite>
-    <sprite>sprites\spr_monsterRockRun</sprite>
-    <sprite>sprites\spr_monsterRockRed</sprite>
-    <sprite>sprites\spr_textBox</sprite>
+    <sprite>sprites\spr_darkness</sprite>
     <sprite>sprites\spr_door</sprite>
+    <sprite>sprites\spr_ember</sprite>
+    <sprite>sprites\spr_helmetBeetle</sprite>
+    <sprite>sprites\spr_Lantern</sprite>
     <sprite>sprites\spr_lever</sprite>
-    <sprite>sprites\spr_shineFountain</sprite>
     <sprite>sprites\spr_light</sprite>
-    <sprite>sprites\spr_ledge</sprite>
+    <sprite>sprites\spr_looter</sprite>
+    <sprite>sprites\spr_magma</sprite>
+    <sprite>sprites\spr_magmaFloat</sprite>
+    <sprite>sprites\spr_shine</sprite>
+    <sprite>sprites\spr_shineFountain</sprite>
+    <sprite>sprites\spr_shineLarge</sprite>
+    <sprite>sprites\spr_shineRed</sprite>
     <sprite>sprites\spr_shooter</sprite>
     <sprite>sprites\spr_shooterShot</sprite>
-    <sprite>sprites\spr_magma</sprite>
-    <sprite>sprites\spr_instanceActivator</sprite>
-    <sprite>sprites\spr_magmaFloat</sprite>
-    <sprite>sprites\spr_wisp</sprite>
-    <sprite>sprites\spr_wispSkull</sprite>
-    <sprite>sprites\spr_blockDestroyable</sprite>
-    <sprite>sprites\spr_bat</sprite>
+    <sprite>sprites\spr_signArrow</sprite>
+    <sprite>sprites\spr_signMonster</sprite>
     <sprite>sprites\spr_spider</sprite>
-    <sprite>sprites\spr_pressurePlate</sprite>
-    <sprite>sprites\spr_looter</sprite>
-    <sprite>sprites\spr_shineRed</sprite>
-    <sprite>sprites\spr_helmetBeetle</sprite>
+    <sprite>sprites\spr_torch</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -133,6 +140,7 @@
         <object>objects\obj_wispSkull</object>
         <object>objects\obj_wispSkullEvent</object>
         <object>objects\obj_helmetBeetle</object>
+        <object>objects\obj_monsterBlock</object>
       </objects>
       <objects name="Neutral Creature">
         <object>objects\obj_bat</object>
