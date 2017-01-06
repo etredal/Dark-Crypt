@@ -28,8 +28,8 @@
             <string>///Set
 hp = 8;
 drop = obj_shineRed;
-slowSpd = 0.4;
-fastSpd = 0.8;
+slowSpd = 0.2;
+fastSpd = 0.4;
 
 //shooting timer
 shotTimerReset = 4 * room_speed;
@@ -52,11 +52,10 @@ rY = 0;
 
 //Lantern
 lantern = instance_create(x,y,obj_sandManLantern);
-lantern.sandManID = instance_id;
 
 //Distances
-minDis = irandom_range(60,90);
-midDis = irandom_range(185,215);
+minDis = irandom_range(50,80);
+midDis = irandom_range(170,200);
 
 </string>
           </argument>
@@ -106,7 +105,7 @@ if (object_get_solid(l) == false) {
         pursue = true;
         attack = false;
     } else if (dis &lt; minDis) {
-        noAction = true;
+        noAction = false;
         idle = false;
         pursue = false;
         attack = true;
@@ -163,11 +162,11 @@ if (idle == true) {
 //PURSUE
 if (pursue == true) {
     if (rX = 0) {
-        rX = irandom_range(-8,8);
+        rX = irandom_range(-32,32);
     }
     
     if (rY = 0) {
-        rY = irandom_range(-8,8);
+        rY = irandom_range(-32,32);
     }
 
     move_towards_point(obj_player.x + rX,obj_player.y + rY,fastSpd);
@@ -180,9 +179,12 @@ if (attack == true) {
     shotTimer--;
     
     if (shotTimer &lt;= 0) {
-        instance_create(lantern.x,lantern.y,obj_sandManShot);
-        instance_create(lantern.x,lantern.y,obj_sandManShot);
-        instance_create(lantern.x,lantern.y,obj_sandManShot);
+        var s1 = instance_create(lantern.x,lantern.y,obj_sandManShot);
+        var s2 = instance_create(lantern.x,lantern.y,obj_sandManShot);
+        var s3 = instance_create(lantern.x,lantern.y,obj_sandManShot);
+        
+        s1.direction -= 15;
+        s3.direction += 15;
         
         shotTimer = shotTimerReset;
     }
@@ -217,32 +219,37 @@ if (speed == 0) {
 }
 
 //Setting Sprite
-if (speed &gt; 0) {
-    if (direction &lt;= 45 || direction &gt;= 315) {
-        sprite_index = spr_sandManRight;
-        
-        lantern.x = x + 8;
-        lantern.y = y + 8;
-        lantern.depth = -y;
-    } else if (direction &gt;= 45 &amp;&amp; direction &lt;= 135) {
-        sprite_index = spr_sandManUp;
-        
-        lantern.x = x + 4;
-        lantern.y = y + 4;
-        lantern.depth = -y;
-    } else if (direction &gt;= 135 &amp;&amp; direction &lt;= 225) {
-        sprite_index = spr_sandManLeft;
-        
-        lantern.x = x + 3;
-        lantern.y = y + 3;
-        lantern.depth = -y;
-    } else if (direction &gt;= 225 &amp;&amp; direction &lt;=315) {
-        sprite_index = spr_sandManDown;
-        
-        lantern.x = x + 2;
-        lantern.y = y + 2;
-        lantern.depth = -y;
-    }
+if (direction &lt;= 40 || direction &gt;= 320) {
+    //Right
+    sprite_index = spr_sandManRight;
+} else if (direction &gt;= 50 &amp;&amp; direction &lt;= 130) {
+    //Up
+    sprite_index = spr_sandManUp;
+} else if (direction &gt;= 140 &amp;&amp; direction &lt;= 220) {
+    //Left
+    sprite_index = spr_sandManLeft;
+} else if (direction &gt;= 230 &amp;&amp; direction &lt;= 310) {
+    //Down
+    sprite_index = spr_sandManDown;
+}
+
+//Lantern Coords
+if (sprite_index == spr_sandManRight) {
+    lantern.x = x + 0;
+    lantern.y = y + 10;
+    lantern.depth = depth - 2;
+} else if (sprite_index == spr_sandManUp) {
+    lantern.x = x - 16;
+    lantern.y = y + 10;
+    lantern.depth = depth + 1;
+} else if (sprite_index == spr_sandManLeft) {
+    lantern.x = x + 0;
+    lantern.y = y + 10;
+    lantern.depth = depth + 1;
+} else if (sprite_index == spr_sandManDown) {
+    lantern.x = x + 16;
+    lantern.y = y + 10;
+    lantern.depth = depth - 2;
 }
 
 //Anim Speed
