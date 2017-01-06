@@ -156,6 +156,8 @@
         <object>objects\obj_monsterBlock</object>
         <object>objects\obj_brod</object>
         <object>objects\obj_brodShot</object>
+        <object>objects\obj_sandMan</object>
+        <object>objects\obj_sandManLantern</object>
       </objects>
       <objects name="Neutral Creature">
         <object>objects\obj_bat</object>
