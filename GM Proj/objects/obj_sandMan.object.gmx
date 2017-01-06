@@ -51,7 +51,7 @@ rX = 0;
 rY = 0;
 
 //Distances
-minDis = irandom_range(80,100);
+minDis = irandom_range(55,90);
 midDis = irandom_range(170,200);
 
 //Lantern
@@ -138,8 +138,8 @@ if (noAction == true) {
 //IDLE
 if (idle == true) {
     if (path == false) {
-        iX = irandom_range(x - 80,x + 80);
-        iY = irandom_range(y - 80,y + 80);
+        iX = irandom_range(x - 40,x + 40);
+        iY = irandom_range(y - 40,y + 40);
         
         path = true;
     }
@@ -164,11 +164,11 @@ if (idle == true) {
 //PURSUE
 if (pursue == true) {
     if (rX = 0) {
-        rX = irandom_range(-32,32);
+        rX = irandom_range(-40,40);
     }
     
     if (rY = 0) {
-        rY = irandom_range(-32,32);
+        rY = irandom_range(-40,40);
     }
 
     move_towards_point(obj_player.x + rX,obj_player.y + rY,fastSpd);
