@@ -70,6 +70,7 @@
     <sprite>sprites\spr_signMonster</sprite>
     <sprite>sprites\spr_spider</sprite>
     <sprite>sprites\spr_torch</sprite>
+    <sprite>sprites\spr_sandManShot</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -158,6 +159,7 @@
         <object>objects\obj_brodShot</object>
         <object>objects\obj_sandMan</object>
         <object>objects\obj_sandManLantern</object>
+        <object>objects\obj_sandManShot</object>
       </objects>
       <objects name="Neutral Creature">
         <object>objects\obj_bat</object>

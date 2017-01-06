@@ -28,11 +28,11 @@
             <string>///Set
 hp = 8;
 drop = obj_shineRed;
-slowSpd = 0.8;
-fastSpd = 1.1
+slowSpd = 0.4;
+fastSpd = 0.8;
 
 //shooting timer
-shotTimerReset = 2 * room_speed;
+shotTimerReset = 4 * room_speed;
 shotTimer = 0;
 
 path = false;
@@ -46,9 +46,18 @@ attack = false;
 iX = -1;
 iY = -1;
 
+//Random offset
+rX = 0;
+rY = 0;
+
 //Lantern
 lantern = instance_create(x,y,obj_sandManLantern);
 lantern.sandManID = instance_id;
+
+//Distances
+minDis = irandom_range(60,90);
+midDis = irandom_range(185,215);
+
 </string>
           </argument>
         </arguments>
@@ -86,17 +95,17 @@ if (object_get_solid(l) == false) {
         idle = false;
         pursue = false;
         attack = false;
-    } else if (dis &lt; 1000) &amp;&amp; (dis &gt; 150) {
+    } else if (dis &lt; 1000) &amp;&amp; (dis &gt; midDis) {
         noAction = false;
         idle = true;
         pursue = false;
         attack = false;
-    } else if (dis &lt;= 150) &amp;&amp; (dis &gt;= 100) {
+    } else if (dis &lt;= midDis) &amp;&amp; (dis &gt;= minDis) {
         noAction = false;
         idle = false;
         pursue = true;
         attack = false;
-    } else if (dis &lt; 100) {
+    } else if (dis &lt; minDis) {
         noAction = true;
         idle = false;
         pursue = false;
@@ -153,7 +162,15 @@ if (idle == true) {
 
 //PURSUE
 if (pursue == true) {
-    move_towards_point(obj_player.x,obj_player.y,fastSpd);
+    if (rX = 0) {
+        rX = irandom_range(-8,8);
+    }
+    
+    if (rY = 0) {
+        rY = irandom_range(-8,8);
+    }
+
+    move_towards_point(obj_player.x + rX,obj_player.y + rY,fastSpd);
 }
 
 //ATTACK
@@ -166,7 +183,75 @@ if (attack == true) {
         instance_create(lantern.x,lantern.y,obj_sandManShot);
         instance_create(lantern.x,lantern.y,obj_sandManShot);
         instance_create(lantern.x,lantern.y,obj_sandManShot);
+        
+        shotTimer = shotTimerReset;
     }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Setting
+//No motion
+if (speed == 0) {
+    image_speed = 0;
+    
+    rX = 0;
+    rY = 0;
+}
+
+//Setting Sprite
+if (speed &gt; 0) {
+    if (direction &lt;= 45 || direction &gt;= 315) {
+        sprite_index = spr_sandManRight;
+        
+        lantern.x = x + 8;
+        lantern.y = y + 8;
+        lantern.depth = -y;
+    } else if (direction &gt;= 45 &amp;&amp; direction &lt;= 135) {
+        sprite_index = spr_sandManUp;
+        
+        lantern.x = x + 4;
+        lantern.y = y + 4;
+        lantern.depth = -y;
+    } else if (direction &gt;= 135 &amp;&amp; direction &lt;= 225) {
+        sprite_index = spr_sandManLeft;
+        
+        lantern.x = x + 3;
+        lantern.y = y + 3;
+        lantern.depth = -y;
+    } else if (direction &gt;= 225 &amp;&amp; direction &lt;=315) {
+        sprite_index = spr_sandManDown;
+        
+        lantern.x = x + 2;
+        lantern.y = y + 2;
+        lantern.depth = -y;
+    }
+}
+
+//Anim Speed
+if (speed == slowSpd) {
+    image_speed = 0.05;
+}
+
+if (speed == fastSpd) {
+    image_speed = 0.1;
 }
 </string>
           </argument>
@@ -195,53 +280,6 @@ if (!place_free(x+hspeed,y+vspeed)) {
     
     image_speed = 0;
     image_index = 0;
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Setting
-//No motion
-if (speed == 0) {
-    image_speed = 0;
-}
-
-//Setting Sprite
-if (speed &gt; 0) {
-    if (direction &lt;= 45 || direction &gt;= 315) {
-        sprite_index = spr_sandManRight;
-    } else if (direction &gt;= 45 &amp;&amp; direction &lt;= 135) {
-        sprite_index = spr_sandManRight;
-    } else if (direction &gt;= 135 &amp;&amp; direction &lt;= 225) {
-        sprite_index = spr_sandManRight;
-    } else if (direction &gt;= 225 &amp;&amp; direction &lt;=315) {
-        sprite_index = spr_sandManRight;
-    }
-}
-
-//Anim Speed
-if (speed == slowSpd) {
-    image_speed = 0.05;
-}
-
-if (speed == fastSpd) {
-    image_speed = 0.1;
 }
 </string>
           </argument>
