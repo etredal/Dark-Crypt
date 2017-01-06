@@ -117,6 +117,11 @@ part_emitter_destroy(global.p_main,p_brodEffectEmitter);
 //Init
 depth = -y;
             
+//Particle Effect Emitter
+part_emitter_region(global.p_main,p_brodEffectEmitter,x - 16,x+16,y-16,y+16,ps_shape_rectangle,ps_distr_gaussian);
+part_emitter_stream(global.p_main, p_brodEffectEmitter,global.p_brodEffect, scr_numberOnce(0.8 * room_speed));
+            
+
 //Setting image angle
 if (direction &lt; 90 || direction &gt; 270) {
     image_xscale = 1;
@@ -140,7 +145,7 @@ if (timer == 0) {
     }
     
     //States------------------------
-    if (idle == true) {
+    if (idle == true) &amp;&amp; (distance_to_point(obj_player.x,obj_player.y) &lt; 1000) {
         image_speed = 0.075;
         sprite_index = spr_brod;
         spd = 0.8;
