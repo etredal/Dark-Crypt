@@ -29,12 +29,15 @@
 image_speed = 0;
 
 once = false;
-dmg = 32;
+onceTimer = 0;
+
+awaken = false;
+dmg = 64;
 
 hp = 8;
 range = 150;
 
-spd = 0.2;
+spd = 0.09;
 </string>
           </argument>
         </arguments>
@@ -58,21 +61,148 @@ spd = 0.2;
           <argument>
             <kind>1</kind>
             <string>///Move/Attack
-var dis = point_distance(obj_player.x,obj_player.y,x,y);
+depth = -y;
 
-//If within range
-if (dis &lt; range) {
-    if (place_free(x + hspeed,y + vspeed)) {
-        image_speed = 0.075;
+if (awaken == true) {
+    var dis = point_distance(obj_player.x,obj_player.y,x,y);
     
-        solid = false;
+    //If within range
+    if (dis &lt; range) {
         move_towards_point(obj_player.x,obj_player.y,spd);
+    
+        if (place_free(x + hspeed,y + vspeed)) {
+            image_speed = 0.075;
+        
+            solid = false;
+        } else {
+            image_speed = 0;
+            image_index = 0;
+            solid = true;
+            speed = 0;
+        }
+    } else {
+        image_speed = 0;
+        image_index = 0;
+        solid = true;
+        speed = 0;
     }
 } else {
     image_speed = 0;
     image_index = 0;
     solid = true;
     speed = 0;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Health management
+if (hp &lt;= 0) {
+    instance_destroy();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Once management
+if (once == true) {
+    onceTimer += 1;
+    
+    if (onceTimer &gt;= 0.5 * room_speed) {
+        once = false;
+        
+        onceTimer = 0;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_ember">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Destroy and awaken
+with (other) {
+    instance_destroy();
+}
+
+awaken = true;
+
+hp -= 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_lantern">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Damage
+if (once == false) &amp;&amp; (awaken == true) {
+    global.rLantern -= dmg;
+    
+    once = true;
 }
 </string>
           </argument>
