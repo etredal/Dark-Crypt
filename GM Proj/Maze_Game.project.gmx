@@ -17,18 +17,28 @@
       <sprite>sprites\spr_playerRight</sprite>
       <sprite>sprites\spr_playerUp</sprite>
       <sprite>sprites\spr_playerDown</sprite>
+      <sprite>sprites\spr_Lantern</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_wisp</sprite>
       <sprite>sprites\spr_wispSkull</sprite>
-      <sprite>sprites\spr_monsterRockRun</sprite>
-      <sprite>sprites\spr_monsterRockRed</sprite>
-      <sprite>sprites\spr_monsterRock</sprite>
       <sprite>sprites\spr_monsterBlock</sprite>
       <sprite>sprites\spr_brod</sprite>
       <sprite>sprites\spr_brodAttack</sprite>
       <sprite>sprites\spr_brodShot</sprite>
       <sprite>sprites\spr_feather</sprite>
+      <sprites name="sandMan">
+        <sprite>sprites\spr_sandManDown</sprite>
+        <sprite>sprites\spr_sandManUp</sprite>
+        <sprite>sprites\spr_sandManLeft</sprite>
+        <sprite>sprites\spr_sandManRight</sprite>
+        <sprite>sprites\spr_sandManLantern</sprite>
+      </sprites>
+      <sprites name="monsterRock">
+        <sprite>sprites\spr_monsterRockRun</sprite>
+        <sprite>sprites\spr_monsterRock</sprite>
+        <sprite>sprites\spr_monsterRockRed</sprite>
+      </sprites>
     </sprites>
     <sprites name="Controllers">
       <sprite>sprites\spr_block</sprite>
@@ -45,7 +55,6 @@
     <sprite>sprites\spr_door</sprite>
     <sprite>sprites\spr_ember</sprite>
     <sprite>sprites\spr_helmetBeetle</sprite>
-    <sprite>sprites\spr_Lantern</sprite>
     <sprite>sprites\spr_lever</sprite>
     <sprite>sprites\spr_light</sprite>
     <sprite>sprites\spr_looter</sprite>
