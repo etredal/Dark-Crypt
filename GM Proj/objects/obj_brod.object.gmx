@@ -264,8 +264,8 @@ if (!place_free(x+hspeed,y+vspeed)) {
           <argument>
             <kind>1</kind>
             <string>///Particle Effect Emitter
-part_emitter_region(global.p_main, p_brodEffectEmitter, x - 32, x + 32, y - 32, y + 32, ps_shape_ellipse, ps_distr_gaussian);
-part_emitter_stream(global.p_main, p_brodEffectEmitter,global.p_brodEffect, scr_numberOnce(0.05 * room_speed));
+part_emitter_region(global.p_main, p_brodEffectEmitter, x - 16, x + 16, y - 16, y + 16, ps_shape_ellipse, ps_distr_gaussian);
+part_emitter_stream(global.p_main, p_brodEffectEmitter,global.p_brodEffect, scr_numberOnce(0.5 * room_speed));
 </string>
           </argument>
         </arguments>
