@@ -27,6 +27,10 @@
             <kind>1</kind>
             <string>///Init
 image_speed = 0.01;
+
+hp = 15;
+
+drop = obj_shineRed;
 </string>
           </argument>
         </arguments>
@@ -56,31 +60,51 @@ if (sprite_index == spr_crabAwaken) {
     }
 }
 
-//Move
-if (sprite_index == spr_crabMove) {
-    image_speed = 0.2;
-
-    if (obj_player.x &gt; x) {
-        if (place_free(x + 1,y)) {
-            x += 1;
+if (obj_player.y &gt; y) {
+    //Move
+    if (sprite_index == spr_crabMove) {
+        image_speed = 0.2;
+    
+        if (obj_player.x &gt; x) {
+            if (place_free(x + 1,y) &amp;&amp; !place_meeting(x + 1,y,obj_player)) {
+                x += 1;
+            } else {
+                image_speed = 0;
+            }
+        } else if (obj_player.x &lt; x) {
+            if (place_free(x - 1,y) &amp;&amp; !place_meeting(x - 1,y,obj_player)) {
+                x -= 1;
+            } else {
+                image_speed = 0;
+            }
         } else {
             image_speed = 0;
         }
-    } else if (obj_player.x &lt; x) {
-        if (place_free(x - 1,y)) {
-            x -= 1;
-        } else {
-            image_speed = 0;
-        }
-    } else {
-        image_speed = 0;
     }
+    
+    //Attack
+    if (distance_to_object(obj_player) &lt; 16) &amp;&amp; (sprite_index == spr_crabMove) {
+        sprite_index = spr_crabAttack;
+    }
+    
+    //Attack
+    if (sprite_index == spr_crabAttack) {
+        image_speed = 0.075;
+        
+        //If distance is in attacking -- ATTACK
+        if (distance_to_object(obj_player) &lt; 16) &amp;&amp; (image_index == 3) {
+            global.rLantern -= 48;
+        }
+        
+        //Replace
+        if (image_index &gt; image_number - 1) {
+            sprite_index = spr_crabMove;
+        }
+    }
+    
 }
 
-//Attack
-if (sprite_index == spr_crabAttack) {
 
-}
 </string>
           </argument>
         </arguments>
@@ -104,12 +128,26 @@ if (sprite_index == spr_crabAttack) {
           <argument>
             <kind>1</kind>
             <string>///Set
+//Awaken
 if (sprite_index == spr_crabSleep) {
     sprite_index = spr_crabAwaken;
 }
 
+//Destroy Ember
 with (other) {
     instance_destroy();
+}
+
+//HP management
+hp -= 1;
+
+if (hp &lt;= 0) {
+    instance_destroy();
+
+    var ran = irandom(3);
+    if (ran == 1) {
+        instance_create(x,y,drop);
+    }
 }
 </string>
           </argument>
