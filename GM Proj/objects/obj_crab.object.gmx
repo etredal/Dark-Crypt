@@ -28,7 +28,9 @@
             <string>///Init
 image_speed = 0.01;
 
-hp = 15;
+hp = 11;
+
+depth = -y;
 
 drop = obj_shineRed;
 </string>
@@ -82,12 +84,12 @@ if (obj_player.y &gt; y) {
         }
     }
     
-    //Attack
+    //Attack1
     if (distance_to_object(obj_player) &lt; 16) &amp;&amp; (sprite_index == spr_crabMove) {
         sprite_index = spr_crabAttack;
     }
     
-    //Attack
+    //Attack1
     if (sprite_index == spr_crabAttack) {
         image_speed = 0.075;
         
@@ -102,9 +104,38 @@ if (obj_player.y &gt; y) {
         }
     }
     
+    //ATTACK 2
+    var ran = 0;
+    
+    if (sprite_index == spr_crabMove) {
+        //Attack2
+        ran = irandom(4 * room_speed);
+    }
+    
+    if (ran == 1) &amp;&amp; (sprite_index == spr_crabMove) {
+        image_speed = 0.075;
+        speed = 0;
+    
+        sprite_index = spr_crabAttack2;
+        
+        ran = 0;
+    }
+    
+    //Attack with bubble
+    if (sprite_index == spr_crabAttack2) &amp;&amp; (image_index &gt;= 2) {
+        var b1 = instance_create(x,y + 16,obj_crabBubble);
+        var b2 = instance_create(x,y + 16,obj_crabBubble);
+        var b3 = instance_create(x,y + 16,obj_crabBubble);
+        
+        b1.direction = 270 - 15;
+        b2.direction = 270;
+        b3.direction = 270 + 15;
+        
+        sprite_index = spr_crabMove;
+    }
+} else {
+    image_speed = 0;
 }
-
-
 </string>
           </argument>
         </arguments>

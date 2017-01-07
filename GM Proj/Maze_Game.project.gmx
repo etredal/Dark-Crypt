@@ -45,6 +45,8 @@
         <sprite>sprites\spr_crabAwaken</sprite>
         <sprite>sprites\spr_crabMove</sprite>
         <sprite>sprites\spr_crabAttack</sprite>
+        <sprite>sprites\spr_crabAttack2</sprite>
+        <sprite>sprites\spr_bubble</sprite>
       </sprites>
     </sprites>
     <sprites name="Controllers">
@@ -171,6 +173,7 @@
         <object>objects\obj_sandManLantern</object>
         <object>objects\obj_sandManShot</object>
         <object>objects\obj_crab</object>
+        <object>objects\obj_crabBubble</object>
       </objects>
       <objects name="Neutral Creature">
         <object>objects\obj_bat</object>
