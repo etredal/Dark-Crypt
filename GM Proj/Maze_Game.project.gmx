@@ -40,6 +40,12 @@
         <sprite>sprites\spr_monsterRock</sprite>
         <sprite>sprites\spr_monsterRockRed</sprite>
       </sprites>
+      <sprites name="Crab">
+        <sprite>sprites\spr_crabSleep</sprite>
+        <sprite>sprites\spr_crabAwaken</sprite>
+        <sprite>sprites\spr_crabMove</sprite>
+        <sprite>sprites\spr_crabAttack</sprite>
+      </sprites>
     </sprites>
     <sprites name="Controllers">
       <sprite>sprites\spr_block</sprite>
@@ -164,6 +170,7 @@
         <object>objects\obj_sandManEvent</object>
         <object>objects\obj_sandManLantern</object>
         <object>objects\obj_sandManShot</object>
+        <object>objects\obj_crab</object>
       </objects>
       <objects name="Neutral Creature">
         <object>objects\obj_bat</object>
