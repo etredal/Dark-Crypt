@@ -3,8 +3,8 @@
   <caption></caption>
   <width>3000</width>
   <height>3000</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_darkness" x="-80" y="-64" name="inst_9B2EDF8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="1320" y="808" name="inst_E1E0E204" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="160" y="944" name="inst_E1E0E204" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shine" x="32" y="32" name="inst_0597FA70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shine" x="32" y="160" name="inst_630F34D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shine" x="200" y="160" name="inst_A92E45CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
