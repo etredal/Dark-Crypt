@@ -114,8 +114,9 @@ if (obj_player.y &gt; y) {
     
     if (ran == 1) &amp;&amp; (sprite_index == spr_crabMove) {
         image_speed = 0.075;
+        image_index = 0;
         speed = 0;
-    
+        
         sprite_index = spr_crabAttack2;
         
         ran = 0;
