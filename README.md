@@ -1,4 +1,4 @@
-# Maze_Game
+# Dark Crypt
 A video game project
 
 A Gamemaker game
