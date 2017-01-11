@@ -29,6 +29,7 @@
       <sprite>sprites\spr_feather</sprite>
       <sprite>sprites\spr_grenSleeping</sprite>
       <sprite>sprites\spr_gren</sprite>
+      <sprite>sprites\spr_scuzz</sprite>
       <sprites name="sandMan">
         <sprite>sprites\spr_sandManDown</sprite>
         <sprite>sprites\spr_sandManEvent</sprite>
@@ -177,6 +178,7 @@
         <object>objects\obj_crab</object>
         <object>objects\obj_crabBubble</object>
         <object>objects\obj_gren</object>
+        <object>objects\obj_scuzz</object>
       </objects>
       <objects name="Neutral Creature">
         <object>objects\obj_bat</object>
