@@ -51,7 +51,11 @@
         <sprite>sprites\spr_crabAttack2</sprite>
         <sprite>sprites\spr_bubble</sprite>
       </sprites>
-      <sprite>sprites\spr_scorpion</sprite>
+      <sprites name="scorpion">
+        <sprite>sprites\spr_scorpionRun</sprite>
+        <sprite>sprites\spr_scorpionAttack</sprite>
+        <sprite>sprites\spr_scorpionAttackAnimation</sprite>
+      </sprites>
     </sprites>
     <sprites name="Controllers">
       <sprite>sprites\spr_block</sprite>

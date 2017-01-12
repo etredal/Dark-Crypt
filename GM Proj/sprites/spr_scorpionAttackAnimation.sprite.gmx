@@ -7,7 +7,7 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>3</bbox_left>
+  <bbox_left>7</bbox_left>
   <bbox_right>34</bbox_right>
   <bbox_top>0</bbox_top>
   <bbox_bottom>35</bbox_bottom>
@@ -20,6 +20,9 @@
   <width>36</width>
   <height>36</height>
   <frames>
-    <frame index="0">images\spr_scorpion_0.png</frame>
+    <frame index="0">images\spr_scorpionAttackAnimation_0.png</frame>
+    <frame index="1">images\spr_scorpionAttackAnimation_1.png</frame>
+    <frame index="2">images\spr_scorpionAttackAnimation_2.png</frame>
+    <frame index="3">images\spr_scorpionAttackAnimation_3.png</frame>
   </frames>
 </sprite>
