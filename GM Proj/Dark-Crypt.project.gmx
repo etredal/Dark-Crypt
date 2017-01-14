@@ -54,7 +54,7 @@
       <sprites name="scorpion">
         <sprite>sprites\spr_scorpionRun</sprite>
         <sprite>sprites\spr_scorpionAttack</sprite>
-        <sprite>sprites\spr_scorpionAttackAnimation</sprite>
+        <sprite>sprites\spr_scorpionAttackEffect</sprite>
       </sprites>
     </sprites>
     <sprites name="Controllers">
@@ -184,6 +184,8 @@
         <object>objects\obj_crabBubble</object>
         <object>objects\obj_gren</object>
         <object>objects\obj_scuzz</object>
+        <object>objects\obj_scorpionStationary</object>
+        <object>objects\obj_scorpionAttackEffect</object>
       </objects>
       <objects name="Neutral Creature">
         <object>objects\obj_bat</object>
