@@ -23,6 +23,7 @@
       <sprite>sprites\spr_wisp</sprite>
       <sprite>sprites\spr_wispSkull</sprite>
       <sprite>sprites\spr_monsterBlock</sprite>
+      <sprite>sprites\spr_monsterBlockSleep</sprite>
       <sprite>sprites\spr_brod</sprite>
       <sprite>sprites\spr_brodAttack</sprite>
       <sprite>sprites\spr_brodShot</sprite>
