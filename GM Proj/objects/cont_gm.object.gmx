@@ -200,14 +200,14 @@ part_type_life(global.p_sandManShotEffect,1 * room_speed,2 * room_speed);
           <argument>
             <kind>1</kind>
             <string>///IF no save file exists, create file -- Also Creates Buttons
-if !(file_exists("Dark-Crypt_MazeSave.txt")) {
-    saveFile = file_text_open_write("Dark-Crypt_MazeSave.txt");
+if !(file_exists("Dark-Crypt_Save.txt")) {
+    saveFile = file_text_open_write("Dark-Crypt_Save.txt");
     file_text_write_real(saveFile, 0);
     file_text_close(saveFile);
 } 
 
 //Set location
-saveFile = file_text_open_read("Dark-Crypt_MazeSave.txt");
+saveFile = file_text_open_read("Dark-Crypt_Save.txt");
 val = file_text_read_real(saveFile);
 file_text_close(saveFile);
 
@@ -216,7 +216,7 @@ var i = 0;
 var j = 0;
 
 //Loop for buttons
-for (i = 0; i &lt; 25; i++) {
+for (i = 0; i &lt; 26; i++) {
     var rows = 9;
     
     if (i%rows == 0) &amp;&amp; (i != 0) {

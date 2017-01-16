@@ -127,6 +127,7 @@
         <object>objects\cont_textBox</object>
         <object>objects\cont_ledge</object>
         <object>objects\cont_light</object>
+        <object>objects\cont_lightFlicker</object>
       </objects>
       <objects name="Action Items">
         <objects name="Shines">

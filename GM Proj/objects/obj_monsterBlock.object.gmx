@@ -86,7 +86,6 @@ if (awaken == true) {
         } else {
             //Reset
             image_speed = 0;
-            image_index = 0;
             solid = true;
             hspeed = 0;
             vspeed = 0;
@@ -97,7 +96,7 @@ if (awaken == true) {
             if (round(obj_player.y) &lt; round(y)) {
                 vspeed = -spd;
             } else if (round(obj_player.y) &gt; round(y)) {
-              vspeed = spd;
+                vspeed = spd;
             }
         }
     
@@ -109,15 +108,20 @@ if (awaken == true) {
         } else {
             //Reset
             image_speed = 0;
-            image_index = 0;
             solid = true;
             hspeed = 0;
             vspeed = 0;
         }
+        
+        if (vspeed != 0 || hspeed != 0) {
+            image_speed = 0.075;
+            
+            solid = false;
+        }
     } else {
         //Reset
         image_speed = 0;
-        image_index = 0;
+        awaken = false;
         solid = true;
         hspeed = 0;
         vspeed = 0;
