@@ -163,6 +163,8 @@ if (obj_player.y &gt; y) {
 //Awaken
 if (sprite_index == spr_crabSleep) {
     sprite_index = spr_crabAwaken;
+    
+    image_speed = 0.075;
 }
 
 //Destroy Ember
