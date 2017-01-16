@@ -90,6 +90,7 @@
     <sprite>sprites\spr_torch</sprite>
     <sprite>sprites\spr_sandManShot</sprite>
     <sprite>sprites\spr_bonfire</sprite>
+    <sprite>sprites\spr_spiker</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -188,6 +189,7 @@
         <object>objects\obj_scuzz</object>
         <object>objects\obj_scorpionStationary</object>
         <object>objects\obj_scorpionAttackEffect</object>
+        <object>objects\obj_spiker</object>
       </objects>
       <objects name="Neutral Creature">
         <object>objects\obj_bat</object>
