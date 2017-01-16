@@ -29,7 +29,7 @@
 image_speed = 0.075;
 
 //Lose value
-attackCost = 12;
+attackCost = 6;
 
 //Slow decrease
 dec = 1/room_speed;

@@ -91,6 +91,7 @@
     <sprite>sprites\spr_sandManShot</sprite>
     <sprite>sprites\spr_bonfire</sprite>
     <sprite>sprites\spr_spiker</sprite>
+    <sprite>sprites\spr_tombstone</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -158,6 +159,7 @@
         <object>objects\obj_signMonster</object>
         <object>objects\obj_torch</object>
         <object>objects\obj_torchLost</object>
+        <object>objects\obj_tombstone</object>
       </objects>
       <objects name="Blocks">
         <object>objects\obj_blockCracked</object>
