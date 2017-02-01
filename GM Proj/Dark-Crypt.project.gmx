@@ -93,6 +93,7 @@
     <sprite>sprites\spr_bonfire</sprite>
     <sprite>sprites\spr_spiker</sprite>
     <sprite>sprites\spr_tombstone</sprite>
+    <sprite>sprites\spr_deadTree</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -166,6 +167,7 @@
       <objects name="Blocks">
         <object>objects\obj_blockCracked</object>
         <object>objects\obj_magma</object>
+        <object>objects\obj_deadTree</object>
       </objects>
     </objects>
     <objects name="Gameplay">
