@@ -16,7 +16,7 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>928</w>
+    <w>896</w>
     <h>600</h>
     <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>65</xoffset>
-    <yoffset>357</yoffset>
+    <xoffset>282</xoffset>
+    <yoffset>939</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
@@ -83,6 +83,9 @@
     <instance objName="obj_monsterRock" x="480" y="320" name="inst_A8C4B8EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_monsterRock" x="336" y="304" name="inst_CC8C4F72" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_monsterRock" x="224" y="336" name="inst_276DC8BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_giantEye" x="192" y="544" name="inst_4BD9D8F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_giantEye" x="288" y="544" name="inst_CC969315" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_snakeMouth" x="240" y="592" name="inst_051E6590" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_blocks" x="0" y="0" w="32" h="32" xo="448" yo="0" id="10025725" name="inst_A259303E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

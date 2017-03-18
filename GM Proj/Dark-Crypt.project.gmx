@@ -98,6 +98,8 @@
     <sprite>sprites\spr_eyesEye</sprite>
     <sprite>sprites\spr_rollingLog</sprite>
     <sprite>sprites\spr_rollingLogPressurePlate</sprite>
+    <sprite>sprites\spr_giantEye</sprite>
+    <sprite>sprites\spr_snakeMouth</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -206,6 +208,8 @@
         <object>objects\obj_eyes</object>
         <object>objects\obj_eyesEyeAttached</object>
         <object>objects\obj_eyesEyeDetached</object>
+        <object>objects\obj_giantEye</object>
+        <object>objects\obj_snakeMouth</object>
       </objects>
       <objects name="Neutral Creature">
         <object>objects\obj_bat</object>
