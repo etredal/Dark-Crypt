@@ -94,6 +94,8 @@
     <sprite>sprites\spr_spiker</sprite>
     <sprite>sprites\spr_tombstone</sprite>
     <sprite>sprites\spr_deadTree</sprite>
+    <sprite>sprites\spr_eyes</sprite>
+    <sprite>sprites\spr_eyesEye</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -197,6 +199,7 @@
         <object>objects\obj_scorpionAttackEffect</object>
         <object>objects\obj_spiker</object>
         <object>objects\obj_devilSpider</object>
+        <object>objects\obj_eyes</object>
       </objects>
       <objects name="Neutral Creature">
         <object>objects\obj_bat</object>

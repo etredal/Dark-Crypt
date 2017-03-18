@@ -16,7 +16,7 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1008</w>
+    <w>1016</w>
     <h>600</h>
     <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
@@ -26,9 +26,9 @@
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>0</page>
-    <xoffset>501</xoffset>
-    <yoffset>137</yoffset>
+    <page>2</page>
+    <xoffset>22</xoffset>
+    <yoffset>1088</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
@@ -289,6 +289,10 @@
     <instance objName="obj_spiker" x="1632" y="384" name="inst_954CC2C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spiker" x="1632" y="448" name="inst_438F593F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_devilSpider" x="1616" y="352" name="inst_4D6A6635" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shineRed" x="160" y="1200" name="inst_A63570AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shineRed" x="224" y="1184" name="inst_D4AED730" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shineRed" x="144" y="1296" name="inst_D844C88D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shineRed" x="240" y="1248" name="inst_5A765FEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_blocks" x="-16" y="96" w="32" h="32" xo="0" yo="0" id="10000072" name="inst_718FBAF1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
