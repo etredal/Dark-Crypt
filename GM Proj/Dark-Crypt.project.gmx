@@ -200,6 +200,8 @@
         <object>objects\obj_spiker</object>
         <object>objects\obj_devilSpider</object>
         <object>objects\obj_eyes</object>
+        <object>objects\obj_eyesEyeAttached</object>
+        <object>objects\obj_eyesEyeDetached</object>
       </objects>
       <objects name="Neutral Creature">
         <object>objects\obj_bat</object>

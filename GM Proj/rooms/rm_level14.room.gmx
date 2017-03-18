@@ -16,7 +16,7 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1000</w>
+    <w>968</w>
     <h>600</h>
     <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>-13</xoffset>
-    <yoffset>44</yoffset>
+    <xoffset>-49</xoffset>
+    <yoffset>137</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
@@ -65,11 +65,14 @@
     <instance objName="cont_block" x="-48" y="560" name="inst_72332CC6" locked="0" code="" scaleX="1.03225803375244" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="592" y="496" name="inst_24B847B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="624" y="304" name="inst_BDEEF35A" locked="0" code="" scaleX="1" scaleY="20.5" colour="4294967295" rotation="0"/>
-    <instance objName="cont_block" x="272" y="16" name="inst_D30DD150" locked="0" code="" scaleX="21" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="cont_block" x="-48" y="16" name="inst_D30DD150" locked="0" code="" scaleX="21" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="16" y="256" name="inst_6ECEFB06" locked="0" code="" scaleX="1" scaleY="14.5" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="-16" y="528" name="inst_5F72DB2B" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="-16" y="592" name="inst_3DE1C618" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_eyes" x="304" y="256" name="inst_32182F2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="cont_block" x="480" y="16" name="inst_F8418404" locked="0" code="" scaleX="10" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_doorInstanceActivator" x="304" y="16" name="inst_66BB7F0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="cont_instanceActivator" x="352" y="304" name="inst_E06AAF08" locked="0" code="obj = obj_eyes;&#xA;" scaleX="29.5" scaleY="19" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_blocks" x="0" y="0" w="32" h="32" xo="448" yo="0" id="10025725" name="inst_A259303E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -137,7 +140,6 @@
     <tile bgName="bg_blocks" x="384" y="0" w="32" h="32" xo="448" yo="0" id="10025791" name="inst_E3281438" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="352" y="0" w="32" h="32" xo="448" yo="0" id="10025792" name="inst_409B636E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="320" y="0" w="32" h="32" xo="448" yo="0" id="10025793" name="inst_330E9E56" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_blocks" x="288" y="0" w="32" h="32" xo="448" yo="0" id="10025794" name="inst_11F38666" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="256" y="0" w="32" h="32" xo="448" yo="0" id="10025795" name="inst_B7BE7B44" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="224" y="0" w="32" h="32" xo="448" yo="0" id="10025796" name="inst_2EFACBF3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_blocks" x="192" y="0" w="32" h="32" xo="448" yo="0" id="10025797" name="inst_F32A5D0B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
