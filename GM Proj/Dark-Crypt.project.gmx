@@ -96,6 +96,8 @@
     <sprite>sprites\spr_deadTree</sprite>
     <sprite>sprites\spr_eyes</sprite>
     <sprite>sprites\spr_eyesEye</sprite>
+    <sprite>sprites\spr_rollingLog</sprite>
+    <sprite>sprites\spr_rollingLogPressurePlate</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_blocks</background>
@@ -152,6 +154,8 @@
           <object>objects\obj_doorInstanceActivator</object>
           <object>objects\cont_pressurePlate</object>
           <object>objects\obj_doorPressurePlate</object>
+          <object>objects\cont_rollingLogPressurePlate</object>
+          <object>objects\obj_rollingLog</object>
         </objects>
         <object>objects\obj_shineFountain</object>
         <object>objects\obj_shooter</object>
