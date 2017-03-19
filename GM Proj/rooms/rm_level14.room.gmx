@@ -16,7 +16,7 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>896</w>
+    <w>1016</w>
     <h>600</h>
     <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>282</xoffset>
-    <yoffset>939</yoffset>
+    <xoffset>3017</xoffset>
+    <yoffset>-441</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
@@ -68,12 +68,6 @@
     <instance objName="cont_block" x="16" y="256" name="inst_6ECEFB06" locked="0" code="" scaleX="1" scaleY="14.5" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="-16" y="528" name="inst_5F72DB2B" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="-16" y="592" name="inst_3DE1C618" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_eyes" x="2064" y="320" name="inst_32182F2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_doorInstanceActivator" x="2128" y="16" name="inst_66BB7F0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cont_instanceActivator" x="2112" y="368" name="inst_E06AAF08" locked="0" code="obj = obj_eyes;&#xA;" scaleX="29.5" scaleY="19" colour="4294967295" rotation="0"/>
-    <instance objName="cont_block" x="2096" y="-16" name="inst_23D718AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cont_block" x="2160" y="-16" name="inst_3ACA556F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cont_exit" x="2128" y="-32" name="inst_29E6D09E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="288" y="272" name="inst_BD48AF51" locked="0" code="" scaleX="22" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="624" y="496" name="inst_03E1D539" locked="0" code="" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="cont_block" x="352" y="400" name="inst_411EA043" locked="0" code="" scaleX="16" scaleY="1" colour="4294967295" rotation="0"/>

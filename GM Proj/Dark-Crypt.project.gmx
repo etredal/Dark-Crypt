@@ -94,8 +94,6 @@
     <sprite>sprites\spr_spiker</sprite>
     <sprite>sprites\spr_tombstone</sprite>
     <sprite>sprites\spr_deadTree</sprite>
-    <sprite>sprites\spr_eyes</sprite>
-    <sprite>sprites\spr_eyesEye</sprite>
     <sprite>sprites\spr_rollingLog</sprite>
     <sprite>sprites\spr_rollingLogPressurePlate</sprite>
     <sprite>sprites\spr_giantEye</sprite>
@@ -205,9 +203,6 @@
         <object>objects\obj_scorpionAttackEffect</object>
         <object>objects\obj_spiker</object>
         <object>objects\obj_devilSpider</object>
-        <object>objects\obj_eyes</object>
-        <object>objects\obj_eyesEyeAttached</object>
-        <object>objects\obj_eyesEyeDetached</object>
         <object>objects\obj_giantEye</object>
         <object>objects\obj_snakeMouth</object>
       </objects>
